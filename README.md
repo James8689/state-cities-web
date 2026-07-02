@@ -56,7 +56,7 @@ for the pre-submission checklist. Monetization is deferred to v1.1.
 | `npm run build:data -- XX` | Generate outline + city data (omit `XX` for all) |
 | `npm run build:physical -- XX` | Generate rivers/lakes (omit `XX` for all) |
 | `npm run diagnose -- XX` | Validate generated data projects correctly |
-| `npm run icons` | Regenerate PNG app icons from `public/icon-source.svg` |
+| `npm run icons` | Regenerate PNG app icons from `public/icon-source.png` |
 | `npm run cap:sync` | Production build + sync into `ios/` and `android/` |
 | `npm run cap:ios` / `cap:android` | Open native IDE (Xcode / Android Studio) |
 

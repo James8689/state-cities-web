@@ -9,7 +9,7 @@ the native shells that load the built `dist/` bundle.
 | Item | Location |
 | --- | --- |
 | App icons (192, 512, 1024, apple-touch) | `public/icon-*.png` — regenerate with `npm run icons` |
-| Icon source art | `public/icon-source.svg` |
+| Icon source art | `public/icon-source.png` (1024×1024) — regenerate with `npm run icons` |
 | PWA manifest (relative paths) | `public/manifest.json` |
 | Privacy policy (static page) | `public/privacy.html` |
 | Security headers (static hosts) | `public/_headers` (Cloudflare Pages / compatible CDNs) |
@@ -39,7 +39,10 @@ npm run cap:android      # open Android Studio
 
 ## Pre-submission checklist
 
-- [ ] Confirm `support@statecities.app` is a real inbox (or update `privacy.html`)
+- [ ] Push to GitHub and enable **Pages → Build and deployment → GitHub Actions** (one-time)
+- [ ] Confirm site is live at `https://james8689.github.io/state-cities/support.html`
+- [ ] App Store Connect **Support URL:** `https://james8689.github.io/state-cities/support.html`
+- [ ] App Store Connect **Privacy URL:** `https://james8689.github.io/state-cities/privacy.html`
 - [ ] Apple Developer Program account ($99/yr)
 - [ ] macOS + Xcode: build iOS, run in Simulator, then TestFlight
 - [ ] Android Studio: build AAB for Play Console (optional parallel track)
