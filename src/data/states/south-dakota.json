@@ -1,0 +1,131 @@
+{
+  "id": "SD",
+  "name": "South Dakota",
+  "capital": "pierre-sd",
+  "mapFiles": {
+    "state": "/maps/south-dakota-state.topojson",
+    "cities": "/maps/south-dakota-cities.geojson",
+    "water": "/maps/south-dakota-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "aberdeen-sd",
+      "geoid": "4600100",
+      "name": "Aberdeen",
+      "population": 28495,
+      "tier": 1
+    },
+    {
+      "id": "belle-fourche-sd",
+      "geoid": "4604380",
+      "name": "Belle Fourche",
+      "population": 5617,
+      "tier": 2
+    },
+    {
+      "id": "box-elder-sd",
+      "geoid": "4606620",
+      "name": "Box Elder",
+      "population": 11746,
+      "tier": 2
+    },
+    {
+      "id": "brandon-sd",
+      "geoid": "4606840",
+      "name": "Brandon",
+      "population": 11048,
+      "tier": 2
+    },
+    {
+      "id": "brookings-sd",
+      "geoid": "4607580",
+      "name": "Brookings",
+      "population": 23377,
+      "tier": 1
+    },
+    {
+      "id": "harrisburg-sd",
+      "geoid": "4627260",
+      "name": "Harrisburg",
+      "population": 6732,
+      "tier": 2
+    },
+    {
+      "id": "huron-sd",
+      "geoid": "4631060",
+      "name": "Huron",
+      "population": 14263,
+      "tier": 1
+    },
+    {
+      "id": "madison-sd",
+      "geoid": "4640220",
+      "name": "Madison",
+      "population": 6191,
+      "tier": 2
+    },
+    {
+      "id": "mitchell-sd",
+      "geoid": "4643100",
+      "name": "Mitchell",
+      "population": 15660,
+      "tier": 1
+    },
+    {
+      "id": "pierre-sd",
+      "geoid": "4649600",
+      "name": "Pierre",
+      "population": 14091,
+      "tier": 1
+    },
+    {
+      "id": "rapid-city-sd",
+      "geoid": "4652980",
+      "name": "Rapid City",
+      "population": 74703,
+      "tier": 1
+    },
+    {
+      "id": "sioux-falls-sd",
+      "geoid": "4659020",
+      "name": "Sioux Falls",
+      "population": 192517,
+      "tier": 1
+    },
+    {
+      "id": "spearfish-sd",
+      "geoid": "4660020",
+      "name": "Spearfish",
+      "population": 12193,
+      "tier": 2
+    },
+    {
+      "id": "sturgis-sd",
+      "geoid": "4662100",
+      "name": "Sturgis",
+      "population": 7020,
+      "tier": 2
+    },
+    {
+      "id": "vermillion-sd",
+      "geoid": "4666700",
+      "name": "Vermillion",
+      "population": 11695,
+      "tier": 2
+    },
+    {
+      "id": "watertown-sd",
+      "geoid": "4669300",
+      "name": "Watertown",
+      "population": 22655,
+      "tier": 1
+    },
+    {
+      "id": "yankton-sd",
+      "geoid": "4673060",
+      "name": "Yankton",
+      "population": 15411,
+      "tier": 1
+    }
+  ]
+}

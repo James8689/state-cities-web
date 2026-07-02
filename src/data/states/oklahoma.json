@@ -1,0 +1,152 @@
+{
+  "id": "OK",
+  "name": "Oklahoma",
+  "capital": "oklahoma-city-ok",
+  "mapFiles": {
+    "state": "/maps/oklahoma-state.topojson",
+    "cities": "/maps/oklahoma-cities.geojson",
+    "water": "/maps/oklahoma-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ardmore-ok",
+      "geoid": "4002600",
+      "name": "Ardmore",
+      "population": 24725,
+      "tier": 2
+    },
+    {
+      "id": "bartlesville-ok",
+      "geoid": "4004450",
+      "name": "Bartlesville",
+      "population": 37290,
+      "tier": 2
+    },
+    {
+      "id": "bixby-ok",
+      "geoid": "4006400",
+      "name": "Bixby",
+      "population": 28609,
+      "tier": 2
+    },
+    {
+      "id": "broken-arrow-ok",
+      "geoid": "4009050",
+      "name": "Broken Arrow",
+      "population": 113540,
+      "tier": 1
+    },
+    {
+      "id": "del-city-ok",
+      "geoid": "4019900",
+      "name": "Del City",
+      "population": 21822,
+      "tier": 2
+    },
+    {
+      "id": "duncan-ok",
+      "geoid": "4021900",
+      "name": "Duncan",
+      "population": 22692,
+      "tier": 2
+    },
+    {
+      "id": "edmond-ok",
+      "geoid": "4023200",
+      "name": "Edmond",
+      "population": 94428,
+      "tier": 1
+    },
+    {
+      "id": "enid-ok",
+      "geoid": "4023950",
+      "name": "Enid",
+      "population": 51308,
+      "tier": 1
+    },
+    {
+      "id": "lawton-ok",
+      "geoid": "4041850",
+      "name": "Lawton",
+      "population": 90381,
+      "tier": 1
+    },
+    {
+      "id": "midwest-city-ok",
+      "geoid": "4048350",
+      "name": "Midwest City",
+      "population": 58409,
+      "tier": 1
+    },
+    {
+      "id": "moore-ok",
+      "geoid": "4049200",
+      "name": "Moore",
+      "population": 62793,
+      "tier": 1
+    },
+    {
+      "id": "muskogee-ok",
+      "geoid": "4050050",
+      "name": "Muskogee",
+      "population": 36878,
+      "tier": 2
+    },
+    {
+      "id": "norman-ok",
+      "geoid": "4052500",
+      "name": "Norman",
+      "population": 128026,
+      "tier": 1
+    },
+    {
+      "id": "oklahoma-city-ok",
+      "geoid": "4055000",
+      "name": "Oklahoma City",
+      "population": 681054,
+      "tier": 1
+    },
+    {
+      "id": "owasso-ok",
+      "geoid": "4056650",
+      "name": "Owasso",
+      "population": 38240,
+      "tier": 2
+    },
+    {
+      "id": "ponca-city-ok",
+      "geoid": "4059850",
+      "name": "Ponca City",
+      "population": 24424,
+      "tier": 2
+    },
+    {
+      "id": "shawnee-ok",
+      "geoid": "4066800",
+      "name": "Shawnee",
+      "population": 31377,
+      "tier": 2
+    },
+    {
+      "id": "stillwater-ok",
+      "geoid": "4070300",
+      "name": "Stillwater",
+      "population": 48394,
+      "tier": 1
+    },
+    {
+      "id": "tulsa-ok",
+      "geoid": "4075000",
+      "name": "Tulsa",
+      "population": 413066,
+      "tier": 1
+    },
+    {
+      "id": "yukon-ok",
+      "geoid": "4082950",
+      "name": "Yukon",
+      "population": 23630,
+      "tier": 2
+    }
+  ]
+}

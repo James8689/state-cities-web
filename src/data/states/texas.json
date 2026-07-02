@@ -1,0 +1,152 @@
+{
+  "id": "TX",
+  "name": "Texas",
+  "capital": "austin-tx",
+  "mapFiles": {
+    "state": "/maps/texas-state.topojson",
+    "cities": "/maps/texas-cities.geojson",
+    "water": "/maps/texas-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "amarillo-tx",
+      "geoid": "4803000",
+      "name": "Amarillo",
+      "population": 200393,
+      "tier": 1
+    },
+    {
+      "id": "arlington-tx",
+      "geoid": "4804000",
+      "name": "Arlington",
+      "population": 394266,
+      "tier": 1
+    },
+    {
+      "id": "austin-tx",
+      "geoid": "4805000",
+      "name": "Austin",
+      "population": 961855,
+      "tier": 1
+    },
+    {
+      "id": "brownsville-tx",
+      "geoid": "4810768",
+      "name": "Brownsville",
+      "population": 186738,
+      "tier": 2
+    },
+    {
+      "id": "corpus-christi-tx",
+      "geoid": "4817000",
+      "name": "Corpus Christi",
+      "population": 317863,
+      "tier": 1
+    },
+    {
+      "id": "dallas-tx",
+      "geoid": "4819000",
+      "name": "Dallas",
+      "population": 1304379,
+      "tier": 1
+    },
+    {
+      "id": "el-paso-tx",
+      "geoid": "4824000",
+      "name": "El Paso",
+      "population": 678815,
+      "tier": 1
+    },
+    {
+      "id": "fort-worth-tx",
+      "geoid": "4827000",
+      "name": "Fort Worth",
+      "population": 918915,
+      "tier": 1
+    },
+    {
+      "id": "frisco-tx",
+      "geoid": "4827684",
+      "name": "Frisco",
+      "population": 200509,
+      "tier": 2
+    },
+    {
+      "id": "garland-tx",
+      "geoid": "4829000",
+      "name": "Garland",
+      "population": 246018,
+      "tier": 1
+    },
+    {
+      "id": "houston-tx",
+      "geoid": "4835000",
+      "name": "Houston",
+      "population": 2304580,
+      "tier": 1
+    },
+    {
+      "id": "irving-tx",
+      "geoid": "4837000",
+      "name": "Irving",
+      "population": 256684,
+      "tier": 1
+    },
+    {
+      "id": "killeen-tx",
+      "geoid": "4839148",
+      "name": "Killeen",
+      "population": 153095,
+      "tier": 2
+    },
+    {
+      "id": "laredo-tx",
+      "geoid": "4841464",
+      "name": "Laredo",
+      "population": 255205,
+      "tier": 1
+    },
+    {
+      "id": "lubbock-tx",
+      "geoid": "4845000",
+      "name": "Lubbock",
+      "population": 257141,
+      "tier": 1
+    },
+    {
+      "id": "mckinney-tx",
+      "geoid": "4845744",
+      "name": "McKinney",
+      "population": 195308,
+      "tier": 2
+    },
+    {
+      "id": "mesquite-tx",
+      "geoid": "4847892",
+      "name": "Mesquite",
+      "population": 150108,
+      "tier": 2
+    },
+    {
+      "id": "pasadena-tx",
+      "geoid": "4856000",
+      "name": "Pasadena",
+      "population": 151950,
+      "tier": 2
+    },
+    {
+      "id": "plano-tx",
+      "geoid": "4858016",
+      "name": "Plano",
+      "population": 285494,
+      "tier": 1
+    },
+    {
+      "id": "san-antonio-tx",
+      "geoid": "4865000",
+      "name": "San Antonio",
+      "population": 1434625,
+      "tier": 1
+    }
+  ]
+}

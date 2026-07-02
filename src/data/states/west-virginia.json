@@ -1,0 +1,131 @@
+{
+  "id": "WV",
+  "name": "West Virginia",
+  "capital": "charleston-wv",
+  "mapFiles": {
+    "state": "/maps/west-virginia-state.topojson",
+    "cities": "/maps/west-virginia-cities.geojson",
+    "water": "/maps/west-virginia-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "beckley-wv",
+      "geoid": "5405332",
+      "name": "Beckley",
+      "population": 17286,
+      "tier": 1
+    },
+    {
+      "id": "bridgeport-wv",
+      "geoid": "5410180",
+      "name": "Bridgeport",
+      "population": 9336,
+      "tier": 2
+    },
+    {
+      "id": "buckhannon-wv",
+      "geoid": "5411188",
+      "name": "Buckhannon",
+      "population": 5186,
+      "tier": 2
+    },
+    {
+      "id": "charleston-wv",
+      "geoid": "5414600",
+      "name": "Charleston",
+      "population": 48864,
+      "tier": 1
+    },
+    {
+      "id": "clarksburg-wv",
+      "geoid": "5415628",
+      "name": "Clarksburg",
+      "population": 16061,
+      "tier": 1
+    },
+    {
+      "id": "fairmont-wv",
+      "geoid": "5426452",
+      "name": "Fairmont",
+      "population": 18416,
+      "tier": 1
+    },
+    {
+      "id": "huntington-wv",
+      "geoid": "5439460",
+      "name": "Huntington",
+      "population": 46842,
+      "tier": 1
+    },
+    {
+      "id": "hurricane-wv",
+      "geoid": "5439532",
+      "name": "Hurricane",
+      "population": 6961,
+      "tier": 2
+    },
+    {
+      "id": "keyser-wv",
+      "geoid": "5443492",
+      "name": "Keyser",
+      "population": 4864,
+      "tier": 2
+    },
+    {
+      "id": "lewisburg-wv",
+      "geoid": "5446636",
+      "name": "Lewisburg",
+      "population": 3922,
+      "tier": 2
+    },
+    {
+      "id": "martinsburg-wv",
+      "geoid": "5452060",
+      "name": "Martinsburg",
+      "population": 18777,
+      "tier": 1
+    },
+    {
+      "id": "morgantown-wv",
+      "geoid": "5455756",
+      "name": "Morgantown",
+      "population": 30347,
+      "tier": 1
+    },
+    {
+      "id": "parkersburg-wv",
+      "geoid": "5462140",
+      "name": "Parkersburg",
+      "population": 29738,
+      "tier": 1
+    },
+    {
+      "id": "south-charleston-wv",
+      "geoid": "5475292",
+      "name": "South Charleston",
+      "population": 13647,
+      "tier": 2
+    },
+    {
+      "id": "st-albans-wv",
+      "geoid": "5471212",
+      "name": "St. Albans",
+      "population": 10861,
+      "tier": 2
+    },
+    {
+      "id": "vienna-wv",
+      "geoid": "5483500",
+      "name": "Vienna",
+      "population": 10652,
+      "tier": 2
+    },
+    {
+      "id": "wheeling-wv",
+      "geoid": "5486452",
+      "name": "Wheeling",
+      "population": 27052,
+      "tier": 1
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "IL",
+  "name": "Illinois",
+  "capital": "springfield-il",
+  "mapFiles": {
+    "state": "/maps/illinois-state.topojson",
+    "cities": "/maps/illinois-cities.geojson",
+    "water": "/maps/illinois-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "aurora-il",
+      "geoid": "1703012",
+      "name": "Aurora",
+      "population": 180542,
+      "tier": 1
+    },
+    {
+      "id": "bloomington-il",
+      "geoid": "1706613",
+      "name": "Bloomington",
+      "population": 78680,
+      "tier": 1
+    },
+    {
+      "id": "bolingbrook-il",
+      "geoid": "1707133",
+      "name": "Bolingbrook",
+      "population": 73922,
+      "tier": 2
+    },
+    {
+      "id": "champaign-il",
+      "geoid": "1712385",
+      "name": "Champaign",
+      "population": 88302,
+      "tier": 1
+    },
+    {
+      "id": "chicago-il",
+      "geoid": "1714000",
+      "name": "Chicago",
+      "population": 2746388,
+      "tier": 1
+    },
+    {
+      "id": "cicero-il",
+      "geoid": "1714351",
+      "name": "Cicero",
+      "population": 85268,
+      "tier": 1
+    },
+    {
+      "id": "decatur-il",
+      "geoid": "1718823",
+      "name": "Decatur",
+      "population": 70522,
+      "tier": 2
+    },
+    {
+      "id": "des-plaines-il",
+      "geoid": "1719642",
+      "name": "Des Plaines",
+      "population": 60675,
+      "tier": 1
+    },
+    {
+      "id": "elgin-il",
+      "geoid": "1723074",
+      "name": "Elgin",
+      "population": 114797,
+      "tier": 1
+    },
+    {
+      "id": "evanston-il",
+      "geoid": "1724582",
+      "name": "Evanston",
+      "population": 78110,
+      "tier": 1
+    },
+    {
+      "id": "joliet-il",
+      "geoid": "1738570",
+      "name": "Joliet",
+      "population": 150362,
+      "tier": 1
+    },
+    {
+      "id": "naperville-il",
+      "geoid": "1751622",
+      "name": "Naperville",
+      "population": 149540,
+      "tier": 1
+    },
+    {
+      "id": "oak-lawn-il",
+      "geoid": "1754820",
+      "name": "Oak Lawn",
+      "population": 58362,
+      "tier": 2
+    },
+    {
+      "id": "palatine-il",
+      "geoid": "1757225",
+      "name": "Palatine",
+      "population": 67908,
+      "tier": 2
+    },
+    {
+      "id": "peoria-il",
+      "geoid": "1759000",
+      "name": "Peoria",
+      "population": 113150,
+      "tier": 1
+    },
+    {
+      "id": "rockford-il",
+      "geoid": "1765000",
+      "name": "Rockford",
+      "population": 148655,
+      "tier": 1
+    },
+    {
+      "id": "schaumburg-il",
+      "geoid": "1768003",
+      "name": "Schaumburg",
+      "population": 78723,
+      "tier": 1
+    },
+    {
+      "id": "skokie-il",
+      "geoid": "1770122",
+      "name": "Skokie",
+      "population": 67824,
+      "tier": 2
+    },
+    {
+      "id": "springfield-il",
+      "geoid": "1772000",
+      "name": "Springfield",
+      "population": 114394,
+      "tier": 1
+    },
+    {
+      "id": "waukegan-il",
+      "geoid": "1779293",
+      "name": "Waukegan",
+      "population": 89321,
+      "tier": 1
+    }
+  ]
+}

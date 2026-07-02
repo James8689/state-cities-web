@@ -1,0 +1,131 @@
+{
+  "id": "ND",
+  "name": "North Dakota",
+  "capital": "bismarck-nd",
+  "mapFiles": {
+    "state": "/maps/north-dakota-state.topojson",
+    "cities": "/maps/north-dakota-cities.geojson",
+    "water": "/maps/north-dakota-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "beulah-nd",
+      "geoid": "3806660",
+      "name": "Beulah",
+      "population": 3058,
+      "tier": 2
+    },
+    {
+      "id": "bismarck-nd",
+      "geoid": "3807200",
+      "name": "Bismarck",
+      "population": 73622,
+      "tier": 1
+    },
+    {
+      "id": "devils-lake-nd",
+      "geoid": "3819420",
+      "name": "Devils Lake",
+      "population": 7192,
+      "tier": 2
+    },
+    {
+      "id": "dickinson-nd",
+      "geoid": "3819620",
+      "name": "Dickinson",
+      "population": 25679,
+      "tier": 1
+    },
+    {
+      "id": "fargo-nd",
+      "geoid": "3825700",
+      "name": "Fargo",
+      "population": 125990,
+      "tier": 1
+    },
+    {
+      "id": "grafton-nd",
+      "geoid": "3831820",
+      "name": "Grafton",
+      "population": 4170,
+      "tier": 2
+    },
+    {
+      "id": "grand-forks-nd",
+      "geoid": "3832060",
+      "name": "Grand Forks",
+      "population": 59166,
+      "tier": 1
+    },
+    {
+      "id": "jamestown-nd",
+      "geoid": "3840580",
+      "name": "Jamestown",
+      "population": 15849,
+      "tier": 1
+    },
+    {
+      "id": "lincoln-nd",
+      "geoid": "3846640",
+      "name": "Lincoln",
+      "population": 4257,
+      "tier": 2
+    },
+    {
+      "id": "mandan-nd",
+      "geoid": "3849900",
+      "name": "Mandan",
+      "population": 24206,
+      "tier": 1
+    },
+    {
+      "id": "minot-nd",
+      "geoid": "3853380",
+      "name": "Minot",
+      "population": 48377,
+      "tier": 1
+    },
+    {
+      "id": "rugby-nd",
+      "geoid": "3868860",
+      "name": "Rugby",
+      "population": 2509,
+      "tier": 2
+    },
+    {
+      "id": "valley-city-nd",
+      "geoid": "3881180",
+      "name": "Valley City",
+      "population": 6575,
+      "tier": 2
+    },
+    {
+      "id": "wahpeton-nd",
+      "geoid": "3882660",
+      "name": "Wahpeton",
+      "population": 8007,
+      "tier": 2
+    },
+    {
+      "id": "watford-city-nd",
+      "geoid": "3883860",
+      "name": "Watford City",
+      "population": 6207,
+      "tier": 2
+    },
+    {
+      "id": "west-fargo-nd",
+      "geoid": "3884780",
+      "name": "West Fargo",
+      "population": 38626,
+      "tier": 1
+    },
+    {
+      "id": "williston-nd",
+      "geoid": "3886220",
+      "name": "Williston",
+      "population": 29160,
+      "tier": 1
+    }
+  ]
+}

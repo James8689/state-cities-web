@@ -1,0 +1,152 @@
+{
+  "id": "IN",
+  "name": "Indiana",
+  "capital": "indianapolis-in",
+  "mapFiles": {
+    "state": "/maps/indiana-state.topojson",
+    "cities": "/maps/indiana-cities.geojson",
+    "water": "/maps/indiana-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "anderson-in",
+      "geoid": "1801468",
+      "name": "Anderson",
+      "population": 54788,
+      "tier": 2
+    },
+    {
+      "id": "bloomington-in",
+      "geoid": "1805860",
+      "name": "Bloomington",
+      "population": 79168,
+      "tier": 1
+    },
+    {
+      "id": "carmel-in",
+      "geoid": "1810342",
+      "name": "Carmel",
+      "population": 99757,
+      "tier": 1
+    },
+    {
+      "id": "elkhart-in",
+      "geoid": "1820728",
+      "name": "Elkhart",
+      "population": 53923,
+      "tier": 2
+    },
+    {
+      "id": "evansville-in",
+      "geoid": "1822000",
+      "name": "Evansville",
+      "population": 117298,
+      "tier": 1
+    },
+    {
+      "id": "fishers-in",
+      "geoid": "1823278",
+      "name": "Fishers",
+      "population": 98977,
+      "tier": 1
+    },
+    {
+      "id": "fort-wayne-in",
+      "geoid": "1825000",
+      "name": "Fort Wayne",
+      "population": 263886,
+      "tier": 1
+    },
+    {
+      "id": "gary-in",
+      "geoid": "1827000",
+      "name": "Gary",
+      "population": 69093,
+      "tier": 1
+    },
+    {
+      "id": "greenwood-in",
+      "geoid": "1829898",
+      "name": "Greenwood",
+      "population": 63830,
+      "tier": 2
+    },
+    {
+      "id": "hammond-in",
+      "geoid": "1831000",
+      "name": "Hammond",
+      "population": 77879,
+      "tier": 1
+    },
+    {
+      "id": "indianapolis-in",
+      "geoid": "1836003",
+      "name": "Indianapolis",
+      "population": 887642,
+      "tier": 1
+    },
+    {
+      "id": "jeffersonville-in",
+      "geoid": "1838358",
+      "name": "Jeffersonville",
+      "population": 49447,
+      "tier": 2
+    },
+    {
+      "id": "kokomo-in",
+      "geoid": "1840392",
+      "name": "Kokomo",
+      "population": 59604,
+      "tier": 1
+    },
+    {
+      "id": "lafayette-in",
+      "geoid": "1840788",
+      "name": "Lafayette",
+      "population": 70783,
+      "tier": 1
+    },
+    {
+      "id": "lawrence-in",
+      "geoid": "1842426",
+      "name": "Lawrence",
+      "population": 49370,
+      "tier": 2
+    },
+    {
+      "id": "mishawaka-in",
+      "geoid": "1849932",
+      "name": "Mishawaka",
+      "population": 51063,
+      "tier": 2
+    },
+    {
+      "id": "muncie-in",
+      "geoid": "1851876",
+      "name": "Muncie",
+      "population": 65194,
+      "tier": 1
+    },
+    {
+      "id": "noblesville-in",
+      "geoid": "1854180",
+      "name": "Noblesville",
+      "population": 69604,
+      "tier": 1
+    },
+    {
+      "id": "south-bend-in",
+      "geoid": "1871000",
+      "name": "South Bend",
+      "population": 103453,
+      "tier": 1
+    },
+    {
+      "id": "terre-haute-in",
+      "geoid": "1875428",
+      "name": "Terre Haute",
+      "population": 58389,
+      "tier": 1
+    }
+  ]
+}

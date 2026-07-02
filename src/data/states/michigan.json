@@ -1,0 +1,152 @@
+{
+  "id": "MI",
+  "name": "Michigan",
+  "capital": "lansing-mi",
+  "mapFiles": {
+    "state": "/maps/michigan-state.topojson",
+    "cities": "/maps/michigan-cities.geojson",
+    "water": "/maps/michigan-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ann-arbor-mi",
+      "geoid": "2603000",
+      "name": "Ann Arbor",
+      "population": 123851,
+      "tier": 1
+    },
+    {
+      "id": "dearborn-mi",
+      "geoid": "2621000",
+      "name": "Dearborn",
+      "population": 109976,
+      "tier": 1
+    },
+    {
+      "id": "detroit-mi",
+      "geoid": "2622000",
+      "name": "Detroit",
+      "population": 639111,
+      "tier": 1
+    },
+    {
+      "id": "farmington-hills-mi",
+      "geoid": "2627440",
+      "name": "Farmington Hills",
+      "population": 83986,
+      "tier": 1
+    },
+    {
+      "id": "flint-mi",
+      "geoid": "2629000",
+      "name": "Flint",
+      "population": 81252,
+      "tier": 1
+    },
+    {
+      "id": "grand-rapids-mi",
+      "geoid": "2634000",
+      "name": "Grand Rapids",
+      "population": 198917,
+      "tier": 1
+    },
+    {
+      "id": "kalamazoo-mi",
+      "geoid": "2642160",
+      "name": "Kalamazoo",
+      "population": 73598,
+      "tier": 1
+    },
+    {
+      "id": "lansing-mi",
+      "geoid": "2646000",
+      "name": "Lansing",
+      "population": 112644,
+      "tier": 1
+    },
+    {
+      "id": "livonia-mi",
+      "geoid": "2649000",
+      "name": "Livonia",
+      "population": 95535,
+      "tier": 1
+    },
+    {
+      "id": "muskegon-mi",
+      "geoid": "2656320",
+      "name": "Muskegon",
+      "population": 38318,
+      "tier": 2
+    },
+    {
+      "id": "pontiac-mi",
+      "geoid": "2665440",
+      "name": "Pontiac",
+      "population": 61606,
+      "tier": 2
+    },
+    {
+      "id": "rochester-hills-mi",
+      "geoid": "2669035",
+      "name": "Rochester Hills",
+      "population": 76300,
+      "tier": 2
+    },
+    {
+      "id": "saginaw-mi",
+      "geoid": "2670520",
+      "name": "Saginaw",
+      "population": 44202,
+      "tier": 2
+    },
+    {
+      "id": "southfield-mi",
+      "geoid": "2674900",
+      "name": "Southfield",
+      "population": 76618,
+      "tier": 2
+    },
+    {
+      "id": "sterling-heights-mi",
+      "geoid": "2676460",
+      "name": "Sterling Heights",
+      "population": 134346,
+      "tier": 1
+    },
+    {
+      "id": "taylor-mi",
+      "geoid": "2679000",
+      "name": "Taylor",
+      "population": 63409,
+      "tier": 2
+    },
+    {
+      "id": "troy-mi",
+      "geoid": "2680700",
+      "name": "Troy",
+      "population": 87294,
+      "tier": 1
+    },
+    {
+      "id": "warren-mi",
+      "geoid": "2684000",
+      "name": "Warren",
+      "population": 139387,
+      "tier": 1
+    },
+    {
+      "id": "westland-mi",
+      "geoid": "2686000",
+      "name": "Westland",
+      "population": 85420,
+      "tier": 1
+    },
+    {
+      "id": "wyoming-mi",
+      "geoid": "2688940",
+      "name": "Wyoming",
+      "population": 76501,
+      "tier": 1
+    }
+  ]
+}

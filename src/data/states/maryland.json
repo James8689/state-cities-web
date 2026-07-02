@@ -1,0 +1,131 @@
+{
+  "id": "MD",
+  "name": "Maryland",
+  "capital": "annapolis-md",
+  "mapFiles": {
+    "state": "/maps/maryland-state.topojson",
+    "cities": "/maps/maryland-cities.geojson",
+    "water": "/maps/maryland-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "aberdeen-md",
+      "geoid": "2400125",
+      "name": "Aberdeen",
+      "population": 16254,
+      "tier": 2
+    },
+    {
+      "id": "annapolis-md",
+      "geoid": "2401600",
+      "name": "Annapolis",
+      "population": 40812,
+      "tier": 1
+    },
+    {
+      "id": "baltimore-md",
+      "geoid": "2404000",
+      "name": "Baltimore",
+      "population": 585708,
+      "tier": 1
+    },
+    {
+      "id": "bowie-md",
+      "geoid": "2408775",
+      "name": "Bowie",
+      "population": 58329,
+      "tier": 1
+    },
+    {
+      "id": "college-park-md",
+      "geoid": "2418750",
+      "name": "College Park",
+      "population": 34740,
+      "tier": 1
+    },
+    {
+      "id": "cumberland-md",
+      "geoid": "2421325",
+      "name": "Cumberland",
+      "population": 19076,
+      "tier": 2
+    },
+    {
+      "id": "easton-md",
+      "geoid": "2424475",
+      "name": "Easton",
+      "population": 17101,
+      "tier": 2
+    },
+    {
+      "id": "frederick-md",
+      "geoid": "2430325",
+      "name": "Frederick",
+      "population": 78171,
+      "tier": 1
+    },
+    {
+      "id": "gaithersburg-md",
+      "geoid": "2431175",
+      "name": "Gaithersburg",
+      "population": 69657,
+      "tier": 1
+    },
+    {
+      "id": "greenbelt-md",
+      "geoid": "2434775",
+      "name": "Greenbelt",
+      "population": 24921,
+      "tier": 1
+    },
+    {
+      "id": "hagerstown-md",
+      "geoid": "2436075",
+      "name": "Hagerstown",
+      "population": 43527,
+      "tier": 1
+    },
+    {
+      "id": "hyattsville-md",
+      "geoid": "2441250",
+      "name": "Hyattsville",
+      "population": 21187,
+      "tier": 2
+    },
+    {
+      "id": "laurel-md",
+      "geoid": "2445900",
+      "name": "Laurel",
+      "population": 30060,
+      "tier": 1
+    },
+    {
+      "id": "rockville-md",
+      "geoid": "2467675",
+      "name": "Rockville",
+      "population": 67117,
+      "tier": 1
+    },
+    {
+      "id": "salisbury-md",
+      "geoid": "2469925",
+      "name": "Salisbury",
+      "population": 33050,
+      "tier": 1
+    },
+    {
+      "id": "takoma-park-md",
+      "geoid": "2476650",
+      "name": "Takoma Park",
+      "population": 17629,
+      "tier": 2
+    },
+    {
+      "id": "westminster-md",
+      "geoid": "2483100",
+      "name": "Westminster",
+      "population": 20126,
+      "tier": 2
+    }
+  ]
+}

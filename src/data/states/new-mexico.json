@@ -1,0 +1,152 @@
+{
+  "id": "NM",
+  "name": "New Mexico",
+  "capital": "santa-fe-nm",
+  "mapFiles": {
+    "state": "/maps/new-mexico-state.topojson",
+    "cities": "/maps/new-mexico-cities.geojson",
+    "water": "/maps/new-mexico-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "alamogordo-nm",
+      "geoid": "3501780",
+      "name": "Alamogordo",
+      "population": 30898,
+      "tier": 1
+    },
+    {
+      "id": "albuquerque-nm",
+      "geoid": "3502000",
+      "name": "Albuquerque",
+      "population": 564559,
+      "tier": 1
+    },
+    {
+      "id": "artesia-nm",
+      "geoid": "3505220",
+      "name": "Artesia",
+      "population": 12875,
+      "tier": 2
+    },
+    {
+      "id": "carlsbad-nm",
+      "geoid": "3512150",
+      "name": "Carlsbad",
+      "population": 32238,
+      "tier": 1
+    },
+    {
+      "id": "chaparral-nm",
+      "geoid": "3514250",
+      "name": "Chaparral",
+      "population": 16551,
+      "tier": 2
+    },
+    {
+      "id": "clovis-nm",
+      "geoid": "3516420",
+      "name": "Clovis",
+      "population": 38567,
+      "tier": 1
+    },
+    {
+      "id": "deming-nm",
+      "geoid": "3520270",
+      "name": "Deming",
+      "population": 14758,
+      "tier": 1
+    },
+    {
+      "id": "farmington-nm",
+      "geoid": "3525800",
+      "name": "Farmington",
+      "population": 46624,
+      "tier": 1
+    },
+    {
+      "id": "gallup-nm",
+      "geoid": "3528460",
+      "name": "Gallup",
+      "population": 21899,
+      "tier": 1
+    },
+    {
+      "id": "hobbs-nm",
+      "geoid": "3532520",
+      "name": "Hobbs",
+      "population": 40508,
+      "tier": 1
+    },
+    {
+      "id": "las-cruces-nm",
+      "geoid": "3539380",
+      "name": "Las Cruces",
+      "population": 111385,
+      "tier": 1
+    },
+    {
+      "id": "las-vegas-nm",
+      "geoid": "3539940",
+      "name": "Las Vegas",
+      "population": 13166,
+      "tier": 2
+    },
+    {
+      "id": "los-lunas-nm",
+      "geoid": "3543370",
+      "name": "Los Lunas",
+      "population": 17242,
+      "tier": 2
+    },
+    {
+      "id": "lovington-nm",
+      "geoid": "3544490",
+      "name": "Lovington",
+      "population": 11668,
+      "tier": 2
+    },
+    {
+      "id": "portales-nm",
+      "geoid": "3559260",
+      "name": "Portales",
+      "population": 12137,
+      "tier": 2
+    },
+    {
+      "id": "rio-rancho-nm",
+      "geoid": "3563460",
+      "name": "Rio Rancho",
+      "population": 104046,
+      "tier": 1
+    },
+    {
+      "id": "roswell-nm",
+      "geoid": "3564930",
+      "name": "Roswell",
+      "population": 48422,
+      "tier": 1
+    },
+    {
+      "id": "santa-fe-nm",
+      "geoid": "3570500",
+      "name": "Santa Fe",
+      "population": 87505,
+      "tier": 1
+    },
+    {
+      "id": "silver-city-nm",
+      "geoid": "3573260",
+      "name": "Silver City",
+      "population": 9704,
+      "tier": 2
+    },
+    {
+      "id": "sunland-park-nm",
+      "geoid": "3575640",
+      "name": "Sunland Park",
+      "population": 16702,
+      "tier": 2
+    }
+  ]
+}

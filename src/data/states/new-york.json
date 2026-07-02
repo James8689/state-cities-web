@@ -1,0 +1,152 @@
+{
+  "id": "NY",
+  "name": "New York",
+  "capital": "albany-ny",
+  "mapFiles": {
+    "state": "/maps/new-york-state.topojson",
+    "cities": "/maps/new-york-cities.geojson",
+    "water": "/maps/new-york-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "albany-ny",
+      "geoid": "3601000",
+      "name": "Albany",
+      "population": 99224,
+      "tier": 1
+    },
+    {
+      "id": "binghamton-ny",
+      "geoid": "3606607",
+      "name": "Binghamton",
+      "population": 47969,
+      "tier": 1
+    },
+    {
+      "id": "buffalo-ny",
+      "geoid": "3611000",
+      "name": "Buffalo",
+      "population": 278349,
+      "tier": 1
+    },
+    {
+      "id": "ithaca-ny",
+      "geoid": "3638077",
+      "name": "Ithaca",
+      "population": 32108,
+      "tier": 2
+    },
+    {
+      "id": "kingston-ny",
+      "geoid": "3639727",
+      "name": "Kingston",
+      "population": 24069,
+      "tier": 2
+    },
+    {
+      "id": "long-beach-ny",
+      "geoid": "3643335",
+      "name": "Long Beach",
+      "population": 35029,
+      "tier": 2
+    },
+    {
+      "id": "mount-vernon-ny",
+      "geoid": "3649121",
+      "name": "Mount Vernon",
+      "population": 73893,
+      "tier": 1
+    },
+    {
+      "id": "new-rochelle-ny",
+      "geoid": "3650617",
+      "name": "New Rochelle",
+      "population": 79726,
+      "tier": 1
+    },
+    {
+      "id": "new-york-ny",
+      "geoid": "3651000",
+      "name": "New York",
+      "population": 8804190,
+      "tier": 1
+    },
+    {
+      "id": "niagara-falls-ny",
+      "geoid": "3651055",
+      "name": "Niagara Falls",
+      "population": 48671,
+      "tier": 1
+    },
+    {
+      "id": "poughkeepsie-ny",
+      "geoid": "3659641",
+      "name": "Poughkeepsie",
+      "population": 31577,
+      "tier": 2
+    },
+    {
+      "id": "rochester-ny",
+      "geoid": "3663000",
+      "name": "Rochester",
+      "population": 211328,
+      "tier": 1
+    },
+    {
+      "id": "saratoga-springs-ny",
+      "geoid": "3665255",
+      "name": "Saratoga Springs",
+      "population": 28491,
+      "tier": 2
+    },
+    {
+      "id": "schenectady-ny",
+      "geoid": "3665508",
+      "name": "Schenectady",
+      "population": 67047,
+      "tier": 1
+    },
+    {
+      "id": "syracuse-ny",
+      "geoid": "3673000",
+      "name": "Syracuse",
+      "population": 148620,
+      "tier": 1
+    },
+    {
+      "id": "troy-ny",
+      "geoid": "3675484",
+      "name": "Troy",
+      "population": 51401,
+      "tier": 1
+    },
+    {
+      "id": "utica-ny",
+      "geoid": "3676540",
+      "name": "Utica",
+      "population": 65283,
+      "tier": 1
+    },
+    {
+      "id": "watertown-ny",
+      "geoid": "3678608",
+      "name": "Watertown",
+      "population": 24685,
+      "tier": 2
+    },
+    {
+      "id": "white-plains-ny",
+      "geoid": "3681677",
+      "name": "White Plains",
+      "population": 59559,
+      "tier": 1
+    },
+    {
+      "id": "yonkers-ny",
+      "geoid": "3684000",
+      "name": "Yonkers",
+      "population": 211569,
+      "tier": 1
+    }
+  ]
+}

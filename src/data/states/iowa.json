@@ -1,0 +1,152 @@
+{
+  "id": "IA",
+  "name": "Iowa",
+  "capital": "des-moines-ia",
+  "mapFiles": {
+    "state": "/maps/iowa-state.topojson",
+    "cities": "/maps/iowa-cities.geojson",
+    "water": "/maps/iowa-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ames-ia",
+      "geoid": "1901855",
+      "name": "Ames",
+      "population": 66427,
+      "tier": 1
+    },
+    {
+      "id": "ankeny-ia",
+      "geoid": "1902305",
+      "name": "Ankeny",
+      "population": 67887,
+      "tier": 1
+    },
+    {
+      "id": "bettendorf-ia",
+      "geoid": "1906355",
+      "name": "Bettendorf",
+      "population": 39102,
+      "tier": 1
+    },
+    {
+      "id": "burlington-ia",
+      "geoid": "1909550",
+      "name": "Burlington",
+      "population": 23982,
+      "tier": 2
+    },
+    {
+      "id": "cedar-falls-ia",
+      "geoid": "1911755",
+      "name": "Cedar Falls",
+      "population": 40713,
+      "tier": 1
+    },
+    {
+      "id": "cedar-rapids-ia",
+      "geoid": "1912000",
+      "name": "Cedar Rapids",
+      "population": 137710,
+      "tier": 1
+    },
+    {
+      "id": "council-bluffs-ia",
+      "geoid": "1916860",
+      "name": "Council Bluffs",
+      "population": 62799,
+      "tier": 1
+    },
+    {
+      "id": "davenport-ia",
+      "geoid": "1919000",
+      "name": "Davenport",
+      "population": 101724,
+      "tier": 1
+    },
+    {
+      "id": "des-moines-ia",
+      "geoid": "1921000",
+      "name": "Des Moines",
+      "population": 214133,
+      "tier": 1
+    },
+    {
+      "id": "dubuque-ia",
+      "geoid": "1922395",
+      "name": "Dubuque",
+      "population": 59667,
+      "tier": 1
+    },
+    {
+      "id": "fort-dodge-ia",
+      "geoid": "1928515",
+      "name": "Fort Dodge",
+      "population": 24871,
+      "tier": 2
+    },
+    {
+      "id": "iowa-city-ia",
+      "geoid": "1938595",
+      "name": "Iowa City",
+      "population": 74828,
+      "tier": 1
+    },
+    {
+      "id": "marion-ia",
+      "geoid": "1949485",
+      "name": "Marion",
+      "population": 41535,
+      "tier": 1
+    },
+    {
+      "id": "mason-city-ia",
+      "geoid": "1950160",
+      "name": "Mason City",
+      "population": 27338,
+      "tier": 2
+    },
+    {
+      "id": "muscatine-ia",
+      "geoid": "1955110",
+      "name": "Muscatine",
+      "population": 23797,
+      "tier": 2
+    },
+    {
+      "id": "ottumwa-ia",
+      "geoid": "1960465",
+      "name": "Ottumwa",
+      "population": 25529,
+      "tier": 2
+    },
+    {
+      "id": "sioux-city-ia",
+      "geoid": "1973335",
+      "name": "Sioux City",
+      "population": 85797,
+      "tier": 1
+    },
+    {
+      "id": "urbandale-ia",
+      "geoid": "1979950",
+      "name": "Urbandale",
+      "population": 45580,
+      "tier": 1
+    },
+    {
+      "id": "waterloo-ia",
+      "geoid": "1982425",
+      "name": "Waterloo",
+      "population": 67314,
+      "tier": 1
+    },
+    {
+      "id": "west-des-moines-ia",
+      "geoid": "1983910",
+      "name": "West Des Moines",
+      "population": 68723,
+      "tier": 1
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "PA",
+  "name": "Pennsylvania",
+  "capital": "harrisburg-pa",
+  "mapFiles": {
+    "state": "/maps/pennsylvania-state.topojson",
+    "cities": "/maps/pennsylvania-cities.geojson",
+    "water": "/maps/pennsylvania-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "allentown-pa",
+      "geoid": "4202000",
+      "name": "Allentown",
+      "population": 125845,
+      "tier": 1
+    },
+    {
+      "id": "altoona-pa",
+      "geoid": "4202184",
+      "name": "Altoona",
+      "population": 43963,
+      "tier": 1
+    },
+    {
+      "id": "bethlehem-pa",
+      "geoid": "4206088",
+      "name": "Bethlehem",
+      "population": 75781,
+      "tier": 1
+    },
+    {
+      "id": "chester-pa",
+      "geoid": "4213208",
+      "name": "Chester",
+      "population": 32605,
+      "tier": 2
+    },
+    {
+      "id": "easton-pa",
+      "geoid": "4221648",
+      "name": "Easton",
+      "population": 28127,
+      "tier": 2
+    },
+    {
+      "id": "erie-pa",
+      "geoid": "4224000",
+      "name": "Erie",
+      "population": 94831,
+      "tier": 1
+    },
+    {
+      "id": "harrisburg-pa",
+      "geoid": "4232800",
+      "name": "Harrisburg",
+      "population": 50099,
+      "tier": 1
+    },
+    {
+      "id": "hazleton-pa",
+      "geoid": "4233408",
+      "name": "Hazleton",
+      "population": 29963,
+      "tier": 2
+    },
+    {
+      "id": "johnstown-pa",
+      "geoid": "4238288",
+      "name": "Johnstown",
+      "population": 18411,
+      "tier": 2
+    },
+    {
+      "id": "lancaster-pa",
+      "geoid": "4241216",
+      "name": "Lancaster",
+      "population": 58039,
+      "tier": 1
+    },
+    {
+      "id": "lebanon-pa",
+      "geoid": "4242168",
+      "name": "Lebanon",
+      "population": 26814,
+      "tier": 2
+    },
+    {
+      "id": "new-castle-pa",
+      "geoid": "4253368",
+      "name": "New Castle",
+      "population": 21926,
+      "tier": 2
+    },
+    {
+      "id": "philadelphia-pa",
+      "geoid": "4260000",
+      "name": "Philadelphia",
+      "population": 1603797,
+      "tier": 1
+    },
+    {
+      "id": "pittsburgh-pa",
+      "geoid": "4261000",
+      "name": "Pittsburgh",
+      "population": 302971,
+      "tier": 1
+    },
+    {
+      "id": "reading-pa",
+      "geoid": "4263624",
+      "name": "Reading",
+      "population": 95112,
+      "tier": 1
+    },
+    {
+      "id": "scranton-pa",
+      "geoid": "4269000",
+      "name": "Scranton",
+      "population": 76328,
+      "tier": 1
+    },
+    {
+      "id": "state-college-pa",
+      "geoid": "4273808",
+      "name": "State College",
+      "population": 40501,
+      "tier": 2
+    },
+    {
+      "id": "wilkes-barre-pa",
+      "geoid": "4285152",
+      "name": "Wilkes-Barre",
+      "population": 44328,
+      "tier": 2
+    },
+    {
+      "id": "williamsport-pa",
+      "geoid": "4285312",
+      "name": "Williamsport",
+      "population": 27754,
+      "tier": 2
+    },
+    {
+      "id": "york-pa",
+      "geoid": "4287048",
+      "name": "York",
+      "population": 44800,
+      "tier": 1
+    }
+  ]
+}

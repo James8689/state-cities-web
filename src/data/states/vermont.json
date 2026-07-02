@@ -1,0 +1,131 @@
+{
+  "id": "VT",
+  "name": "Vermont",
+  "capital": "montpelier-vt",
+  "mapFiles": {
+    "state": "/maps/vermont-state.topojson",
+    "cities": "/maps/vermont-cities.geojson",
+    "water": "/maps/vermont-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "barre-vt",
+      "geoid": "5003175",
+      "name": "Barre",
+      "population": 8491,
+      "tier": 1
+    },
+    {
+      "id": "bellows-falls-vt",
+      "geoid": "5004225",
+      "name": "Bellows Falls",
+      "population": 2747,
+      "tier": 2
+    },
+    {
+      "id": "bennington-vt",
+      "geoid": "5004750",
+      "name": "Bennington",
+      "population": 8795,
+      "tier": 2
+    },
+    {
+      "id": "brattleboro-vt",
+      "geoid": "5007975",
+      "name": "Brattleboro",
+      "population": 7352,
+      "tier": 2
+    },
+    {
+      "id": "burlington-vt",
+      "geoid": "5010675",
+      "name": "Burlington",
+      "population": 44743,
+      "tier": 1
+    },
+    {
+      "id": "essex-junction-vt",
+      "geoid": "5024400",
+      "name": "Essex Junction",
+      "population": 10590,
+      "tier": 2
+    },
+    {
+      "id": "middlebury-vt",
+      "geoid": "5044275",
+      "name": "Middlebury",
+      "population": 7304,
+      "tier": 2
+    },
+    {
+      "id": "milton-vt",
+      "geoid": "5045175",
+      "name": "Milton",
+      "population": 3804,
+      "tier": 2
+    },
+    {
+      "id": "montpelier-vt",
+      "geoid": "5046000",
+      "name": "Montpelier",
+      "population": 8074,
+      "tier": 1
+    },
+    {
+      "id": "newport-vt",
+      "geoid": "5048850",
+      "name": "Newport",
+      "population": 4455,
+      "tier": 2
+    },
+    {
+      "id": "rutland-vt",
+      "geoid": "5061225",
+      "name": "Rutland",
+      "population": 15807,
+      "tier": 1
+    },
+    {
+      "id": "south-burlington-vt",
+      "geoid": "5066175",
+      "name": "South Burlington",
+      "population": 20292,
+      "tier": 1
+    },
+    {
+      "id": "springfield-vt",
+      "geoid": "5069475",
+      "name": "Springfield",
+      "population": 4189,
+      "tier": 2
+    },
+    {
+      "id": "st-albans-vt",
+      "geoid": "5061675",
+      "name": "St. Albans",
+      "population": 6877,
+      "tier": 1
+    },
+    {
+      "id": "swanton-vt",
+      "geoid": "5071650",
+      "name": "Swanton",
+      "population": 2328,
+      "tier": 2
+    },
+    {
+      "id": "winooski-vt",
+      "geoid": "5085150",
+      "name": "Winooski",
+      "population": 7997,
+      "tier": 1
+    },
+    {
+      "id": "woodstock-vt",
+      "geoid": "5085900",
+      "name": "Woodstock",
+      "population": 900,
+      "tier": 2
+    }
+  ]
+}

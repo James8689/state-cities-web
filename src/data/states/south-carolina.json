@@ -1,0 +1,152 @@
+{
+  "id": "SC",
+  "name": "South Carolina",
+  "capital": "columbia-sc",
+  "mapFiles": {
+    "state": "/maps/south-carolina-state.topojson",
+    "cities": "/maps/south-carolina-cities.geojson",
+    "water": "/maps/south-carolina-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "aiken-sc",
+      "geoid": "4500550",
+      "name": "Aiken",
+      "population": 32025,
+      "tier": 2
+    },
+    {
+      "id": "anderson-sc",
+      "geoid": "4501360",
+      "name": "Anderson",
+      "population": 28106,
+      "tier": 2
+    },
+    {
+      "id": "charleston-sc",
+      "geoid": "4513330",
+      "name": "Charleston",
+      "population": 150227,
+      "tier": 1
+    },
+    {
+      "id": "columbia-sc",
+      "geoid": "4516000",
+      "name": "Columbia",
+      "population": 136632,
+      "tier": 1
+    },
+    {
+      "id": "easley-sc",
+      "geoid": "4521985",
+      "name": "Easley",
+      "population": 22921,
+      "tier": 2
+    },
+    {
+      "id": "florence-sc",
+      "geoid": "4525810",
+      "name": "Florence",
+      "population": 39899,
+      "tier": 1
+    },
+    {
+      "id": "goose-creek-sc",
+      "geoid": "4529815",
+      "name": "Goose Creek",
+      "population": 45946,
+      "tier": 1
+    },
+    {
+      "id": "greenville-sc",
+      "geoid": "4530850",
+      "name": "Greenville",
+      "population": 70720,
+      "tier": 1
+    },
+    {
+      "id": "greenwood-sc",
+      "geoid": "4530895",
+      "name": "Greenwood",
+      "population": 22545,
+      "tier": 2
+    },
+    {
+      "id": "greer-sc",
+      "geoid": "4530985",
+      "name": "Greer",
+      "population": 35308,
+      "tier": 2
+    },
+    {
+      "id": "hilton-head-island-sc",
+      "geoid": "4534045",
+      "name": "Hilton Head Island",
+      "population": 37661,
+      "tier": 1
+    },
+    {
+      "id": "mauldin-sc",
+      "geoid": "4545115",
+      "name": "Mauldin",
+      "population": 24724,
+      "tier": 2
+    },
+    {
+      "id": "mount-pleasant-sc",
+      "geoid": "4548535",
+      "name": "Mount Pleasant",
+      "population": 90801,
+      "tier": 1
+    },
+    {
+      "id": "myrtle-beach-sc",
+      "geoid": "4549075",
+      "name": "Myrtle Beach",
+      "population": 35682,
+      "tier": 2
+    },
+    {
+      "id": "north-augusta-sc",
+      "geoid": "4550695",
+      "name": "North Augusta",
+      "population": 24379,
+      "tier": 2
+    },
+    {
+      "id": "north-charleston-sc",
+      "geoid": "4550875",
+      "name": "North Charleston",
+      "population": 114852,
+      "tier": 1
+    },
+    {
+      "id": "rock-hill-sc",
+      "geoid": "4561405",
+      "name": "Rock Hill",
+      "population": 74372,
+      "tier": 1
+    },
+    {
+      "id": "spartanburg-sc",
+      "geoid": "4568290",
+      "name": "Spartanburg",
+      "population": 38732,
+      "tier": 1
+    },
+    {
+      "id": "summerville-sc",
+      "geoid": "4570270",
+      "name": "Summerville",
+      "population": 50915,
+      "tier": 1
+    },
+    {
+      "id": "sumter-sc",
+      "geoid": "4570405",
+      "name": "Sumter",
+      "population": 43463,
+      "tier": 2
+    }
+  ]
+}

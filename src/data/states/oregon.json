@@ -1,0 +1,145 @@
+{
+  "id": "OR",
+  "name": "Oregon",
+  "capital": "salem-or",
+  "mapFiles": {
+    "state": "/maps/oregon-state.topojson",
+    "cities": "/maps/oregon-cities.geojson",
+    "water": "/maps/oregon-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "albany-or",
+      "geoid": "4101000",
+      "name": "Albany",
+      "population": 56472,
+      "tier": 1
+    },
+    {
+      "id": "ashland-or",
+      "geoid": "4103050",
+      "name": "Ashland",
+      "population": 21360,
+      "tier": 2
+    },
+    {
+      "id": "astoria-or",
+      "geoid": "4103150",
+      "name": "Astoria",
+      "population": 10181,
+      "tier": 2
+    },
+    {
+      "id": "beaverton-or",
+      "geoid": "4105350",
+      "name": "Beaverton",
+      "population": 97494,
+      "tier": 1
+    },
+    {
+      "id": "bend-or",
+      "geoid": "4105800",
+      "name": "Bend",
+      "population": 99178,
+      "tier": 1
+    },
+    {
+      "id": "corvallis-or",
+      "geoid": "4115800",
+      "name": "Corvallis",
+      "population": 59922,
+      "tier": 1
+    },
+    {
+      "id": "eugene-or",
+      "geoid": "4123850",
+      "name": "Eugene",
+      "population": 176654,
+      "tier": 1
+    },
+    {
+      "id": "grants-pass-or",
+      "geoid": "4130550",
+      "name": "Grants Pass",
+      "population": 39189,
+      "tier": 1
+    },
+    {
+      "id": "gresham-or",
+      "geoid": "4131250",
+      "name": "Gresham",
+      "population": 114247,
+      "tier": 1
+    },
+    {
+      "id": "hillsboro-or",
+      "geoid": "4134100",
+      "name": "Hillsboro",
+      "population": 106447,
+      "tier": 1
+    },
+    {
+      "id": "hood-river-or",
+      "geoid": "4134900",
+      "name": "Hood River",
+      "population": 8313,
+      "tier": 2
+    },
+    {
+      "id": "medford-or",
+      "geoid": "4147000",
+      "name": "Medford",
+      "population": 85824,
+      "tier": 1
+    },
+    {
+      "id": "newport-or",
+      "geoid": "4152450",
+      "name": "Newport",
+      "population": 10256,
+      "tier": 2
+    },
+    {
+      "id": "oregon-city-or",
+      "geoid": "4155200",
+      "name": "Oregon City",
+      "population": 37572,
+      "tier": 1
+    },
+    {
+      "id": "pendleton-or",
+      "geoid": "4157150",
+      "name": "Pendleton",
+      "population": 17107,
+      "tier": 2
+    },
+    {
+      "id": "portland-or",
+      "geoid": "4159000",
+      "name": "Portland",
+      "population": 652503,
+      "tier": 1
+    },
+    {
+      "id": "salem-or",
+      "geoid": "4164900",
+      "name": "Salem",
+      "population": 175535,
+      "tier": 1
+    },
+    {
+      "id": "springfield-or",
+      "geoid": "4169600",
+      "name": "Springfield",
+      "population": 61851,
+      "tier": 1
+    },
+    {
+      "id": "tigard-or",
+      "geoid": "4173650",
+      "name": "Tigard",
+      "population": 54539,
+      "tier": 1
+    }
+  ]
+}

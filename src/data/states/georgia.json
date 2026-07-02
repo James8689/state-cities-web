@@ -1,0 +1,152 @@
+{
+  "id": "GA",
+  "name": "Georgia",
+  "capital": "atlanta-ga",
+  "mapFiles": {
+    "state": "/maps/georgia-state.topojson",
+    "cities": "/maps/georgia-cities.geojson",
+    "water": "/maps/georgia-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "albany-ga",
+      "geoid": "1301052",
+      "name": "Albany",
+      "population": 69647,
+      "tier": 1
+    },
+    {
+      "id": "alpharetta-ga",
+      "geoid": "1301696",
+      "name": "Alpharetta",
+      "population": 65818,
+      "tier": 1
+    },
+    {
+      "id": "athens-ga",
+      "geoid": "1303440",
+      "name": "Athens",
+      "population": 127315,
+      "tier": 1
+    },
+    {
+      "id": "atlanta-ga",
+      "geoid": "1304000",
+      "name": "Atlanta",
+      "population": 498715,
+      "tier": 1
+    },
+    {
+      "id": "augusta-ga",
+      "geoid": "1304204",
+      "name": "Augusta",
+      "population": 202081,
+      "tier": 1
+    },
+    {
+      "id": "brunswick-ga",
+      "geoid": "1311560",
+      "name": "Brunswick",
+      "population": 15210,
+      "tier": 2
+    },
+    {
+      "id": "columbus-ga",
+      "geoid": "1319000",
+      "name": "Columbus",
+      "population": 206922,
+      "tier": 1
+    },
+    {
+      "id": "dalton-ga",
+      "geoid": "1321380",
+      "name": "Dalton",
+      "population": 34417,
+      "tier": 2
+    },
+    {
+      "id": "gainesville-ga",
+      "geoid": "1331908",
+      "name": "Gainesville",
+      "population": 42296,
+      "tier": 2
+    },
+    {
+      "id": "johns-creek-ga",
+      "geoid": "1342425",
+      "name": "Johns Creek",
+      "population": 82453,
+      "tier": 1
+    },
+    {
+      "id": "macon-ga",
+      "geoid": "1349008",
+      "name": "Macon",
+      "population": 157346,
+      "tier": 1
+    },
+    {
+      "id": "marietta-ga",
+      "geoid": "1349756",
+      "name": "Marietta",
+      "population": 60972,
+      "tier": 1
+    },
+    {
+      "id": "newnan-ga",
+      "geoid": "1355020",
+      "name": "Newnan",
+      "population": 42549,
+      "tier": 2
+    },
+    {
+      "id": "rome-ga",
+      "geoid": "1366668",
+      "name": "Rome",
+      "population": 37713,
+      "tier": 2
+    },
+    {
+      "id": "roswell-ga",
+      "geoid": "1367284",
+      "name": "Roswell",
+      "population": 92833,
+      "tier": 1
+    },
+    {
+      "id": "sandy-springs-ga",
+      "geoid": "1368516",
+      "name": "Sandy Springs",
+      "population": 108080,
+      "tier": 1
+    },
+    {
+      "id": "savannah-ga",
+      "geoid": "1369000",
+      "name": "Savannah",
+      "population": 147780,
+      "tier": 1
+    },
+    {
+      "id": "smyrna-ga",
+      "geoid": "1371492",
+      "name": "Smyrna",
+      "population": 55663,
+      "tier": 1
+    },
+    {
+      "id": "valdosta-ga",
+      "geoid": "1378800",
+      "name": "Valdosta",
+      "population": 55378,
+      "tier": 1
+    },
+    {
+      "id": "warner-robins-ga",
+      "geoid": "1380508",
+      "name": "Warner Robins",
+      "population": 80308,
+      "tier": 1
+    }
+  ]
+}

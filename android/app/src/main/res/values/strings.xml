@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">State Cities</string>
+    <string name="title_activity_main">State Cities</string>
+    <string name="package_name">com.statecities.app</string>
+    <string name="custom_url_scheme">com.statecities.app</string>
+</resources>

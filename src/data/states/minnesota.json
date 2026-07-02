@@ -1,0 +1,152 @@
+{
+  "id": "MN",
+  "name": "Minnesota",
+  "capital": "st-paul-mn",
+  "mapFiles": {
+    "state": "/maps/minnesota-state.topojson",
+    "cities": "/maps/minnesota-cities.geojson",
+    "water": "/maps/minnesota-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "apple-valley-mn",
+      "geoid": "2701900",
+      "name": "Apple Valley",
+      "population": 56374,
+      "tier": 2
+    },
+    {
+      "id": "blaine-mn",
+      "geoid": "2706382",
+      "name": "Blaine",
+      "population": 70222,
+      "tier": 2
+    },
+    {
+      "id": "bloomington-mn",
+      "geoid": "2706616",
+      "name": "Bloomington",
+      "population": 89987,
+      "tier": 1
+    },
+    {
+      "id": "brooklyn-park-mn",
+      "geoid": "2707966",
+      "name": "Brooklyn Park",
+      "population": 86478,
+      "tier": 1
+    },
+    {
+      "id": "burnsville-mn",
+      "geoid": "2708794",
+      "name": "Burnsville",
+      "population": 64317,
+      "tier": 1
+    },
+    {
+      "id": "coon-rapids-mn",
+      "geoid": "2713114",
+      "name": "Coon Rapids",
+      "population": 63599,
+      "tier": 1
+    },
+    {
+      "id": "duluth-mn",
+      "geoid": "2717000",
+      "name": "Duluth",
+      "population": 86697,
+      "tier": 1
+    },
+    {
+      "id": "eagan-mn",
+      "geoid": "2717288",
+      "name": "Eagan",
+      "population": 68855,
+      "tier": 1
+    },
+    {
+      "id": "eden-prairie-mn",
+      "geoid": "2718116",
+      "name": "Eden Prairie",
+      "population": 64198,
+      "tier": 1
+    },
+    {
+      "id": "edina-mn",
+      "geoid": "2718188",
+      "name": "Edina",
+      "population": 53494,
+      "tier": 2
+    },
+    {
+      "id": "lakeville-mn",
+      "geoid": "2735180",
+      "name": "Lakeville",
+      "population": 69490,
+      "tier": 2
+    },
+    {
+      "id": "mankato-mn",
+      "geoid": "2739878",
+      "name": "Mankato",
+      "population": 44488,
+      "tier": 2
+    },
+    {
+      "id": "maple-grove-mn",
+      "geoid": "2740166",
+      "name": "Maple Grove",
+      "population": 70253,
+      "tier": 1
+    },
+    {
+      "id": "minneapolis-mn",
+      "geoid": "2743000",
+      "name": "Minneapolis",
+      "population": 429954,
+      "tier": 1
+    },
+    {
+      "id": "minnetonka-mn",
+      "geoid": "2743252",
+      "name": "Minnetonka",
+      "population": 53781,
+      "tier": 2
+    },
+    {
+      "id": "plymouth-mn",
+      "geoid": "2751730",
+      "name": "Plymouth",
+      "population": 81026,
+      "tier": 1
+    },
+    {
+      "id": "rochester-mn",
+      "geoid": "2754880",
+      "name": "Rochester",
+      "population": 121395,
+      "tier": 1
+    },
+    {
+      "id": "st-cloud-mn",
+      "geoid": "2756896",
+      "name": "St. Cloud",
+      "population": 68881,
+      "tier": 1
+    },
+    {
+      "id": "st-paul-mn",
+      "geoid": "2758000",
+      "name": "St. Paul",
+      "population": 311527,
+      "tier": 1
+    },
+    {
+      "id": "woodbury-mn",
+      "geoid": "2771428",
+      "name": "Woodbury",
+      "population": 75102,
+      "tier": 1
+    }
+  ]
+}

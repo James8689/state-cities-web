@@ -1,0 +1,131 @@
+{
+  "id": "ME",
+  "name": "Maine",
+  "capital": "augusta-me",
+  "mapFiles": {
+    "state": "/maps/maine-state.topojson",
+    "cities": "/maps/maine-cities.geojson",
+    "water": "/maps/maine-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "auburn-me",
+      "geoid": "2302060",
+      "name": "Auburn",
+      "population": 24061,
+      "tier": 1
+    },
+    {
+      "id": "augusta-me",
+      "geoid": "2302100",
+      "name": "Augusta",
+      "population": 18899,
+      "tier": 1
+    },
+    {
+      "id": "bangor-me",
+      "geoid": "2302795",
+      "name": "Bangor",
+      "population": 31753,
+      "tier": 1
+    },
+    {
+      "id": "bath-me",
+      "geoid": "2303355",
+      "name": "Bath",
+      "population": 8766,
+      "tier": 2
+    },
+    {
+      "id": "biddeford-me",
+      "geoid": "2304860",
+      "name": "Biddeford",
+      "population": 22552,
+      "tier": 1
+    },
+    {
+      "id": "brewer-me",
+      "geoid": "2306925",
+      "name": "Brewer",
+      "population": 9672,
+      "tier": 2
+    },
+    {
+      "id": "caribou-me",
+      "geoid": "2310565",
+      "name": "Caribou",
+      "population": 7396,
+      "tier": 2
+    },
+    {
+      "id": "ellsworth-me",
+      "geoid": "2323200",
+      "name": "Ellsworth",
+      "population": 8399,
+      "tier": 2
+    },
+    {
+      "id": "lewiston-me",
+      "geoid": "2338740",
+      "name": "Lewiston",
+      "population": 37121,
+      "tier": 1
+    },
+    {
+      "id": "old-town-me",
+      "geoid": "2355225",
+      "name": "Old Town",
+      "population": 7431,
+      "tier": 2
+    },
+    {
+      "id": "portland-me",
+      "geoid": "2360545",
+      "name": "Portland",
+      "population": 68408,
+      "tier": 1
+    },
+    {
+      "id": "presque-isle-me",
+      "geoid": "2360825",
+      "name": "Presque Isle",
+      "population": 8797,
+      "tier": 2
+    },
+    {
+      "id": "saco-me",
+      "geoid": "2364675",
+      "name": "Saco",
+      "population": 20381,
+      "tier": 1
+    },
+    {
+      "id": "sanford-me",
+      "geoid": "2365725",
+      "name": "Sanford",
+      "population": 21982,
+      "tier": 2
+    },
+    {
+      "id": "south-portland-me",
+      "geoid": "2371990",
+      "name": "South Portland",
+      "population": 26498,
+      "tier": 1
+    },
+    {
+      "id": "waterville-me",
+      "geoid": "2380740",
+      "name": "Waterville",
+      "population": 15828,
+      "tier": 1
+    },
+    {
+      "id": "westbrook-me",
+      "geoid": "2382105",
+      "name": "Westbrook",
+      "population": 20400,
+      "tier": 1
+    }
+  ]
+}

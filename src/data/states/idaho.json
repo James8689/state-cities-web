@@ -1,0 +1,152 @@
+{
+  "id": "ID",
+  "name": "Idaho",
+  "capital": "boise-id",
+  "mapFiles": {
+    "state": "/maps/idaho-state.topojson",
+    "cities": "/maps/idaho-cities.geojson",
+    "water": "/maps/idaho-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ammon-id",
+      "geoid": "1601990",
+      "name": "Ammon",
+      "population": 17694,
+      "tier": 2
+    },
+    {
+      "id": "blackfoot-id",
+      "geoid": "1607840",
+      "name": "Blackfoot",
+      "population": 12346,
+      "tier": 2
+    },
+    {
+      "id": "boise-id",
+      "geoid": "1608830",
+      "name": "Boise",
+      "population": 235684,
+      "tier": 1
+    },
+    {
+      "id": "caldwell-id",
+      "geoid": "1612250",
+      "name": "Caldwell",
+      "population": 59996,
+      "tier": 1
+    },
+    {
+      "id": "chubbuck-id",
+      "geoid": "1614680",
+      "name": "Chubbuck",
+      "population": 15570,
+      "tier": 2
+    },
+    {
+      "id": "coeur-d-alene-id",
+      "geoid": "1616750",
+      "name": "Coeur d'Alene",
+      "population": 54628,
+      "tier": 1
+    },
+    {
+      "id": "eagle-id",
+      "geoid": "1623410",
+      "name": "Eagle",
+      "population": 30346,
+      "tier": 1
+    },
+    {
+      "id": "hayden-id",
+      "geoid": "1636370",
+      "name": "Hayden",
+      "population": 15570,
+      "tier": 2
+    },
+    {
+      "id": "idaho-falls-id",
+      "geoid": "1639700",
+      "name": "Idaho Falls",
+      "population": 64818,
+      "tier": 1
+    },
+    {
+      "id": "jerome-id",
+      "geoid": "1641320",
+      "name": "Jerome",
+      "population": 12349,
+      "tier": 2
+    },
+    {
+      "id": "kuna-id",
+      "geoid": "1644290",
+      "name": "Kuna",
+      "population": 24011,
+      "tier": 1
+    },
+    {
+      "id": "lewiston-id",
+      "geoid": "1646540",
+      "name": "Lewiston",
+      "population": 34203,
+      "tier": 1
+    },
+    {
+      "id": "meridian-id",
+      "geoid": "1652120",
+      "name": "Meridian",
+      "population": 117635,
+      "tier": 1
+    },
+    {
+      "id": "moscow-id",
+      "geoid": "1654550",
+      "name": "Moscow",
+      "population": 25435,
+      "tier": 1
+    },
+    {
+      "id": "mountain-home-id",
+      "geoid": "1654730",
+      "name": "Mountain Home",
+      "population": 15979,
+      "tier": 2
+    },
+    {
+      "id": "nampa-id",
+      "geoid": "1656260",
+      "name": "Nampa",
+      "population": 100200,
+      "tier": 1
+    },
+    {
+      "id": "pocatello-id",
+      "geoid": "1664090",
+      "name": "Pocatello",
+      "population": 56320,
+      "tier": 1
+    },
+    {
+      "id": "post-falls-id",
+      "geoid": "1664810",
+      "name": "Post Falls",
+      "population": 38485,
+      "tier": 1
+    },
+    {
+      "id": "rexburg-id",
+      "geoid": "1667420",
+      "name": "Rexburg",
+      "population": 39409,
+      "tier": 1
+    },
+    {
+      "id": "twin-falls-id",
+      "geoid": "1682810",
+      "name": "Twin Falls",
+      "population": 51807,
+      "tier": 1
+    }
+  ]
+}

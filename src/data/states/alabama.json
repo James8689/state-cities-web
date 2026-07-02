@@ -1,0 +1,152 @@
+{
+  "id": "AL",
+  "name": "Alabama",
+  "capital": "montgomery-al",
+  "mapFiles": {
+    "state": "/maps/alabama-state.topojson",
+    "cities": "/maps/alabama-cities.geojson",
+    "water": "/maps/alabama-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "anniston-al",
+      "geoid": "0101852",
+      "name": "Anniston",
+      "population": 21564,
+      "tier": 2
+    },
+    {
+      "id": "auburn-al",
+      "geoid": "0103076",
+      "name": "Auburn",
+      "population": 76143,
+      "tier": 1
+    },
+    {
+      "id": "bessemer-al",
+      "geoid": "0105980",
+      "name": "Bessemer",
+      "population": 26019,
+      "tier": 2
+    },
+    {
+      "id": "birmingham-al",
+      "geoid": "0107000",
+      "name": "Birmingham",
+      "population": 200733,
+      "tier": 1
+    },
+    {
+      "id": "decatur-al",
+      "geoid": "0120104",
+      "name": "Decatur",
+      "population": 57938,
+      "tier": 1
+    },
+    {
+      "id": "dothan-al",
+      "geoid": "0121184",
+      "name": "Dothan",
+      "population": 71072,
+      "tier": 1
+    },
+    {
+      "id": "enterprise-al",
+      "geoid": "0124184",
+      "name": "Enterprise",
+      "population": 28711,
+      "tier": 2
+    },
+    {
+      "id": "florence-al",
+      "geoid": "0126896",
+      "name": "Florence",
+      "population": 40184,
+      "tier": 1
+    },
+    {
+      "id": "gadsden-al",
+      "geoid": "0128696",
+      "name": "Gadsden",
+      "population": 33945,
+      "tier": 1
+    },
+    {
+      "id": "homewood-al",
+      "geoid": "0135800",
+      "name": "Homewood",
+      "population": 26414,
+      "tier": 2
+    },
+    {
+      "id": "hoover-al",
+      "geoid": "0135896",
+      "name": "Hoover",
+      "population": 92606,
+      "tier": 1
+    },
+    {
+      "id": "huntsville-al",
+      "geoid": "0137000",
+      "name": "Huntsville",
+      "population": 215006,
+      "tier": 1
+    },
+    {
+      "id": "madison-al",
+      "geoid": "0145784",
+      "name": "Madison",
+      "population": 56933,
+      "tier": 1
+    },
+    {
+      "id": "mobile-al",
+      "geoid": "0150000",
+      "name": "Mobile",
+      "population": 187041,
+      "tier": 1
+    },
+    {
+      "id": "montgomery-al",
+      "geoid": "0151000",
+      "name": "Montgomery",
+      "population": 200603,
+      "tier": 1
+    },
+    {
+      "id": "opelika-al",
+      "geoid": "0157048",
+      "name": "Opelika",
+      "population": 30995,
+      "tier": 2
+    },
+    {
+      "id": "phenix-city-al",
+      "geoid": "0159472",
+      "name": "Phenix City",
+      "population": 38816,
+      "tier": 1
+    },
+    {
+      "id": "prattville-al",
+      "geoid": "0162328",
+      "name": "Prattville",
+      "population": 37781,
+      "tier": 1
+    },
+    {
+      "id": "tuscaloosa-al",
+      "geoid": "0177256",
+      "name": "Tuscaloosa",
+      "population": 99600,
+      "tier": 1
+    },
+    {
+      "id": "vestavia-hills-al",
+      "geoid": "0178552",
+      "name": "Vestavia Hills",
+      "population": 39102,
+      "tier": 1
+    }
+  ]
+}

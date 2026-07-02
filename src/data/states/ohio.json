@@ -1,0 +1,152 @@
+{
+  "id": "OH",
+  "name": "Ohio",
+  "capital": "columbus-oh",
+  "mapFiles": {
+    "state": "/maps/ohio-state.topojson",
+    "cities": "/maps/ohio-cities.geojson",
+    "water": "/maps/ohio-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "akron-oh",
+      "geoid": "3901000",
+      "name": "Akron",
+      "population": 190469,
+      "tier": 1
+    },
+    {
+      "id": "beavercreek-oh",
+      "geoid": "3904720",
+      "name": "Beavercreek",
+      "population": 46549,
+      "tier": 2
+    },
+    {
+      "id": "canton-oh",
+      "geoid": "3912000",
+      "name": "Canton",
+      "population": 70872,
+      "tier": 1
+    },
+    {
+      "id": "cincinnati-oh",
+      "geoid": "3915000",
+      "name": "Cincinnati",
+      "population": 309317,
+      "tier": 1
+    },
+    {
+      "id": "cleveland-oh",
+      "geoid": "3916000",
+      "name": "Cleveland",
+      "population": 372624,
+      "tier": 1
+    },
+    {
+      "id": "columbus-oh",
+      "geoid": "3918000",
+      "name": "Columbus",
+      "population": 905748,
+      "tier": 1
+    },
+    {
+      "id": "cuyahoga-falls-oh",
+      "geoid": "3919778",
+      "name": "Cuyahoga Falls",
+      "population": 51114,
+      "tier": 2
+    },
+    {
+      "id": "dayton-oh",
+      "geoid": "3921000",
+      "name": "Dayton",
+      "population": 137644,
+      "tier": 1
+    },
+    {
+      "id": "elyria-oh",
+      "geoid": "3925256",
+      "name": "Elyria",
+      "population": 52656,
+      "tier": 2
+    },
+    {
+      "id": "hamilton-oh",
+      "geoid": "3933012",
+      "name": "Hamilton",
+      "population": 63399,
+      "tier": 1
+    },
+    {
+      "id": "kettering-oh",
+      "geoid": "3940040",
+      "name": "Kettering",
+      "population": 57862,
+      "tier": 1
+    },
+    {
+      "id": "lorain-oh",
+      "geoid": "3944856",
+      "name": "Lorain",
+      "population": 65211,
+      "tier": 1
+    },
+    {
+      "id": "mansfield-oh",
+      "geoid": "3947138",
+      "name": "Mansfield",
+      "population": 47534,
+      "tier": 2
+    },
+    {
+      "id": "mentor-oh",
+      "geoid": "3949056",
+      "name": "Mentor",
+      "population": 47450,
+      "tier": 2
+    },
+    {
+      "id": "middletown-oh",
+      "geoid": "3949840",
+      "name": "Middletown",
+      "population": 50987,
+      "tier": 2
+    },
+    {
+      "id": "newark-oh",
+      "geoid": "3954040",
+      "name": "Newark",
+      "population": 49934,
+      "tier": 2
+    },
+    {
+      "id": "parma-oh",
+      "geoid": "3961000",
+      "name": "Parma",
+      "population": 81146,
+      "tier": 1
+    },
+    {
+      "id": "springfield-oh",
+      "geoid": "3974118",
+      "name": "Springfield",
+      "population": 58662,
+      "tier": 1
+    },
+    {
+      "id": "toledo-oh",
+      "geoid": "3977000",
+      "name": "Toledo",
+      "population": 270871,
+      "tier": 1
+    },
+    {
+      "id": "youngstown-oh",
+      "geoid": "3988000",
+      "name": "Youngstown",
+      "population": 60068,
+      "tier": 1
+    }
+  ]
+}

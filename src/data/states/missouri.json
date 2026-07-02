@@ -1,0 +1,152 @@
+{
+  "id": "MO",
+  "name": "Missouri",
+  "capital": "jefferson-city-mo",
+  "mapFiles": {
+    "state": "/maps/missouri-state.topojson",
+    "cities": "/maps/missouri-cities.geojson",
+    "water": "/maps/missouri-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ballwin-mo",
+      "geoid": "2903160",
+      "name": "Ballwin",
+      "population": 31103,
+      "tier": 2
+    },
+    {
+      "id": "blue-springs-mo",
+      "geoid": "2906652",
+      "name": "Blue Springs",
+      "population": 58603,
+      "tier": 1
+    },
+    {
+      "id": "cape-girardeau-mo",
+      "geoid": "2911242",
+      "name": "Cape Girardeau",
+      "population": 39540,
+      "tier": 2
+    },
+    {
+      "id": "chesterfield-mo",
+      "geoid": "2913600",
+      "name": "Chesterfield",
+      "population": 49999,
+      "tier": 1
+    },
+    {
+      "id": "columbia-mo",
+      "geoid": "2915670",
+      "name": "Columbia",
+      "population": 126254,
+      "tier": 1
+    },
+    {
+      "id": "florissant-mo",
+      "geoid": "2924778",
+      "name": "Florissant",
+      "population": 52533,
+      "tier": 1
+    },
+    {
+      "id": "hannibal-mo",
+      "geoid": "2930214",
+      "name": "Hannibal",
+      "population": 17108,
+      "tier": 2
+    },
+    {
+      "id": "independence-mo",
+      "geoid": "2935000",
+      "name": "Independence",
+      "population": 123011,
+      "tier": 1
+    },
+    {
+      "id": "jefferson-city-mo",
+      "geoid": "2937000",
+      "name": "Jefferson City",
+      "population": 43228,
+      "tier": 1
+    },
+    {
+      "id": "joplin-mo",
+      "geoid": "2937592",
+      "name": "Joplin",
+      "population": 51762,
+      "tier": 1
+    },
+    {
+      "id": "kansas-city-mo",
+      "geoid": "2938000",
+      "name": "Kansas City",
+      "population": 508090,
+      "tier": 1
+    },
+    {
+      "id": "lee-s-summit-mo",
+      "geoid": "2941348",
+      "name": "Lee's Summit",
+      "population": 101108,
+      "tier": 1
+    },
+    {
+      "id": "liberty-mo",
+      "geoid": "2942032",
+      "name": "Liberty",
+      "population": 30167,
+      "tier": 2
+    },
+    {
+      "id": "o-fallon-mo",
+      "geoid": "2954074",
+      "name": "O'Fallon",
+      "population": 91316,
+      "tier": 1
+    },
+    {
+      "id": "raytown-mo",
+      "geoid": "2960788",
+      "name": "Raytown",
+      "population": 30012,
+      "tier": 2
+    },
+    {
+      "id": "springfield-mo",
+      "geoid": "2970000",
+      "name": "Springfield",
+      "population": 169176,
+      "tier": 1
+    },
+    {
+      "id": "st-charles-mo",
+      "geoid": "2964082",
+      "name": "St. Charles",
+      "population": 70493,
+      "tier": 1
+    },
+    {
+      "id": "st-joseph-mo",
+      "geoid": "2964550",
+      "name": "St. Joseph",
+      "population": 72473,
+      "tier": 1
+    },
+    {
+      "id": "st-louis-mo",
+      "geoid": "2965000",
+      "name": "St. Louis",
+      "population": 301578,
+      "tier": 1
+    },
+    {
+      "id": "wentzville-mo",
+      "geoid": "2978442",
+      "name": "Wentzville",
+      "population": 44372,
+      "tier": 2
+    }
+  ]
+}

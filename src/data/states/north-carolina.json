@@ -1,0 +1,152 @@
+{
+  "id": "NC",
+  "name": "North Carolina",
+  "capital": "raleigh-nc",
+  "mapFiles": {
+    "state": "/maps/north-carolina-state.topojson",
+    "cities": "/maps/north-carolina-cities.geojson",
+    "water": "/maps/north-carolina-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "apex-nc",
+      "geoid": "3701520",
+      "name": "Apex",
+      "population": 58780,
+      "tier": 2
+    },
+    {
+      "id": "asheville-nc",
+      "geoid": "3702140",
+      "name": "Asheville",
+      "population": 94589,
+      "tier": 1
+    },
+    {
+      "id": "burlington-nc",
+      "geoid": "3709060",
+      "name": "Burlington",
+      "population": 57303,
+      "tier": 2
+    },
+    {
+      "id": "cary-nc",
+      "geoid": "3710740",
+      "name": "Cary",
+      "population": 174721,
+      "tier": 1
+    },
+    {
+      "id": "chapel-hill-nc",
+      "geoid": "3711800",
+      "name": "Chapel Hill",
+      "population": 61960,
+      "tier": 2
+    },
+    {
+      "id": "charlotte-nc",
+      "geoid": "3712000",
+      "name": "Charlotte",
+      "population": 874579,
+      "tier": 1
+    },
+    {
+      "id": "concord-nc",
+      "geoid": "3714100",
+      "name": "Concord",
+      "population": 105240,
+      "tier": 1
+    },
+    {
+      "id": "durham-nc",
+      "geoid": "3719000",
+      "name": "Durham",
+      "population": 283506,
+      "tier": 1
+    },
+    {
+      "id": "fayetteville-nc",
+      "geoid": "3722920",
+      "name": "Fayetteville",
+      "population": 208501,
+      "tier": 1
+    },
+    {
+      "id": "gastonia-nc",
+      "geoid": "3725580",
+      "name": "Gastonia",
+      "population": 80411,
+      "tier": 1
+    },
+    {
+      "id": "greensboro-nc",
+      "geoid": "3728000",
+      "name": "Greensboro",
+      "population": 299035,
+      "tier": 1
+    },
+    {
+      "id": "greenville-nc",
+      "geoid": "3728080",
+      "name": "Greenville",
+      "population": 87521,
+      "tier": 1
+    },
+    {
+      "id": "high-point-nc",
+      "geoid": "3731400",
+      "name": "High Point",
+      "population": 114059,
+      "tier": 1
+    },
+    {
+      "id": "huntersville-nc",
+      "geoid": "3733120",
+      "name": "Huntersville",
+      "population": 61376,
+      "tier": 2
+    },
+    {
+      "id": "jacksonville-nc",
+      "geoid": "3734200",
+      "name": "Jacksonville",
+      "population": 72723,
+      "tier": 2
+    },
+    {
+      "id": "raleigh-nc",
+      "geoid": "3755000",
+      "name": "Raleigh",
+      "population": 467665,
+      "tier": 1
+    },
+    {
+      "id": "rocky-mount-nc",
+      "geoid": "3757500",
+      "name": "Rocky Mount",
+      "population": 54341,
+      "tier": 2
+    },
+    {
+      "id": "wilmington-nc",
+      "geoid": "3774440",
+      "name": "Wilmington",
+      "population": 115451,
+      "tier": 1
+    },
+    {
+      "id": "wilson-nc",
+      "geoid": "3774540",
+      "name": "Wilson",
+      "population": 47851,
+      "tier": 2
+    },
+    {
+      "id": "winston-salem-nc",
+      "geoid": "3775000",
+      "name": "Winston-Salem",
+      "population": 249545,
+      "tier": 1
+    }
+  ]
+}

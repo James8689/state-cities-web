@@ -1,0 +1,152 @@
+{
+  "id": "UT",
+  "name": "Utah",
+  "capital": "salt-lake-city-ut",
+  "mapFiles": {
+    "state": "/maps/utah-state.topojson",
+    "cities": "/maps/utah-cities.geojson",
+    "water": "/maps/utah-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "bountiful-ut",
+      "geoid": "4907690",
+      "name": "Bountiful",
+      "population": 45762,
+      "tier": 2
+    },
+    {
+      "id": "draper-ut",
+      "geoid": "4920120",
+      "name": "Draper",
+      "population": 51017,
+      "tier": 2
+    },
+    {
+      "id": "herriman-ut",
+      "geoid": "4934970",
+      "name": "Herriman",
+      "population": 55144,
+      "tier": 2
+    },
+    {
+      "id": "layton-ut",
+      "geoid": "4943660",
+      "name": "Layton",
+      "population": 81773,
+      "tier": 1
+    },
+    {
+      "id": "lehi-ut",
+      "geoid": "4944320",
+      "name": "Lehi",
+      "population": 75907,
+      "tier": 1
+    },
+    {
+      "id": "logan-ut",
+      "geoid": "4945860",
+      "name": "Logan",
+      "population": 52778,
+      "tier": 2
+    },
+    {
+      "id": "millcreek-ut",
+      "geoid": "4950150",
+      "name": "Millcreek",
+      "population": 63380,
+      "tier": 1
+    },
+    {
+      "id": "murray-ut",
+      "geoid": "4953230",
+      "name": "Murray",
+      "population": 50637,
+      "tier": 2
+    },
+    {
+      "id": "ogden-ut",
+      "geoid": "4955980",
+      "name": "Ogden",
+      "population": 87321,
+      "tier": 1
+    },
+    {
+      "id": "orem-ut",
+      "geoid": "4957300",
+      "name": "Orem",
+      "population": 98129,
+      "tier": 1
+    },
+    {
+      "id": "provo-ut",
+      "geoid": "4962470",
+      "name": "Provo",
+      "population": 115162,
+      "tier": 1
+    },
+    {
+      "id": "riverton-ut",
+      "geoid": "4964340",
+      "name": "Riverton",
+      "population": 45285,
+      "tier": 2
+    },
+    {
+      "id": "salt-lake-city-ut",
+      "geoid": "4967000",
+      "name": "Salt Lake City",
+      "population": 199723,
+      "tier": 1
+    },
+    {
+      "id": "sandy-ut",
+      "geoid": "4967440",
+      "name": "Sandy",
+      "population": 96904,
+      "tier": 1
+    },
+    {
+      "id": "south-jordan-ut",
+      "geoid": "4970850",
+      "name": "South Jordan",
+      "population": 77487,
+      "tier": 1
+    },
+    {
+      "id": "spanish-fork-ut",
+      "geoid": "4971290",
+      "name": "Spanish Fork",
+      "population": 42602,
+      "tier": 2
+    },
+    {
+      "id": "st-george-ut",
+      "geoid": "4965330",
+      "name": "St. George",
+      "population": 95342,
+      "tier": 1
+    },
+    {
+      "id": "taylorsville-ut",
+      "geoid": "4975360",
+      "name": "Taylorsville",
+      "population": 60448,
+      "tier": 2
+    },
+    {
+      "id": "west-jordan-ut",
+      "geoid": "4982950",
+      "name": "West Jordan",
+      "population": 116961,
+      "tier": 1
+    },
+    {
+      "id": "west-valley-city-ut",
+      "geoid": "4983470",
+      "name": "West Valley City",
+      "population": 140230,
+      "tier": 1
+    }
+  ]
+}

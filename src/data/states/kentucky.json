@@ -1,0 +1,152 @@
+{
+  "id": "KY",
+  "name": "Kentucky",
+  "capital": "frankfort-ky",
+  "mapFiles": {
+    "state": "/maps/kentucky-state.topojson",
+    "cities": "/maps/kentucky-cities.geojson",
+    "water": "/maps/kentucky-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ashland-ky",
+      "geoid": "2102368",
+      "name": "Ashland",
+      "population": 21625,
+      "tier": 2
+    },
+    {
+      "id": "bowling-green-ky",
+      "geoid": "2108902",
+      "name": "Bowling Green",
+      "population": 72294,
+      "tier": 1
+    },
+    {
+      "id": "covington-ky",
+      "geoid": "2117848",
+      "name": "Covington",
+      "population": 40961,
+      "tier": 1
+    },
+    {
+      "id": "elizabethtown-ky",
+      "geoid": "2124274",
+      "name": "Elizabethtown",
+      "population": 31394,
+      "tier": 1
+    },
+    {
+      "id": "florence-ky",
+      "geoid": "2127982",
+      "name": "Florence",
+      "population": 31946,
+      "tier": 1
+    },
+    {
+      "id": "frankfort-ky",
+      "geoid": "2128900",
+      "name": "Frankfort",
+      "population": 28602,
+      "tier": 1
+    },
+    {
+      "id": "georgetown-ky",
+      "geoid": "2130700",
+      "name": "Georgetown",
+      "population": 37086,
+      "tier": 1
+    },
+    {
+      "id": "henderson-ky",
+      "geoid": "2135866",
+      "name": "Henderson",
+      "population": 27981,
+      "tier": 1
+    },
+    {
+      "id": "hopkinsville-ky",
+      "geoid": "2137918",
+      "name": "Hopkinsville",
+      "population": 31180,
+      "tier": 1
+    },
+    {
+      "id": "independence-ky",
+      "geoid": "2139142",
+      "name": "Independence",
+      "population": 28676,
+      "tier": 2
+    },
+    {
+      "id": "jeffersontown-ky",
+      "geoid": "2140222",
+      "name": "Jeffersontown",
+      "population": 28474,
+      "tier": 1
+    },
+    {
+      "id": "lexington-ky",
+      "geoid": "2146027",
+      "name": "Lexington",
+      "population": 322570,
+      "tier": 1
+    },
+    {
+      "id": "louisville-ky",
+      "geoid": "2148006",
+      "name": "Louisville",
+      "population": 386884,
+      "tier": 1
+    },
+    {
+      "id": "madisonville-ky",
+      "geoid": "2149368",
+      "name": "Madisonville",
+      "population": 19542,
+      "tier": 2
+    },
+    {
+      "id": "murray-ky",
+      "geoid": "2154642",
+      "name": "Murray",
+      "population": 17307,
+      "tier": 2
+    },
+    {
+      "id": "nicholasville-ky",
+      "geoid": "2156136",
+      "name": "Nicholasville",
+      "population": 31093,
+      "tier": 1
+    },
+    {
+      "id": "owensboro-ky",
+      "geoid": "2158620",
+      "name": "Owensboro",
+      "population": 60183,
+      "tier": 1
+    },
+    {
+      "id": "paducah-ky",
+      "geoid": "2158836",
+      "name": "Paducah",
+      "population": 27137,
+      "tier": 2
+    },
+    {
+      "id": "radcliff-ky",
+      "geoid": "2163912",
+      "name": "Radcliff",
+      "population": 23042,
+      "tier": 2
+    },
+    {
+      "id": "richmond-ky",
+      "geoid": "2165226",
+      "name": "Richmond",
+      "population": 34585,
+      "tier": 1
+    }
+  ]
+}

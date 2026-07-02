@@ -1,0 +1,145 @@
+{
+  "id": "AK",
+  "name": "Alaska",
+  "capital": "juneau-ak",
+  "mapFiles": {
+    "state": "/maps/alaska-state.topojson",
+    "cities": "/maps/alaska-cities.geojson",
+    "water": "/maps/alaska-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "anchorage-ak",
+      "geoid": "0203000",
+      "name": "Anchorage",
+      "population": 291247,
+      "tier": 1
+    },
+    {
+      "id": "bethel-ak",
+      "geoid": "0206520",
+      "name": "Bethel",
+      "population": 6325,
+      "tier": 1
+    },
+    {
+      "id": "cordova-ak",
+      "geoid": "0217410",
+      "name": "Cordova",
+      "population": 2609,
+      "tier": 2
+    },
+    {
+      "id": "fairbanks-ak",
+      "geoid": "0224230",
+      "name": "Fairbanks",
+      "population": 32515,
+      "tier": 1
+    },
+    {
+      "id": "homer-ak",
+      "geoid": "0233140",
+      "name": "Homer",
+      "population": 5522,
+      "tier": 1
+    },
+    {
+      "id": "juneau-ak",
+      "geoid": "0236400",
+      "name": "Juneau",
+      "population": 32255,
+      "tier": 1
+    },
+    {
+      "id": "kenai-ak",
+      "geoid": "0238420",
+      "name": "Kenai",
+      "population": 7424,
+      "tier": 1
+    },
+    {
+      "id": "ketchikan-ak",
+      "geoid": "0238970",
+      "name": "Ketchikan",
+      "population": 8192,
+      "tier": 1
+    },
+    {
+      "id": "kodiak-ak",
+      "geoid": "0240950",
+      "name": "Kodiak",
+      "population": 5581,
+      "tier": 1
+    },
+    {
+      "id": "kotzebue-ak",
+      "geoid": "0241830",
+      "name": "Kotzebue",
+      "population": 3102,
+      "tier": 2
+    },
+    {
+      "id": "nome-ak",
+      "geoid": "0254920",
+      "name": "Nome",
+      "population": 3699,
+      "tier": 2
+    },
+    {
+      "id": "north-pole-ak",
+      "geoid": "0255910",
+      "name": "North Pole",
+      "population": 2243,
+      "tier": 2
+    },
+    {
+      "id": "palmer-ak",
+      "geoid": "0258660",
+      "name": "Palmer",
+      "population": 5888,
+      "tier": 1
+    },
+    {
+      "id": "seward-ak",
+      "geoid": "0268560",
+      "name": "Seward",
+      "population": 2717,
+      "tier": 2
+    },
+    {
+      "id": "sitka-ak",
+      "geoid": "0270540",
+      "name": "Sitka",
+      "population": 8458,
+      "tier": 1
+    },
+    {
+      "id": "soldotna-ak",
+      "geoid": "0271640",
+      "name": "Soldotna",
+      "population": 4342,
+      "tier": 1
+    },
+    {
+      "id": "unalaska-ak",
+      "geoid": "0280770",
+      "name": "Unalaska",
+      "population": 4254,
+      "tier": 1
+    },
+    {
+      "id": "valdez-ak",
+      "geoid": "0282200",
+      "name": "Valdez",
+      "population": 3985,
+      "tier": 1
+    },
+    {
+      "id": "wasilla-ak",
+      "geoid": "0283080",
+      "name": "Wasilla",
+      "population": 9054,
+      "tier": 1
+    }
+  ]
+}

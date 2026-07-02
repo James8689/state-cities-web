@@ -1,0 +1,152 @@
+{
+  "id": "KS",
+  "name": "Kansas",
+  "capital": "topeka-ks",
+  "mapFiles": {
+    "state": "/maps/kansas-state.topojson",
+    "cities": "/maps/kansas-cities.geojson",
+    "water": "/maps/kansas-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "derby-ks",
+      "geoid": "2017800",
+      "name": "Derby",
+      "population": 25625,
+      "tier": 2
+    },
+    {
+      "id": "dodge-city-ks",
+      "geoid": "2018250",
+      "name": "Dodge City",
+      "population": 27788,
+      "tier": 2
+    },
+    {
+      "id": "emporia-ks",
+      "geoid": "2021275",
+      "name": "Emporia",
+      "population": 24139,
+      "tier": 2
+    },
+    {
+      "id": "garden-city-ks",
+      "geoid": "2025325",
+      "name": "Garden City",
+      "population": 28151,
+      "tier": 2
+    },
+    {
+      "id": "hays-ks",
+      "geoid": "2031100",
+      "name": "Hays",
+      "population": 21116,
+      "tier": 2
+    },
+    {
+      "id": "hutchinson-ks",
+      "geoid": "2033625",
+      "name": "Hutchinson",
+      "population": 40006,
+      "tier": 1
+    },
+    {
+      "id": "junction-city-ks",
+      "geoid": "2035750",
+      "name": "Junction City",
+      "population": 22932,
+      "tier": 2
+    },
+    {
+      "id": "kansas-city-ks",
+      "geoid": "2036000",
+      "name": "Kansas City",
+      "population": 156607,
+      "tier": 1
+    },
+    {
+      "id": "lawrence-ks",
+      "geoid": "2038900",
+      "name": "Lawrence",
+      "population": 94934,
+      "tier": 1
+    },
+    {
+      "id": "leavenworth-ks",
+      "geoid": "2039000",
+      "name": "Leavenworth",
+      "population": 37351,
+      "tier": 1
+    },
+    {
+      "id": "leawood-ks",
+      "geoid": "2039075",
+      "name": "Leawood",
+      "population": 33902,
+      "tier": 1
+    },
+    {
+      "id": "lenexa-ks",
+      "geoid": "2039350",
+      "name": "Lenexa",
+      "population": 57434,
+      "tier": 1
+    },
+    {
+      "id": "manhattan-ks",
+      "geoid": "2044250",
+      "name": "Manhattan",
+      "population": 54100,
+      "tier": 1
+    },
+    {
+      "id": "olathe-ks",
+      "geoid": "2052575",
+      "name": "Olathe",
+      "population": 141290,
+      "tier": 1
+    },
+    {
+      "id": "overland-park-ks",
+      "geoid": "2053775",
+      "name": "Overland Park",
+      "population": 197238,
+      "tier": 1
+    },
+    {
+      "id": "prairie-village-ks",
+      "geoid": "2057575",
+      "name": "Prairie Village",
+      "population": 22957,
+      "tier": 2
+    },
+    {
+      "id": "salina-ks",
+      "geoid": "2062700",
+      "name": "Salina",
+      "population": 46889,
+      "tier": 1
+    },
+    {
+      "id": "shawnee-ks",
+      "geoid": "2064500",
+      "name": "Shawnee",
+      "population": 67311,
+      "tier": 1
+    },
+    {
+      "id": "topeka-ks",
+      "geoid": "2071000",
+      "name": "Topeka",
+      "population": 126587,
+      "tier": 1
+    },
+    {
+      "id": "wichita-ks",
+      "geoid": "2079000",
+      "name": "Wichita",
+      "population": 397532,
+      "tier": 1
+    }
+  ]
+}

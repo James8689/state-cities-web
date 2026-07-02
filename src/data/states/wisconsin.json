@@ -1,0 +1,152 @@
+{
+  "id": "WI",
+  "name": "Wisconsin",
+  "capital": "madison-wi",
+  "mapFiles": {
+    "state": "/maps/wisconsin-state.topojson",
+    "cities": "/maps/wisconsin-cities.geojson",
+    "water": "/maps/wisconsin-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "appleton-wi",
+      "geoid": "5502375",
+      "name": "Appleton",
+      "population": 75644,
+      "tier": 1
+    },
+    {
+      "id": "beloit-wi",
+      "geoid": "5506500",
+      "name": "Beloit",
+      "population": 36657,
+      "tier": 2
+    },
+    {
+      "id": "brookfield-wi",
+      "geoid": "5510025",
+      "name": "Brookfield",
+      "population": 41464,
+      "tier": 2
+    },
+    {
+      "id": "eau-claire-wi",
+      "geoid": "5522300",
+      "name": "Eau Claire",
+      "population": 69421,
+      "tier": 1
+    },
+    {
+      "id": "fond-du-lac-wi",
+      "geoid": "5526275",
+      "name": "Fond du Lac",
+      "population": 44678,
+      "tier": 2
+    },
+    {
+      "id": "green-bay-wi",
+      "geoid": "5531000",
+      "name": "Green Bay",
+      "population": 107395,
+      "tier": 1
+    },
+    {
+      "id": "greenfield-wi",
+      "geoid": "5531175",
+      "name": "Greenfield",
+      "population": 37803,
+      "tier": 2
+    },
+    {
+      "id": "janesville-wi",
+      "geoid": "5537825",
+      "name": "Janesville",
+      "population": 65615,
+      "tier": 1
+    },
+    {
+      "id": "kenosha-wi",
+      "geoid": "5539225",
+      "name": "Kenosha",
+      "population": 99986,
+      "tier": 1
+    },
+    {
+      "id": "la-crosse-wi",
+      "geoid": "5540775",
+      "name": "La Crosse",
+      "population": 52680,
+      "tier": 2
+    },
+    {
+      "id": "madison-wi",
+      "geoid": "5548000",
+      "name": "Madison",
+      "population": 269840,
+      "tier": 1
+    },
+    {
+      "id": "milwaukee-wi",
+      "geoid": "5553000",
+      "name": "Milwaukee",
+      "population": 577222,
+      "tier": 1
+    },
+    {
+      "id": "new-berlin-wi",
+      "geoid": "5556375",
+      "name": "New Berlin",
+      "population": 40451,
+      "tier": 2
+    },
+    {
+      "id": "oshkosh-wi",
+      "geoid": "5560500",
+      "name": "Oshkosh",
+      "population": 66816,
+      "tier": 1
+    },
+    {
+      "id": "racine-wi",
+      "geoid": "5566000",
+      "name": "Racine",
+      "population": 77816,
+      "tier": 1
+    },
+    {
+      "id": "sheboygan-wi",
+      "geoid": "5572975",
+      "name": "Sheboygan",
+      "population": 49929,
+      "tier": 2
+    },
+    {
+      "id": "waukesha-wi",
+      "geoid": "5584250",
+      "name": "Waukesha",
+      "population": 71158,
+      "tier": 1
+    },
+    {
+      "id": "wausau-wi",
+      "geoid": "5584475",
+      "name": "Wausau",
+      "population": 39994,
+      "tier": 2
+    },
+    {
+      "id": "wauwatosa-wi",
+      "geoid": "5584675",
+      "name": "Wauwatosa",
+      "population": 48387,
+      "tier": 2
+    },
+    {
+      "id": "west-allis-wi",
+      "geoid": "5585300",
+      "name": "West Allis",
+      "population": 60325,
+      "tier": 1
+    }
+  ]
+}

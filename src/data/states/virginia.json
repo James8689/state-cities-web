@@ -1,0 +1,152 @@
+{
+  "id": "VA",
+  "name": "Virginia",
+  "capital": "richmond-va",
+  "mapFiles": {
+    "state": "/maps/virginia-state.topojson",
+    "cities": "/maps/virginia-cities.geojson",
+    "water": "/maps/virginia-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "alexandria-va",
+      "geoid": "5101000",
+      "name": "Alexandria",
+      "population": 159467,
+      "tier": 1
+    },
+    {
+      "id": "blacksburg-va",
+      "geoid": "5107784",
+      "name": "Blacksburg",
+      "population": 44826,
+      "tier": 2
+    },
+    {
+      "id": "charlottesville-va",
+      "geoid": "5114968",
+      "name": "Charlottesville",
+      "population": 46553,
+      "tier": 1
+    },
+    {
+      "id": "chesapeake-va",
+      "geoid": "5116000",
+      "name": "Chesapeake",
+      "population": 249422,
+      "tier": 1
+    },
+    {
+      "id": "danville-va",
+      "geoid": "5121344",
+      "name": "Danville",
+      "population": 42590,
+      "tier": 2
+    },
+    {
+      "id": "fredericksburg-va",
+      "geoid": "5129744",
+      "name": "Fredericksburg",
+      "population": 27982,
+      "tier": 2
+    },
+    {
+      "id": "hampton-va",
+      "geoid": "5135000",
+      "name": "Hampton",
+      "population": 137148,
+      "tier": 1
+    },
+    {
+      "id": "harrisonburg-va",
+      "geoid": "5135624",
+      "name": "Harrisonburg",
+      "population": 51814,
+      "tier": 1
+    },
+    {
+      "id": "lynchburg-va",
+      "geoid": "5147672",
+      "name": "Lynchburg",
+      "population": 79009,
+      "tier": 1
+    },
+    {
+      "id": "manassas-va",
+      "geoid": "5148952",
+      "name": "Manassas",
+      "population": 42772,
+      "tier": 2
+    },
+    {
+      "id": "newport-news-va",
+      "geoid": "5156000",
+      "name": "Newport News",
+      "population": 186247,
+      "tier": 1
+    },
+    {
+      "id": "norfolk-va",
+      "geoid": "5157000",
+      "name": "Norfolk",
+      "population": 238005,
+      "tier": 1
+    },
+    {
+      "id": "petersburg-va",
+      "geoid": "5161832",
+      "name": "Petersburg",
+      "population": 33458,
+      "tier": 2
+    },
+    {
+      "id": "portsmouth-va",
+      "geoid": "5164000",
+      "name": "Portsmouth",
+      "population": 97915,
+      "tier": 1
+    },
+    {
+      "id": "richmond-va",
+      "geoid": "5167000",
+      "name": "Richmond",
+      "population": 226610,
+      "tier": 1
+    },
+    {
+      "id": "roanoke-va",
+      "geoid": "5168000",
+      "name": "Roanoke",
+      "population": 100011,
+      "tier": 1
+    },
+    {
+      "id": "salem-va",
+      "geoid": "5170000",
+      "name": "Salem",
+      "population": 25346,
+      "tier": 2
+    },
+    {
+      "id": "suffolk-va",
+      "geoid": "5176432",
+      "name": "Suffolk",
+      "population": 94324,
+      "tier": 1
+    },
+    {
+      "id": "virginia-beach-va",
+      "geoid": "5182000",
+      "name": "Virginia Beach",
+      "population": 459470,
+      "tier": 1
+    },
+    {
+      "id": "winchester-va",
+      "geoid": "5186720",
+      "name": "Winchester",
+      "population": 28120,
+      "tier": 2
+    }
+  ]
+}

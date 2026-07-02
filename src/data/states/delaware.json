@@ -1,0 +1,131 @@
+{
+  "id": "DE",
+  "name": "Delaware",
+  "capital": "dover-de",
+  "mapFiles": {
+    "state": "/maps/delaware-state.topojson",
+    "cities": "/maps/delaware-cities.geojson",
+    "water": "/maps/delaware-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "camden-de",
+      "geoid": "1010760",
+      "name": "Camden",
+      "population": 3715,
+      "tier": 2
+    },
+    {
+      "id": "clayton-de",
+      "geoid": "1015440",
+      "name": "Clayton",
+      "population": 3961,
+      "tier": 2
+    },
+    {
+      "id": "dover-de",
+      "geoid": "1021200",
+      "name": "Dover",
+      "population": 39403,
+      "tier": 1
+    },
+    {
+      "id": "elsmere-de",
+      "geoid": "1024540",
+      "name": "Elsmere",
+      "population": 6229,
+      "tier": 1
+    },
+    {
+      "id": "georgetown-de",
+      "geoid": "1029090",
+      "name": "Georgetown",
+      "population": 7134,
+      "tier": 1
+    },
+    {
+      "id": "harrington-de",
+      "geoid": "1033120",
+      "name": "Harrington",
+      "population": 3774,
+      "tier": 2
+    },
+    {
+      "id": "laurel-de",
+      "geoid": "1041310",
+      "name": "Laurel",
+      "population": 3865,
+      "tier": 2
+    },
+    {
+      "id": "lewes-de",
+      "geoid": "1041830",
+      "name": "Lewes",
+      "population": 3303,
+      "tier": 2
+    },
+    {
+      "id": "middletown-de",
+      "geoid": "1047030",
+      "name": "Middletown",
+      "population": 23192,
+      "tier": 1
+    },
+    {
+      "id": "milford-de",
+      "geoid": "1047420",
+      "name": "Milford",
+      "population": 11190,
+      "tier": 1
+    },
+    {
+      "id": "new-castle-de",
+      "geoid": "1050800",
+      "name": "New Castle",
+      "population": 5551,
+      "tier": 1
+    },
+    {
+      "id": "newark-de",
+      "geoid": "1050670",
+      "name": "Newark",
+      "population": 30601,
+      "tier": 1
+    },
+    {
+      "id": "newport-de",
+      "geoid": "1051190",
+      "name": "Newport",
+      "population": 910,
+      "tier": 2
+    },
+    {
+      "id": "rehoboth-beach-de",
+      "geoid": "1060290",
+      "name": "Rehoboth Beach",
+      "population": 1108,
+      "tier": 2
+    },
+    {
+      "id": "seaford-de",
+      "geoid": "1064320",
+      "name": "Seaford",
+      "population": 7957,
+      "tier": 1
+    },
+    {
+      "id": "smyrna-de",
+      "geoid": "1067310",
+      "name": "Smyrna",
+      "population": 12883,
+      "tier": 1
+    },
+    {
+      "id": "wilmington-de",
+      "geoid": "1077580",
+      "name": "Wilmington",
+      "population": 70898,
+      "tier": 1
+    }
+  ]
+}

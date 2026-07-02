@@ -1,0 +1,152 @@
+{
+  "id": "TN",
+  "name": "Tennessee",
+  "capital": "nashville-tn",
+  "mapFiles": {
+    "state": "/maps/tennessee-state.topojson",
+    "cities": "/maps/tennessee-cities.geojson",
+    "water": "/maps/tennessee-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "bartlett-tn",
+      "geoid": "4703440",
+      "name": "Bartlett",
+      "population": 57786,
+      "tier": 1
+    },
+    {
+      "id": "chattanooga-tn",
+      "geoid": "4714000",
+      "name": "Chattanooga",
+      "population": 181099,
+      "tier": 1
+    },
+    {
+      "id": "clarksville-tn",
+      "geoid": "4715160",
+      "name": "Clarksville",
+      "population": 166722,
+      "tier": 1
+    },
+    {
+      "id": "cleveland-tn",
+      "geoid": "4715400",
+      "name": "Cleveland",
+      "population": 47356,
+      "tier": 2
+    },
+    {
+      "id": "collierville-tn",
+      "geoid": "4716420",
+      "name": "Collierville",
+      "population": 51324,
+      "tier": 2
+    },
+    {
+      "id": "columbia-tn",
+      "geoid": "4716540",
+      "name": "Columbia",
+      "population": 41690,
+      "tier": 2
+    },
+    {
+      "id": "franklin-tn",
+      "geoid": "4727740",
+      "name": "Franklin",
+      "population": 83454,
+      "tier": 1
+    },
+    {
+      "id": "gallatin-tn",
+      "geoid": "4728540",
+      "name": "Gallatin",
+      "population": 44431,
+      "tier": 2
+    },
+    {
+      "id": "germantown-tn",
+      "geoid": "4728960",
+      "name": "Germantown",
+      "population": 41333,
+      "tier": 2
+    },
+    {
+      "id": "hendersonville-tn",
+      "geoid": "4733280",
+      "name": "Hendersonville",
+      "population": 61753,
+      "tier": 1
+    },
+    {
+      "id": "jackson-tn",
+      "geoid": "4737640",
+      "name": "Jackson",
+      "population": 68205,
+      "tier": 1
+    },
+    {
+      "id": "johnson-city-tn",
+      "geoid": "4738320",
+      "name": "Johnson City",
+      "population": 71046,
+      "tier": 1
+    },
+    {
+      "id": "kingsport-tn",
+      "geoid": "4739560",
+      "name": "Kingsport",
+      "population": 55442,
+      "tier": 1
+    },
+    {
+      "id": "knoxville-tn",
+      "geoid": "4740000",
+      "name": "Knoxville",
+      "population": 190740,
+      "tier": 1
+    },
+    {
+      "id": "la-vergne-tn",
+      "geoid": "4741200",
+      "name": "La Vergne",
+      "population": 38719,
+      "tier": 2
+    },
+    {
+      "id": "memphis-tn",
+      "geoid": "4748000",
+      "name": "Memphis",
+      "population": 633104,
+      "tier": 1
+    },
+    {
+      "id": "murfreesboro-tn",
+      "geoid": "4751560",
+      "name": "Murfreesboro",
+      "population": 152769,
+      "tier": 1
+    },
+    {
+      "id": "nashville-tn",
+      "geoid": "4752006",
+      "name": "Nashville",
+      "population": 689447,
+      "tier": 1
+    },
+    {
+      "id": "smyrna-tn",
+      "geoid": "4769420",
+      "name": "Smyrna",
+      "population": 53070,
+      "tier": 2
+    },
+    {
+      "id": "spring-hill-tn",
+      "geoid": "4770580",
+      "name": "Spring Hill",
+      "population": 50005,
+      "tier": 2
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "AZ",
+  "name": "Arizona",
+  "capital": "phoenix-az",
+  "mapFiles": {
+    "state": "/maps/arizona-state.topojson",
+    "cities": "/maps/arizona-cities.geojson",
+    "water": "/maps/arizona-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "avondale-az",
+      "geoid": "0404720",
+      "name": "Avondale",
+      "population": 89334,
+      "tier": 1
+    },
+    {
+      "id": "buckeye-az",
+      "geoid": "0407940",
+      "name": "Buckeye",
+      "population": 91502,
+      "tier": 1
+    },
+    {
+      "id": "casa-grande-az",
+      "geoid": "0410530",
+      "name": "Casa Grande",
+      "population": 53658,
+      "tier": 2
+    },
+    {
+      "id": "chandler-az",
+      "geoid": "0412000",
+      "name": "Chandler",
+      "population": 275987,
+      "tier": 1
+    },
+    {
+      "id": "flagstaff-az",
+      "geoid": "0423620",
+      "name": "Flagstaff",
+      "population": 76831,
+      "tier": 1
+    },
+    {
+      "id": "gilbert-az",
+      "geoid": "0427400",
+      "name": "Gilbert",
+      "population": 267918,
+      "tier": 1
+    },
+    {
+      "id": "glendale-az",
+      "geoid": "0427820",
+      "name": "Glendale",
+      "population": 248325,
+      "tier": 1
+    },
+    {
+      "id": "goodyear-az",
+      "geoid": "0428380",
+      "name": "Goodyear",
+      "population": 95294,
+      "tier": 1
+    },
+    {
+      "id": "lake-havasu-city-az",
+      "geoid": "0439370",
+      "name": "Lake Havasu City",
+      "population": 57144,
+      "tier": 2
+    },
+    {
+      "id": "maricopa-az",
+      "geoid": "0444410",
+      "name": "Maricopa",
+      "population": 58125,
+      "tier": 2
+    },
+    {
+      "id": "mesa-az",
+      "geoid": "0446000",
+      "name": "Mesa",
+      "population": 504258,
+      "tier": 1
+    },
+    {
+      "id": "oro-valley-az",
+      "geoid": "0451600",
+      "name": "Oro Valley",
+      "population": 47070,
+      "tier": 2
+    },
+    {
+      "id": "peoria-az",
+      "geoid": "0454050",
+      "name": "Peoria",
+      "population": 190985,
+      "tier": 1
+    },
+    {
+      "id": "phoenix-az",
+      "geoid": "0455000",
+      "name": "Phoenix",
+      "population": 1608139,
+      "tier": 1
+    },
+    {
+      "id": "scottsdale-az",
+      "geoid": "0465000",
+      "name": "Scottsdale",
+      "population": 241361,
+      "tier": 1
+    },
+    {
+      "id": "sierra-vista-az",
+      "geoid": "0466820",
+      "name": "Sierra Vista",
+      "population": 45308,
+      "tier": 2
+    },
+    {
+      "id": "surprise-az",
+      "geoid": "0471510",
+      "name": "Surprise",
+      "population": 143148,
+      "tier": 1
+    },
+    {
+      "id": "tempe-az",
+      "geoid": "0473000",
+      "name": "Tempe",
+      "population": 180587,
+      "tier": 1
+    },
+    {
+      "id": "tucson-az",
+      "geoid": "0477000",
+      "name": "Tucson",
+      "population": 542629,
+      "tier": 1
+    },
+    {
+      "id": "yuma-az",
+      "geoid": "0485540",
+      "name": "Yuma",
+      "population": 95548,
+      "tier": 1
+    }
+  ]
+}

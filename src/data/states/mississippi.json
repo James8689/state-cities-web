@@ -1,0 +1,152 @@
+{
+  "id": "MS",
+  "name": "Mississippi",
+  "capital": "jackson-ms",
+  "mapFiles": {
+    "state": "/maps/mississippi-state.topojson",
+    "cities": "/maps/mississippi-cities.geojson",
+    "water": "/maps/mississippi-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "biloxi-ms",
+      "geoid": "2806220",
+      "name": "Biloxi",
+      "population": 49449,
+      "tier": 1
+    },
+    {
+      "id": "clinton-ms",
+      "geoid": "2814420",
+      "name": "Clinton",
+      "population": 28100,
+      "tier": 1
+    },
+    {
+      "id": "columbus-ms",
+      "geoid": "2815380",
+      "name": "Columbus",
+      "population": 24084,
+      "tier": 2
+    },
+    {
+      "id": "gautier-ms",
+      "geoid": "2826860",
+      "name": "Gautier",
+      "population": 19024,
+      "tier": 2
+    },
+    {
+      "id": "greenville-ms",
+      "geoid": "2829180",
+      "name": "Greenville",
+      "population": 29670,
+      "tier": 1
+    },
+    {
+      "id": "gulfport-ms",
+      "geoid": "2829700",
+      "name": "Gulfport",
+      "population": 72926,
+      "tier": 1
+    },
+    {
+      "id": "hattiesburg-ms",
+      "geoid": "2831020",
+      "name": "Hattiesburg",
+      "population": 48730,
+      "tier": 1
+    },
+    {
+      "id": "horn-lake-ms",
+      "geoid": "2833700",
+      "name": "Horn Lake",
+      "population": 26736,
+      "tier": 1
+    },
+    {
+      "id": "jackson-ms",
+      "geoid": "2836000",
+      "name": "Jackson",
+      "population": 153701,
+      "tier": 1
+    },
+    {
+      "id": "madison-ms",
+      "geoid": "2844520",
+      "name": "Madison",
+      "population": 27747,
+      "tier": 1
+    },
+    {
+      "id": "meridian-ms",
+      "geoid": "2846640",
+      "name": "Meridian",
+      "population": 35052,
+      "tier": 1
+    },
+    {
+      "id": "ocean-springs-ms",
+      "geoid": "2853520",
+      "name": "Ocean Springs",
+      "population": 18429,
+      "tier": 2
+    },
+    {
+      "id": "olive-branch-ms",
+      "geoid": "2854040",
+      "name": "Olive Branch",
+      "population": 39711,
+      "tier": 1
+    },
+    {
+      "id": "oxford-ms",
+      "geoid": "2854840",
+      "name": "Oxford",
+      "population": 25416,
+      "tier": 2
+    },
+    {
+      "id": "pascagoula-ms",
+      "geoid": "2855360",
+      "name": "Pascagoula",
+      "population": 22010,
+      "tier": 2
+    },
+    {
+      "id": "pearl-ms",
+      "geoid": "2855760",
+      "name": "Pearl",
+      "population": 27115,
+      "tier": 1
+    },
+    {
+      "id": "southaven-ms",
+      "geoid": "2869280",
+      "name": "Southaven",
+      "population": 54648,
+      "tier": 1
+    },
+    {
+      "id": "starkville-ms",
+      "geoid": "2870240",
+      "name": "Starkville",
+      "population": 24360,
+      "tier": 2
+    },
+    {
+      "id": "tupelo-ms",
+      "geoid": "2874840",
+      "name": "Tupelo",
+      "population": 37923,
+      "tier": 1
+    },
+    {
+      "id": "vicksburg-ms",
+      "geoid": "2876720",
+      "name": "Vicksburg",
+      "population": 21573,
+      "tier": 2
+    }
+  ]
+}

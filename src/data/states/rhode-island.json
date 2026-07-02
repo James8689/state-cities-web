@@ -1,0 +1,124 @@
+{
+  "id": "RI",
+  "name": "Rhode Island",
+  "capital": "providence-ri",
+  "mapFiles": {
+    "state": "/maps/rhode-island-state.topojson",
+    "cities": "/maps/rhode-island-cities.geojson",
+    "water": "/maps/rhode-island-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ashaway-ri",
+      "geoid": "4403520",
+      "name": "Ashaway",
+      "population": 1501,
+      "tier": 2
+    },
+    {
+      "id": "central-falls-ri",
+      "geoid": "4414140",
+      "name": "Central Falls",
+      "population": 22583,
+      "tier": 2
+    },
+    {
+      "id": "cranston-ri",
+      "geoid": "4419180",
+      "name": "Cranston",
+      "population": 82934,
+      "tier": 1
+    },
+    {
+      "id": "cumberland-hill-ri",
+      "geoid": "4420260",
+      "name": "Cumberland Hill",
+      "population": 8140,
+      "tier": 2
+    },
+    {
+      "id": "east-providence-ri",
+      "geoid": "4422960",
+      "name": "East Providence",
+      "population": 47139,
+      "tier": 1
+    },
+    {
+      "id": "greenville-ri",
+      "geoid": "4431600",
+      "name": "Greenville",
+      "population": 9061,
+      "tier": 2
+    },
+    {
+      "id": "kingston-ri",
+      "geoid": "4438980",
+      "name": "Kingston",
+      "population": 7825,
+      "tier": 2
+    },
+    {
+      "id": "narragansett-pier-ri",
+      "geoid": "4448700",
+      "name": "Narragansett Pier",
+      "population": 3308,
+      "tier": 2
+    },
+    {
+      "id": "newport-ri",
+      "geoid": "4449960",
+      "name": "Newport",
+      "population": 25163,
+      "tier": 1
+    },
+    {
+      "id": "pawtucket-ri",
+      "geoid": "4454640",
+      "name": "Pawtucket",
+      "population": 75604,
+      "tier": 1
+    },
+    {
+      "id": "providence-ri",
+      "geoid": "4459000",
+      "name": "Providence",
+      "population": 190934,
+      "tier": 1
+    },
+    {
+      "id": "tiverton-ri",
+      "geoid": "4470700",
+      "name": "Tiverton",
+      "population": 7809,
+      "tier": 2
+    },
+    {
+      "id": "wakefield-peace-dale-ri",
+      "geoid": "4473132",
+      "name": "Wakefield-Peace Dale",
+      "population": 8925,
+      "tier": 2
+    },
+    {
+      "id": "warwick-ri",
+      "geoid": "4474300",
+      "name": "Warwick",
+      "population": 82823,
+      "tier": 1
+    },
+    {
+      "id": "westerly-ri",
+      "geoid": "4476820",
+      "name": "Westerly",
+      "population": 18423,
+      "tier": 2
+    },
+    {
+      "id": "woonsocket-ri",
+      "geoid": "4480780",
+      "name": "Woonsocket",
+      "population": 43240,
+      "tier": 1
+    }
+  ]
+}

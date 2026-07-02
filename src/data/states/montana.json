@@ -1,0 +1,152 @@
+{
+  "id": "MT",
+  "name": "Montana",
+  "capital": "helena-mt",
+  "mapFiles": {
+    "state": "/maps/montana-state.topojson",
+    "cities": "/maps/montana-cities.geojson",
+    "water": "/maps/montana-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "anaconda-mt",
+      "geoid": "3001675",
+      "name": "Anaconda",
+      "population": 9421,
+      "tier": 1
+    },
+    {
+      "id": "belgrade-mt",
+      "geoid": "3004975",
+      "name": "Belgrade",
+      "population": 10460,
+      "tier": 2
+    },
+    {
+      "id": "billings-mt",
+      "geoid": "3006550",
+      "name": "Billings",
+      "population": 117116,
+      "tier": 1
+    },
+    {
+      "id": "bozeman-mt",
+      "geoid": "3008950",
+      "name": "Bozeman",
+      "population": 53293,
+      "tier": 1
+    },
+    {
+      "id": "butte-mt",
+      "geoid": "3011397",
+      "name": "Butte",
+      "population": 34494,
+      "tier": 1
+    },
+    {
+      "id": "columbia-falls-mt",
+      "geoid": "3016600",
+      "name": "Columbia Falls",
+      "population": 5308,
+      "tier": 2
+    },
+    {
+      "id": "glendive-mt",
+      "geoid": "3031450",
+      "name": "Glendive",
+      "population": 4873,
+      "tier": 2
+    },
+    {
+      "id": "great-falls-mt",
+      "geoid": "3032800",
+      "name": "Great Falls",
+      "population": 60442,
+      "tier": 1
+    },
+    {
+      "id": "hamilton-mt",
+      "geoid": "3033775",
+      "name": "Hamilton",
+      "population": 4659,
+      "tier": 2
+    },
+    {
+      "id": "havre-mt",
+      "geoid": "3035050",
+      "name": "Havre",
+      "population": 9362,
+      "tier": 1
+    },
+    {
+      "id": "helena-mt",
+      "geoid": "3035600",
+      "name": "Helena",
+      "population": 32091,
+      "tier": 1
+    },
+    {
+      "id": "kalispell-mt",
+      "geoid": "3040075",
+      "name": "Kalispell",
+      "population": 24558,
+      "tier": 1
+    },
+    {
+      "id": "laurel-mt",
+      "geoid": "3042700",
+      "name": "Laurel",
+      "population": 7222,
+      "tier": 2
+    },
+    {
+      "id": "lewistown-mt",
+      "geoid": "3043375",
+      "name": "Lewistown",
+      "population": 5952,
+      "tier": 2
+    },
+    {
+      "id": "livingston-mt",
+      "geoid": "3043975",
+      "name": "Livingston",
+      "population": 8040,
+      "tier": 2
+    },
+    {
+      "id": "miles-city-mt",
+      "geoid": "3049525",
+      "name": "Miles City",
+      "population": 8354,
+      "tier": 2
+    },
+    {
+      "id": "missoula-mt",
+      "geoid": "3050200",
+      "name": "Missoula",
+      "population": 73489,
+      "tier": 1
+    },
+    {
+      "id": "polson-mt",
+      "geoid": "3058750",
+      "name": "Polson",
+      "population": 5148,
+      "tier": 2
+    },
+    {
+      "id": "sidney-mt",
+      "geoid": "3067900",
+      "name": "Sidney",
+      "population": 6346,
+      "tier": 2
+    },
+    {
+      "id": "whitefish-mt",
+      "geoid": "3079825",
+      "name": "Whitefish",
+      "population": 7751,
+      "tier": 2
+    }
+  ]
+}

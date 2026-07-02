@@ -1,0 +1,152 @@
+{
+  "id": "NV",
+  "name": "Nevada",
+  "capital": "carson-city-nv",
+  "mapFiles": {
+    "state": "/maps/nevada-state.topojson",
+    "cities": "/maps/nevada-cities.geojson",
+    "water": "/maps/nevada-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "boulder-city-nv",
+      "geoid": "3206500",
+      "name": "Boulder City",
+      "population": 14885,
+      "tier": 1
+    },
+    {
+      "id": "caliente-nv",
+      "geoid": "3208500",
+      "name": "Caliente",
+      "population": 990,
+      "tier": 2
+    },
+    {
+      "id": "carson-city-nv",
+      "geoid": "3209700",
+      "name": "Carson City",
+      "population": 58639,
+      "tier": 1
+    },
+    {
+      "id": "elko-nv",
+      "geoid": "3222500",
+      "name": "Elko",
+      "population": 20564,
+      "tier": 1
+    },
+    {
+      "id": "ely-nv",
+      "geoid": "3223500",
+      "name": "Ely",
+      "population": 3924,
+      "tier": 2
+    },
+    {
+      "id": "fallon-nv",
+      "geoid": "3224100",
+      "name": "Fallon",
+      "population": 9327,
+      "tier": 1
+    },
+    {
+      "id": "fernley-nv",
+      "geoid": "3224900",
+      "name": "Fernley",
+      "population": 22895,
+      "tier": 1
+    },
+    {
+      "id": "henderson-nv",
+      "geoid": "3231900",
+      "name": "Henderson",
+      "population": 317610,
+      "tier": 1
+    },
+    {
+      "id": "jackpot-nv",
+      "geoid": "3236500",
+      "name": "Jackpot",
+      "population": 855,
+      "tier": 2
+    },
+    {
+      "id": "las-vegas-nv",
+      "geoid": "3240000",
+      "name": "Las Vegas",
+      "population": 641903,
+      "tier": 1
+    },
+    {
+      "id": "lovelock-nv",
+      "geoid": "3243000",
+      "name": "Lovelock",
+      "population": 1805,
+      "tier": 2
+    },
+    {
+      "id": "mesquite-nv",
+      "geoid": "3246000",
+      "name": "Mesquite",
+      "population": 20471,
+      "tier": 1
+    },
+    {
+      "id": "north-las-vegas-nv",
+      "geoid": "3251800",
+      "name": "North Las Vegas",
+      "population": 262527,
+      "tier": 1
+    },
+    {
+      "id": "pahrump-nv",
+      "geoid": "3253800",
+      "name": "Pahrump",
+      "population": 44738,
+      "tier": 2
+    },
+    {
+      "id": "reno-nv",
+      "geoid": "3260600",
+      "name": "Reno",
+      "population": 264165,
+      "tier": 1
+    },
+    {
+      "id": "sparks-nv",
+      "geoid": "3268400",
+      "name": "Sparks",
+      "population": 108445,
+      "tier": 1
+    },
+    {
+      "id": "wells-nv",
+      "geoid": "3283000",
+      "name": "Wells",
+      "population": 1237,
+      "tier": 2
+    },
+    {
+      "id": "west-wendover-nv",
+      "geoid": "3283730",
+      "name": "West Wendover",
+      "population": 4512,
+      "tier": 2
+    },
+    {
+      "id": "winnemucca-nv",
+      "geoid": "3284800",
+      "name": "Winnemucca",
+      "population": 8431,
+      "tier": 1
+    },
+    {
+      "id": "yerington-nv",
+      "geoid": "3285400",
+      "name": "Yerington",
+      "population": 3121,
+      "tier": 2
+    }
+  ]
+}

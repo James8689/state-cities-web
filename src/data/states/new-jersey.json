@@ -1,0 +1,152 @@
+{
+  "id": "NJ",
+  "name": "New Jersey",
+  "capital": "trenton-nj",
+  "mapFiles": {
+    "state": "/maps/new-jersey-state.topojson",
+    "cities": "/maps/new-jersey-cities.geojson",
+    "water": "/maps/new-jersey-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "bayonne-nj",
+      "geoid": "3403580",
+      "name": "Bayonne",
+      "population": 71686,
+      "tier": 2
+    },
+    {
+      "id": "camden-nj",
+      "geoid": "3410000",
+      "name": "Camden",
+      "population": 71791,
+      "tier": 1
+    },
+    {
+      "id": "clifton-nj",
+      "geoid": "3413690",
+      "name": "Clifton",
+      "population": 90296,
+      "tier": 1
+    },
+    {
+      "id": "east-orange-nj",
+      "geoid": "3419390",
+      "name": "East Orange",
+      "population": 69612,
+      "tier": 2
+    },
+    {
+      "id": "elizabeth-nj",
+      "geoid": "3421000",
+      "name": "Elizabeth",
+      "population": 137298,
+      "tier": 1
+    },
+    {
+      "id": "hackensack-nj",
+      "geoid": "3428680",
+      "name": "Hackensack",
+      "population": 46030,
+      "tier": 1
+    },
+    {
+      "id": "hoboken-nj",
+      "geoid": "3432250",
+      "name": "Hoboken",
+      "population": 60419,
+      "tier": 2
+    },
+    {
+      "id": "jersey-city-nj",
+      "geoid": "3436000",
+      "name": "Jersey City",
+      "population": 292449,
+      "tier": 1
+    },
+    {
+      "id": "lakewood-nj",
+      "geoid": "3438580",
+      "name": "Lakewood",
+      "population": 69398,
+      "tier": 1
+    },
+    {
+      "id": "new-brunswick-nj",
+      "geoid": "3451210",
+      "name": "New Brunswick",
+      "population": 55266,
+      "tier": 2
+    },
+    {
+      "id": "newark-nj",
+      "geoid": "3451000",
+      "name": "Newark",
+      "population": 311549,
+      "tier": 1
+    },
+    {
+      "id": "passaic-nj",
+      "geoid": "3456550",
+      "name": "Passaic",
+      "population": 70537,
+      "tier": 1
+    },
+    {
+      "id": "paterson-nj",
+      "geoid": "3457000",
+      "name": "Paterson",
+      "population": 159732,
+      "tier": 1
+    },
+    {
+      "id": "perth-amboy-nj",
+      "geoid": "3458200",
+      "name": "Perth Amboy",
+      "population": 55436,
+      "tier": 1
+    },
+    {
+      "id": "plainfield-nj",
+      "geoid": "3459190",
+      "name": "Plainfield",
+      "population": 54586,
+      "tier": 1
+    },
+    {
+      "id": "toms-river-nj",
+      "geoid": "3473110",
+      "name": "Toms River",
+      "population": 92830,
+      "tier": 1
+    },
+    {
+      "id": "trenton-nj",
+      "geoid": "3474000",
+      "name": "Trenton",
+      "population": 90871,
+      "tier": 1
+    },
+    {
+      "id": "union-city-nj",
+      "geoid": "3474630",
+      "name": "Union City",
+      "population": 68589,
+      "tier": 2
+    },
+    {
+      "id": "vineland-nj",
+      "geoid": "3476070",
+      "name": "Vineland",
+      "population": 60780,
+      "tier": 2
+    },
+    {
+      "id": "woodbridge-nj",
+      "geoid": "3481950",
+      "name": "Woodbridge",
+      "population": 19839,
+      "tier": 1
+    }
+  ]
+}

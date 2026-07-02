@@ -1,0 +1,256 @@
+/**
+ * Device layout — phone widths, short viewports, and landscape orientation.
+ * Portrait keeps the 480px phone frame; landscape expands to full width and
+ * reflows the quiz into map + side controls so the map stays usable.
+ */
+
+:root {
+  --app-max-width: 480px;
+  --space-page-x: 1rem;
+  --touch-target: 2.75rem;
+}
+
+/* ── Narrow phones (SE, mini) ── */
+
+@media (max-width: 374px) {
+  :root {
+    --space-page-x: 0.875rem;
+  }
+
+  .state-detail-header h1,
+  .state-select-header h1,
+  .campaign-hub-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .mode-tier-card-title {
+    font-size: 1.2rem;
+  }
+
+  .quiz-find-pill {
+    font-size: 0.9375rem;
+  }
+
+  .quiz-correct-pill,
+  .quiz-timer-pill {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* ── Large phones (Plus / Pro Max portrait) ── */
+
+@media (min-width: 414px) {
+  :root {
+    --space-page-x: 1.125rem;
+  }
+}
+
+/* ── Short viewport — landscape phones, on-screen keyboard, etc. ── */
+
+@media (orientation: landscape) and (max-height: 520px) {
+  :root {
+    --app-max-width: none;
+  }
+
+  .app-shell:has(.quiz-screen) {
+    box-shadow: none;
+  }
+
+  /* Quiz: map left, controls right */
+  .quiz-main {
+    flex-direction: row;
+  }
+
+  .map-area {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .quiz-controls {
+    width: clamp(11.5rem, 36vw, 18rem);
+    justify-content: flex-end;
+    background: linear-gradient(180deg, #173b41 0%, #12333a 100%);
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    padding-left: env(safe-area-inset-left, 0px);
+  }
+
+  .quiz-type-form,
+  .quiz-actions {
+    background: transparent;
+    border-top: none;
+  }
+
+  .quiz-type-form {
+    flex-direction: column;
+    padding: 0.5rem 0.75rem 0;
+  }
+
+  .quiz-type-submit {
+    width: 100%;
+  }
+
+  .quiz-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem max(0.5rem, env(safe-area-inset-bottom, 0px))
+      max(0.75rem, env(safe-area-inset-right, 0px));
+  }
+
+  .quiz-action-btn {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    min-height: var(--touch-target);
+  }
+
+  /* Compact quiz header */
+  .quiz-topcard {
+    padding-top: max(0.375rem, env(safe-area-inset-top, 0px));
+    padding-bottom: 0.375rem;
+  }
+
+  .quiz-topcard .back-btn--dark,
+  .quiz-icon-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 10px;
+  }
+
+  .quiz-progress-row {
+    margin-top: 0.375rem;
+  }
+
+  .quiz-find-row {
+    margin-top: 0.375rem;
+  }
+
+  .quiz-find-pill {
+    font-size: 0.9375rem;
+    max-width: min(55vw, 20rem);
+  }
+
+  .quiz-segment {
+    height: 6px;
+  }
+
+  .zoom-hint {
+    display: none;
+  }
+
+  .map-compass {
+    width: 2rem;
+    height: 2rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  /* Hub & browse: tighter chrome, more content visible */
+  .campaign-hub-header,
+  .state-select-header {
+    padding-top: max(0.625rem, env(safe-area-inset-top, 0px));
+    padding-bottom: 0.5rem;
+  }
+
+  .campaign-hub-header h1,
+  .state-select-header h1 {
+    font-size: 1.375rem;
+  }
+
+  .campaign-hub-tagline,
+  .state-select-subtitle {
+    font-size: 0.8125rem;
+    margin-top: 0.25rem;
+  }
+
+  .onboarding-header {
+    padding-top: max(0.75rem, env(safe-area-inset-top, 0px));
+    padding-bottom: 0.625rem;
+  }
+
+  .onboarding-header h1 {
+    font-size: 1.375rem;
+  }
+
+  .state-detail-header {
+    padding: 0.25rem 0 0.625rem;
+  }
+
+  .state-detail-header h1 {
+    font-size: 1.375rem;
+  }
+
+  .results-screen {
+    padding: 0.75rem 1rem;
+  }
+
+  .results-score {
+    font-size: 1.875rem;
+  }
+}
+
+/* ── Landscape with room for two columns (tier picker, hub cards) ── */
+
+@media (orientation: landscape) and (min-width: 560px) and (max-height: 520px) {
+  .mode-tier-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.625rem;
+  }
+
+  .campaign-hub-body {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    align-content: start;
+  }
+
+  .hub-hero,
+  .hub-daily-card,
+  .hub-store-placeholder {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Very short landscape (SE, older small phones) ── */
+
+@media (orientation: landscape) and (max-height: 400px) {
+  .quiz-find-row {
+    margin-top: 0.25rem;
+  }
+
+  .quiz-nav-title {
+    font-size: 0.625rem;
+  }
+
+  .quiz-controls {
+    width: clamp(10.5rem, 34vw, 14rem);
+  }
+
+  .quiz-action-btn {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .hub-hero {
+    padding: 0.875rem 1rem;
+  }
+
+  .hub-hero-title {
+    font-size: 1.0625rem;
+  }
+
+  .hub-hero-reason {
+    margin-bottom: 0.625rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* ── Apply page gutter token where screens scroll ── */
+
+.state-detail-body,
+.campaign-hub-body,
+.journey-body,
+.state-list-regions {
+  padding-left: max(var(--space-page-x), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--space-page-x), env(safe-area-inset-right, 0px));
+}

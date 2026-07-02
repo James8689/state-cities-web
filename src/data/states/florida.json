@@ -1,0 +1,152 @@
+{
+  "id": "FL",
+  "name": "Florida",
+  "capital": "tallahassee-fl",
+  "mapFiles": {
+    "state": "/maps/florida-state.topojson",
+    "cities": "/maps/florida-cities.geojson",
+    "water": "/maps/florida-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "cape-coral-fl",
+      "geoid": "1210275",
+      "name": "Cape Coral",
+      "population": 194016,
+      "tier": 1
+    },
+    {
+      "id": "clearwater-fl",
+      "geoid": "1212875",
+      "name": "Clearwater",
+      "population": 117292,
+      "tier": 2
+    },
+    {
+      "id": "coral-springs-fl",
+      "geoid": "1214400",
+      "name": "Coral Springs",
+      "population": 134394,
+      "tier": 1
+    },
+    {
+      "id": "fort-lauderdale-fl",
+      "geoid": "1224000",
+      "name": "Fort Lauderdale",
+      "population": 182760,
+      "tier": 1
+    },
+    {
+      "id": "gainesville-fl",
+      "geoid": "1225175",
+      "name": "Gainesville",
+      "population": 141085,
+      "tier": 1
+    },
+    {
+      "id": "hialeah-fl",
+      "geoid": "1230000",
+      "name": "Hialeah",
+      "population": 223109,
+      "tier": 1
+    },
+    {
+      "id": "hollywood-fl",
+      "geoid": "1232000",
+      "name": "Hollywood",
+      "population": 153067,
+      "tier": 1
+    },
+    {
+      "id": "jacksonville-fl",
+      "geoid": "1235000",
+      "name": "Jacksonville",
+      "population": 949611,
+      "tier": 1
+    },
+    {
+      "id": "lakeland-fl",
+      "geoid": "1238250",
+      "name": "Lakeland",
+      "population": 112641,
+      "tier": 2
+    },
+    {
+      "id": "miami-fl",
+      "geoid": "1245000",
+      "name": "Miami",
+      "population": 442241,
+      "tier": 1
+    },
+    {
+      "id": "miramar-fl",
+      "geoid": "1245975",
+      "name": "Miramar",
+      "population": 134721,
+      "tier": 1
+    },
+    {
+      "id": "orlando-fl",
+      "geoid": "1253000",
+      "name": "Orlando",
+      "population": 307573,
+      "tier": 1
+    },
+    {
+      "id": "palm-bay-fl",
+      "geoid": "1254000",
+      "name": "Palm Bay",
+      "population": 119760,
+      "tier": 2
+    },
+    {
+      "id": "pembroke-pines-fl",
+      "geoid": "1255775",
+      "name": "Pembroke Pines",
+      "population": 171178,
+      "tier": 1
+    },
+    {
+      "id": "pompano-beach-fl",
+      "geoid": "1258050",
+      "name": "Pompano Beach",
+      "population": 112046,
+      "tier": 2
+    },
+    {
+      "id": "port-st-lucie-fl",
+      "geoid": "1258715",
+      "name": "Port St. Lucie",
+      "population": 204851,
+      "tier": 1
+    },
+    {
+      "id": "st-petersburg-fl",
+      "geoid": "1263000",
+      "name": "St. Petersburg",
+      "population": 258308,
+      "tier": 1
+    },
+    {
+      "id": "tallahassee-fl",
+      "geoid": "1270600",
+      "name": "Tallahassee",
+      "population": 196169,
+      "tier": 1
+    },
+    {
+      "id": "tampa-fl",
+      "geoid": "1271000",
+      "name": "Tampa",
+      "population": 384959,
+      "tier": 1
+    },
+    {
+      "id": "west-palm-beach-fl",
+      "geoid": "1276600",
+      "name": "West Palm Beach",
+      "population": 117415,
+      "tier": 2
+    }
+  ]
+}

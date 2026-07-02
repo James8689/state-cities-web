@@ -1,0 +1,152 @@
+{
+  "id": "AR",
+  "name": "Arkansas",
+  "capital": "little-rock-ar",
+  "mapFiles": {
+    "state": "/maps/arkansas-state.topojson",
+    "cities": "/maps/arkansas-cities.geojson",
+    "water": "/maps/arkansas-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "benton-ar",
+      "geoid": "0505290",
+      "name": "Benton",
+      "population": 35014,
+      "tier": 1
+    },
+    {
+      "id": "bentonville-ar",
+      "geoid": "0505320",
+      "name": "Bentonville",
+      "population": 54164,
+      "tier": 1
+    },
+    {
+      "id": "cabot-ar",
+      "geoid": "0510300",
+      "name": "Cabot",
+      "population": 26569,
+      "tier": 2
+    },
+    {
+      "id": "conway-ar",
+      "geoid": "0515190",
+      "name": "Conway",
+      "population": 64134,
+      "tier": 1
+    },
+    {
+      "id": "fayetteville-ar",
+      "geoid": "0523290",
+      "name": "Fayetteville",
+      "population": 93949,
+      "tier": 1
+    },
+    {
+      "id": "fort-smith-ar",
+      "geoid": "0524550",
+      "name": "Fort Smith",
+      "population": 89142,
+      "tier": 1
+    },
+    {
+      "id": "hot-springs-ar",
+      "geoid": "0533400",
+      "name": "Hot Springs",
+      "population": 37930,
+      "tier": 1
+    },
+    {
+      "id": "jacksonville-ar",
+      "geoid": "0534750",
+      "name": "Jacksonville",
+      "population": 29477,
+      "tier": 2
+    },
+    {
+      "id": "jonesboro-ar",
+      "geoid": "0535710",
+      "name": "Jonesboro",
+      "population": 78576,
+      "tier": 1
+    },
+    {
+      "id": "little-rock-ar",
+      "geoid": "0541000",
+      "name": "Little Rock",
+      "population": 202591,
+      "tier": 1
+    },
+    {
+      "id": "north-little-rock-ar",
+      "geoid": "0550450",
+      "name": "North Little Rock",
+      "population": 64591,
+      "tier": 1
+    },
+    {
+      "id": "paragould-ar",
+      "geoid": "0553390",
+      "name": "Paragould",
+      "population": 29537,
+      "tier": 2
+    },
+    {
+      "id": "pine-bluff-ar",
+      "geoid": "0555310",
+      "name": "Pine Bluff",
+      "population": 41253,
+      "tier": 1
+    },
+    {
+      "id": "rogers-ar",
+      "geoid": "0560410",
+      "name": "Rogers",
+      "population": 69908,
+      "tier": 1
+    },
+    {
+      "id": "russellville-ar",
+      "geoid": "0561670",
+      "name": "Russellville",
+      "population": 28940,
+      "tier": 2
+    },
+    {
+      "id": "searcy-ar",
+      "geoid": "0563020",
+      "name": "Searcy",
+      "population": 22937,
+      "tier": 2
+    },
+    {
+      "id": "sherwood-ar",
+      "geoid": "0563800",
+      "name": "Sherwood",
+      "population": 32731,
+      "tier": 1
+    },
+    {
+      "id": "springdale-ar",
+      "geoid": "0566080",
+      "name": "Springdale",
+      "population": 84161,
+      "tier": 1
+    },
+    {
+      "id": "texarkana-ar",
+      "geoid": "0568810",
+      "name": "Texarkana",
+      "population": 29387,
+      "tier": 1
+    },
+    {
+      "id": "west-memphis-ar",
+      "geoid": "0574540",
+      "name": "West Memphis",
+      "population": 24520,
+      "tier": 2
+    }
+  ]
+}

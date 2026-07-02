@@ -1,0 +1,152 @@
+{
+  "id": "CA",
+  "name": "California",
+  "capital": "sacramento-ca",
+  "mapFiles": {
+    "state": "/maps/california-state.topojson",
+    "cities": "/maps/california-cities.geojson",
+    "water": "/maps/california-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "anaheim-ca",
+      "geoid": "0602000",
+      "name": "Anaheim",
+      "population": 346824,
+      "tier": 1
+    },
+    {
+      "id": "bakersfield-ca",
+      "geoid": "0603526",
+      "name": "Bakersfield",
+      "population": 403455,
+      "tier": 1
+    },
+    {
+      "id": "chula-vista-ca",
+      "geoid": "0613392",
+      "name": "Chula Vista",
+      "population": 275487,
+      "tier": 1
+    },
+    {
+      "id": "fremont-ca",
+      "geoid": "0626000",
+      "name": "Fremont",
+      "population": 230504,
+      "tier": 1
+    },
+    {
+      "id": "fresno-ca",
+      "geoid": "0627000",
+      "name": "Fresno",
+      "population": 542107,
+      "tier": 1
+    },
+    {
+      "id": "irvine-ca",
+      "geoid": "0636770",
+      "name": "Irvine",
+      "population": 307670,
+      "tier": 1
+    },
+    {
+      "id": "long-beach-ca",
+      "geoid": "0643000",
+      "name": "Long Beach",
+      "population": 466742,
+      "tier": 1
+    },
+    {
+      "id": "los-angeles-ca",
+      "geoid": "0644000",
+      "name": "Los Angeles",
+      "population": 3898747,
+      "tier": 1
+    },
+    {
+      "id": "modesto-ca",
+      "geoid": "0648354",
+      "name": "Modesto",
+      "population": 218464,
+      "tier": 2
+    },
+    {
+      "id": "oakland-ca",
+      "geoid": "0653000",
+      "name": "Oakland",
+      "population": 440646,
+      "tier": 1
+    },
+    {
+      "id": "oxnard-ca",
+      "geoid": "0654652",
+      "name": "Oxnard",
+      "population": 202063,
+      "tier": 2
+    },
+    {
+      "id": "riverside-ca",
+      "geoid": "0662000",
+      "name": "Riverside",
+      "population": 314998,
+      "tier": 1
+    },
+    {
+      "id": "sacramento-ca",
+      "geoid": "0664000",
+      "name": "Sacramento",
+      "population": 524943,
+      "tier": 1
+    },
+    {
+      "id": "san-bernardino-ca",
+      "geoid": "0665000",
+      "name": "San Bernardino",
+      "population": 222101,
+      "tier": 1
+    },
+    {
+      "id": "san-diego-ca",
+      "geoid": "0666000",
+      "name": "San Diego",
+      "population": 1386932,
+      "tier": 1
+    },
+    {
+      "id": "san-francisco-ca",
+      "geoid": "0667000",
+      "name": "San Francisco",
+      "population": 873965,
+      "tier": 1
+    },
+    {
+      "id": "san-jose-ca",
+      "geoid": "0668000",
+      "name": "San Jose",
+      "population": 1013240,
+      "tier": 1
+    },
+    {
+      "id": "santa-ana-ca",
+      "geoid": "0669000",
+      "name": "Santa Ana",
+      "population": 310227,
+      "tier": 1
+    },
+    {
+      "id": "santa-clarita-ca",
+      "geoid": "0669088",
+      "name": "Santa Clarita",
+      "population": 228673,
+      "tier": 2
+    },
+    {
+      "id": "stockton-ca",
+      "geoid": "0675000",
+      "name": "Stockton",
+      "population": 320804,
+      "tier": 1
+    }
+  ]
+}

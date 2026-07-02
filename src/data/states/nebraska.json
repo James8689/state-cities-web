@@ -1,0 +1,145 @@
+{
+  "id": "NE",
+  "name": "Nebraska",
+  "capital": "lincoln-ne",
+  "mapFiles": {
+    "state": "/maps/nebraska-state.topojson",
+    "cities": "/maps/nebraska-cities.geojson",
+    "water": "/maps/nebraska-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "alliance-ne",
+      "geoid": "3100905",
+      "name": "Alliance",
+      "population": 8151,
+      "tier": 2
+    },
+    {
+      "id": "beatrice-ne",
+      "geoid": "3103390",
+      "name": "Beatrice",
+      "population": 12261,
+      "tier": 2
+    },
+    {
+      "id": "bellevue-ne",
+      "geoid": "3103950",
+      "name": "Bellevue",
+      "population": 64176,
+      "tier": 1
+    },
+    {
+      "id": "columbus-ne",
+      "geoid": "3110110",
+      "name": "Columbus",
+      "population": 24028,
+      "tier": 1
+    },
+    {
+      "id": "fremont-ne",
+      "geoid": "3117670",
+      "name": "Fremont",
+      "population": 27141,
+      "tier": 1
+    },
+    {
+      "id": "gering-ne",
+      "geoid": "3118580",
+      "name": "Gering",
+      "population": 8564,
+      "tier": 2
+    },
+    {
+      "id": "grand-island-ne",
+      "geoid": "3119595",
+      "name": "Grand Island",
+      "population": 53131,
+      "tier": 1
+    },
+    {
+      "id": "hastings-ne",
+      "geoid": "3121415",
+      "name": "Hastings",
+      "population": 25152,
+      "tier": 1
+    },
+    {
+      "id": "kearney-ne",
+      "geoid": "3125055",
+      "name": "Kearney",
+      "population": 33790,
+      "tier": 1
+    },
+    {
+      "id": "la-vista-ne",
+      "geoid": "3126385",
+      "name": "La Vista",
+      "population": 16746,
+      "tier": 1
+    },
+    {
+      "id": "lincoln-ne",
+      "geoid": "3128000",
+      "name": "Lincoln",
+      "population": 291082,
+      "tier": 1
+    },
+    {
+      "id": "mccook-ne",
+      "geoid": "3129925",
+      "name": "McCook",
+      "population": 7446,
+      "tier": 2
+    },
+    {
+      "id": "norfolk-ne",
+      "geoid": "3134615",
+      "name": "Norfolk",
+      "population": 24955,
+      "tier": 1
+    },
+    {
+      "id": "north-platte-ne",
+      "geoid": "3135000",
+      "name": "North Platte",
+      "population": 23390,
+      "tier": 1
+    },
+    {
+      "id": "omaha-ne",
+      "geoid": "3137000",
+      "name": "Omaha",
+      "population": 486051,
+      "tier": 1
+    },
+    {
+      "id": "papillion-ne",
+      "geoid": "3138295",
+      "name": "Papillion",
+      "population": 24159,
+      "tier": 1
+    },
+    {
+      "id": "scottsbluff-ne",
+      "geoid": "3144245",
+      "name": "Scottsbluff",
+      "population": 14436,
+      "tier": 1
+    },
+    {
+      "id": "south-sioux-city-ne",
+      "geoid": "3146030",
+      "name": "South Sioux City",
+      "population": 14043,
+      "tier": 2
+    },
+    {
+      "id": "york-ne",
+      "geoid": "3154045",
+      "name": "York",
+      "population": 8066,
+      "tier": 2
+    }
+  ]
+}

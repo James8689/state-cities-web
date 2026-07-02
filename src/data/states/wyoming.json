@@ -1,0 +1,131 @@
+{
+  "id": "WY",
+  "name": "Wyoming",
+  "capital": "cheyenne-wy",
+  "mapFiles": {
+    "state": "/maps/wyoming-state.topojson",
+    "cities": "/maps/wyoming-cities.geojson",
+    "water": "/maps/wyoming-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "casper-wy",
+      "geoid": "5613150",
+      "name": "Casper",
+      "population": 59038,
+      "tier": 1
+    },
+    {
+      "id": "cheyenne-wy",
+      "geoid": "5613900",
+      "name": "Cheyenne",
+      "population": 65132,
+      "tier": 1
+    },
+    {
+      "id": "cody-wy",
+      "geoid": "5615760",
+      "name": "Cody",
+      "population": 10028,
+      "tier": 2
+    },
+    {
+      "id": "douglas-wy",
+      "geoid": "5621125",
+      "name": "Douglas",
+      "population": 6386,
+      "tier": 2
+    },
+    {
+      "id": "evanston-wy",
+      "geoid": "5625620",
+      "name": "Evanston",
+      "population": 11747,
+      "tier": 1
+    },
+    {
+      "id": "gillette-wy",
+      "geoid": "5631855",
+      "name": "Gillette",
+      "population": 33403,
+      "tier": 1
+    },
+    {
+      "id": "green-river-wy",
+      "geoid": "5633740",
+      "name": "Green River",
+      "population": 11825,
+      "tier": 1
+    },
+    {
+      "id": "jackson-wy",
+      "geoid": "5640120",
+      "name": "Jackson",
+      "population": 10760,
+      "tier": 2
+    },
+    {
+      "id": "lander-wy",
+      "geoid": "5644760",
+      "name": "Lander",
+      "population": 7546,
+      "tier": 2
+    },
+    {
+      "id": "laramie-wy",
+      "geoid": "5645050",
+      "name": "Laramie",
+      "population": 31407,
+      "tier": 1
+    },
+    {
+      "id": "powell-wy",
+      "geoid": "5662450",
+      "name": "Powell",
+      "population": 6419,
+      "tier": 2
+    },
+    {
+      "id": "rawlins-wy",
+      "geoid": "5663900",
+      "name": "Rawlins",
+      "population": 8221,
+      "tier": 2
+    },
+    {
+      "id": "riverton-wy",
+      "geoid": "5666220",
+      "name": "Riverton",
+      "population": 10682,
+      "tier": 1
+    },
+    {
+      "id": "rock-springs-wy",
+      "geoid": "5667235",
+      "name": "Rock Springs",
+      "population": 23526,
+      "tier": 1
+    },
+    {
+      "id": "sheridan-wy",
+      "geoid": "5669845",
+      "name": "Sheridan",
+      "population": 18737,
+      "tier": 1
+    },
+    {
+      "id": "torrington-wy",
+      "geoid": "5677530",
+      "name": "Torrington",
+      "population": 6119,
+      "tier": 2
+    },
+    {
+      "id": "worland-wy",
+      "geoid": "5684925",
+      "name": "Worland",
+      "population": 4773,
+      "tier": 2
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "LA",
+  "name": "Louisiana",
+  "capital": "baton-rouge-la",
+  "mapFiles": {
+    "state": "/maps/louisiana-state.topojson",
+    "cities": "/maps/louisiana-cities.geojson",
+    "water": "/maps/louisiana-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "alexandria-la",
+      "geoid": "2200975",
+      "name": "Alexandria",
+      "population": 45275,
+      "tier": 1
+    },
+    {
+      "id": "baton-rouge-la",
+      "geoid": "2205000",
+      "name": "Baton Rouge",
+      "population": 227470,
+      "tier": 1
+    },
+    {
+      "id": "bossier-city-la",
+      "geoid": "2208920",
+      "name": "Bossier City",
+      "population": 62701,
+      "tier": 1
+    },
+    {
+      "id": "central-la",
+      "geoid": "2213960",
+      "name": "Central",
+      "population": 29565,
+      "tier": 1
+    },
+    {
+      "id": "gretna-la",
+      "geoid": "2231915",
+      "name": "Gretna",
+      "population": 17814,
+      "tier": 2
+    },
+    {
+      "id": "hammond-la",
+      "geoid": "2232755",
+      "name": "Hammond",
+      "population": 19584,
+      "tier": 2
+    },
+    {
+      "id": "houma-la",
+      "geoid": "2236255",
+      "name": "Houma",
+      "population": 33406,
+      "tier": 1
+    },
+    {
+      "id": "kenner-la",
+      "geoid": "2239475",
+      "name": "Kenner",
+      "population": 66448,
+      "tier": 1
+    },
+    {
+      "id": "lafayette-la",
+      "geoid": "2240735",
+      "name": "Lafayette",
+      "population": 121374,
+      "tier": 1
+    },
+    {
+      "id": "lake-charles-la",
+      "geoid": "2241155",
+      "name": "Lake Charles",
+      "population": 84872,
+      "tier": 1
+    },
+    {
+      "id": "metairie-la",
+      "geoid": "2250115",
+      "name": "Metairie",
+      "population": 143507,
+      "tier": 1
+    },
+    {
+      "id": "monroe-la",
+      "geoid": "2251410",
+      "name": "Monroe",
+      "population": 47702,
+      "tier": 1
+    },
+    {
+      "id": "natchitoches-la",
+      "geoid": "2253545",
+      "name": "Natchitoches",
+      "population": 18039,
+      "tier": 2
+    },
+    {
+      "id": "new-orleans-la",
+      "geoid": "2255000",
+      "name": "New Orleans",
+      "population": 383997,
+      "tier": 1
+    },
+    {
+      "id": "opelousas-la",
+      "geoid": "2258045",
+      "name": "Opelousas",
+      "population": 15786,
+      "tier": 2
+    },
+    {
+      "id": "ruston-la",
+      "geoid": "2266655",
+      "name": "Ruston",
+      "population": 22166,
+      "tier": 2
+    },
+    {
+      "id": "shreveport-la",
+      "geoid": "2270000",
+      "name": "Shreveport",
+      "population": 187593,
+      "tier": 1
+    },
+    {
+      "id": "slidell-la",
+      "geoid": "2270805",
+      "name": "Slidell",
+      "population": 28781,
+      "tier": 1
+    },
+    {
+      "id": "sulphur-la",
+      "geoid": "2273640",
+      "name": "Sulphur",
+      "population": 21809,
+      "tier": 2
+    },
+    {
+      "id": "thibodaux-la",
+      "geoid": "2275425",
+      "name": "Thibodaux",
+      "population": 15948,
+      "tier": 2
+    }
+  ]
+}

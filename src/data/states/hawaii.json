@@ -1,0 +1,152 @@
+{
+  "id": "HI",
+  "name": "Hawaii",
+  "capital": "honolulu-hi",
+  "mapFiles": {
+    "state": "/maps/hawaii-state.topojson",
+    "cities": "/maps/hawaii-cities.geojson",
+    "water": "/maps/hawaii-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ewa-beach-hi",
+      "geoid": "1507450",
+      "name": "Ewa Beach",
+      "population": 16415,
+      "tier": 2
+    },
+    {
+      "id": "ewa-gentry-hi",
+      "geoid": "1507470",
+      "name": "Ewa Gentry",
+      "population": 25707,
+      "tier": 1
+    },
+    {
+      "id": "halawa-hi",
+      "geoid": "1510000",
+      "name": "Halawa",
+      "population": 15016,
+      "tier": 2
+    },
+    {
+      "id": "hilo-hi",
+      "geoid": "1514650",
+      "name": "Hilo",
+      "population": 44186,
+      "tier": 1
+    },
+    {
+      "id": "honolulu-hi",
+      "geoid": "1571550",
+      "name": "Honolulu",
+      "population": 350964,
+      "tier": 1
+    },
+    {
+      "id": "kahului-hi",
+      "geoid": "1522700",
+      "name": "Kahului",
+      "population": 28219,
+      "tier": 1
+    },
+    {
+      "id": "kailua-hi",
+      "geoid": "1523150",
+      "name": "Kailua",
+      "population": 40514,
+      "tier": 1
+    },
+    {
+      "id": "kailua-hi",
+      "geoid": "1523000",
+      "name": "Kailua",
+      "population": 19713,
+      "tier": 1
+    },
+    {
+      "id": "kaneohe-hi",
+      "geoid": "1528250",
+      "name": "Kaneohe",
+      "population": 37430,
+      "tier": 1
+    },
+    {
+      "id": "kapolei-hi",
+      "geoid": "1530300",
+      "name": "Kapolei",
+      "population": 21411,
+      "tier": 2
+    },
+    {
+      "id": "kihei-hi",
+      "geoid": "1536500",
+      "name": "Kihei",
+      "population": 21423,
+      "tier": 1
+    },
+    {
+      "id": "lihue-hi",
+      "geoid": "1545200",
+      "name": "Lihue",
+      "population": 8004,
+      "tier": 2
+    },
+    {
+      "id": "makakilo-hi",
+      "geoid": "1547600",
+      "name": "Makakilo",
+      "population": 19877,
+      "tier": 1
+    },
+    {
+      "id": "mililani-town-hi",
+      "geoid": "1551050",
+      "name": "Mililani Town",
+      "population": 28121,
+      "tier": 1
+    },
+    {
+      "id": "pearl-city-hi",
+      "geoid": "1562600",
+      "name": "Pearl City",
+      "population": 45295,
+      "tier": 1
+    },
+    {
+      "id": "royal-kunia-hi",
+      "geoid": "1568815",
+      "name": "Royal Kunia",
+      "population": 14896,
+      "tier": 2
+    },
+    {
+      "id": "schofield-barracks-hi",
+      "geoid": "1569050",
+      "name": "Schofield Barracks",
+      "population": 14904,
+      "tier": 2
+    },
+    {
+      "id": "wahiawa-hi",
+      "geoid": "1572650",
+      "name": "Wahiawa",
+      "population": 18658,
+      "tier": 1
+    },
+    {
+      "id": "wailuku-hi",
+      "geoid": "1577450",
+      "name": "Wailuku",
+      "population": 17697,
+      "tier": 2
+    },
+    {
+      "id": "waipahu-hi",
+      "geoid": "1579700",
+      "name": "Waipahu",
+      "population": 43485,
+      "tier": 1
+    }
+  ]
+}

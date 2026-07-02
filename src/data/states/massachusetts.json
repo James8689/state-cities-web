@@ -1,0 +1,152 @@
+{
+  "id": "MA",
+  "name": "Massachusetts",
+  "capital": "boston-ma",
+  "mapFiles": {
+    "state": "/maps/massachusetts-state.topojson",
+    "cities": "/maps/massachusetts-cities.geojson",
+    "water": "/maps/massachusetts-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "boston-ma",
+      "geoid": "2507000",
+      "name": "Boston",
+      "population": 675647,
+      "tier": 1
+    },
+    {
+      "id": "brockton-ma",
+      "geoid": "2509000",
+      "name": "Brockton",
+      "population": 105643,
+      "tier": 1
+    },
+    {
+      "id": "cambridge-ma",
+      "geoid": "2511000",
+      "name": "Cambridge",
+      "population": 118403,
+      "tier": 1
+    },
+    {
+      "id": "fall-river-ma",
+      "geoid": "2523000",
+      "name": "Fall River",
+      "population": 94000,
+      "tier": 1
+    },
+    {
+      "id": "framingham-ma",
+      "geoid": "2524960",
+      "name": "Framingham",
+      "population": 72362,
+      "tier": 1
+    },
+    {
+      "id": "haverhill-ma",
+      "geoid": "2529405",
+      "name": "Haverhill",
+      "population": 67787,
+      "tier": 2
+    },
+    {
+      "id": "lawrence-ma",
+      "geoid": "2534550",
+      "name": "Lawrence",
+      "population": 89143,
+      "tier": 1
+    },
+    {
+      "id": "lowell-ma",
+      "geoid": "2537000",
+      "name": "Lowell",
+      "population": 115554,
+      "tier": 1
+    },
+    {
+      "id": "lynn-ma",
+      "geoid": "2537490",
+      "name": "Lynn",
+      "population": 101253,
+      "tier": 1
+    },
+    {
+      "id": "malden-ma",
+      "geoid": "2537875",
+      "name": "Malden",
+      "population": 66263,
+      "tier": 2
+    },
+    {
+      "id": "medford-ma",
+      "geoid": "2539835",
+      "name": "Medford",
+      "population": 59659,
+      "tier": 2
+    },
+    {
+      "id": "new-bedford-ma",
+      "geoid": "2545000",
+      "name": "New Bedford",
+      "population": 101079,
+      "tier": 1
+    },
+    {
+      "id": "newton-ma",
+      "geoid": "2545560",
+      "name": "Newton",
+      "population": 88923,
+      "tier": 1
+    },
+    {
+      "id": "quincy-ma",
+      "geoid": "2555745",
+      "name": "Quincy",
+      "population": 101636,
+      "tier": 1
+    },
+    {
+      "id": "revere-ma",
+      "geoid": "2556585",
+      "name": "Revere",
+      "population": 62186,
+      "tier": 2
+    },
+    {
+      "id": "somerville-ma",
+      "geoid": "2562535",
+      "name": "Somerville",
+      "population": 81045,
+      "tier": 1
+    },
+    {
+      "id": "springfield-ma",
+      "geoid": "2567000",
+      "name": "Springfield",
+      "population": 155929,
+      "tier": 1
+    },
+    {
+      "id": "taunton-ma",
+      "geoid": "2569170",
+      "name": "Taunton",
+      "population": 59408,
+      "tier": 2
+    },
+    {
+      "id": "waltham-ma",
+      "geoid": "2572600",
+      "name": "Waltham",
+      "population": 65218,
+      "tier": 2
+    },
+    {
+      "id": "worcester-ma",
+      "geoid": "2582000",
+      "name": "Worcester",
+      "population": 206518,
+      "tier": 1
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "WA",
+  "name": "Washington",
+  "capital": "olympia-wa",
+  "mapFiles": {
+    "state": "/maps/washington-state.topojson",
+    "cities": "/maps/washington-cities.geojson",
+    "water": "/maps/washington-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "auburn-wa",
+      "geoid": "5303180",
+      "name": "Auburn",
+      "population": 87256,
+      "tier": 2
+    },
+    {
+      "id": "bellevue-wa",
+      "geoid": "5305210",
+      "name": "Bellevue",
+      "population": 151854,
+      "tier": 1
+    },
+    {
+      "id": "bellingham-wa",
+      "geoid": "5305280",
+      "name": "Bellingham",
+      "population": 91482,
+      "tier": 1
+    },
+    {
+      "id": "everett-wa",
+      "geoid": "5322640",
+      "name": "Everett",
+      "population": 110629,
+      "tier": 1
+    },
+    {
+      "id": "federal-way-wa",
+      "geoid": "5323515",
+      "name": "Federal Way",
+      "population": 101030,
+      "tier": 1
+    },
+    {
+      "id": "kennewick-wa",
+      "geoid": "5335275",
+      "name": "Kennewick",
+      "population": 83921,
+      "tier": 1
+    },
+    {
+      "id": "kent-wa",
+      "geoid": "5335415",
+      "name": "Kent",
+      "population": 136588,
+      "tier": 1
+    },
+    {
+      "id": "kirkland-wa",
+      "geoid": "5335940",
+      "name": "Kirkland",
+      "population": 92175,
+      "tier": 1
+    },
+    {
+      "id": "lakewood-wa",
+      "geoid": "5338038",
+      "name": "Lakewood",
+      "population": 63612,
+      "tier": 2
+    },
+    {
+      "id": "marysville-wa",
+      "geoid": "5343955",
+      "name": "Marysville",
+      "population": 70714,
+      "tier": 2
+    },
+    {
+      "id": "olympia-wa",
+      "geoid": "5351300",
+      "name": "Olympia",
+      "population": 55605,
+      "tier": 1
+    },
+    {
+      "id": "pasco-wa",
+      "geoid": "5353545",
+      "name": "Pasco",
+      "population": 77108,
+      "tier": 2
+    },
+    {
+      "id": "redmond-wa",
+      "geoid": "5357535",
+      "name": "Redmond",
+      "population": 73256,
+      "tier": 2
+    },
+    {
+      "id": "renton-wa",
+      "geoid": "5357745",
+      "name": "Renton",
+      "population": 106785,
+      "tier": 1
+    },
+    {
+      "id": "seattle-wa",
+      "geoid": "5363000",
+      "name": "Seattle",
+      "population": 737015,
+      "tier": 1
+    },
+    {
+      "id": "shoreline-wa",
+      "geoid": "5363960",
+      "name": "Shoreline",
+      "population": 58608,
+      "tier": 2
+    },
+    {
+      "id": "spokane-wa",
+      "geoid": "5367000",
+      "name": "Spokane",
+      "population": 228989,
+      "tier": 1
+    },
+    {
+      "id": "tacoma-wa",
+      "geoid": "5370000",
+      "name": "Tacoma",
+      "population": 219346,
+      "tier": 1
+    },
+    {
+      "id": "vancouver-wa",
+      "geoid": "5374060",
+      "name": "Vancouver",
+      "population": 190915,
+      "tier": 1
+    },
+    {
+      "id": "yakima-wa",
+      "geoid": "5380010",
+      "name": "Yakima",
+      "population": 96968,
+      "tier": 1
+    }
+  ]
+}

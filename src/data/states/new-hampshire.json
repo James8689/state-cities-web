@@ -1,0 +1,131 @@
+{
+  "id": "NH",
+  "name": "New Hampshire",
+  "capital": "concord-nh",
+  "mapFiles": {
+    "state": "/maps/new-hampshire-state.topojson",
+    "cities": "/maps/new-hampshire-cities.geojson",
+    "water": "/maps/new-hampshire-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "berlin-nh",
+      "geoid": "3305140",
+      "name": "Berlin",
+      "population": 9425,
+      "tier": 2
+    },
+    {
+      "id": "claremont-nh",
+      "geoid": "3312900",
+      "name": "Claremont",
+      "population": 12949,
+      "tier": 2
+    },
+    {
+      "id": "concord-nh",
+      "geoid": "3314200",
+      "name": "Concord",
+      "population": 43976,
+      "tier": 1
+    },
+    {
+      "id": "derry-nh",
+      "geoid": "3317860",
+      "name": "Derry",
+      "population": 22879,
+      "tier": 1
+    },
+    {
+      "id": "dover-nh",
+      "geoid": "3318820",
+      "name": "Dover",
+      "population": 32741,
+      "tier": 1
+    },
+    {
+      "id": "franklin-nh",
+      "geoid": "3327380",
+      "name": "Franklin",
+      "population": 8741,
+      "tier": 2
+    },
+    {
+      "id": "goffstown-nh",
+      "geoid": "3329780",
+      "name": "Goffstown",
+      "population": 3366,
+      "tier": 2
+    },
+    {
+      "id": "hudson-nh",
+      "geoid": "3337860",
+      "name": "Hudson",
+      "population": 7534,
+      "tier": 1
+    },
+    {
+      "id": "keene-nh",
+      "geoid": "3339300",
+      "name": "Keene",
+      "population": 23047,
+      "tier": 1
+    },
+    {
+      "id": "laconia-nh",
+      "geoid": "3340180",
+      "name": "Laconia",
+      "population": 16871,
+      "tier": 2
+    },
+    {
+      "id": "lebanon-nh",
+      "geoid": "3341300",
+      "name": "Lebanon",
+      "population": 14282,
+      "tier": 2
+    },
+    {
+      "id": "londonderry-nh",
+      "geoid": "3343140",
+      "name": "Londonderry",
+      "population": 11645,
+      "tier": 1
+    },
+    {
+      "id": "manchester-nh",
+      "geoid": "3345140",
+      "name": "Manchester",
+      "population": 115644,
+      "tier": 1
+    },
+    {
+      "id": "nashua-nh",
+      "geoid": "3350260",
+      "name": "Nashua",
+      "population": 91322,
+      "tier": 1
+    },
+    {
+      "id": "portsmouth-nh",
+      "geoid": "3362900",
+      "name": "Portsmouth",
+      "population": 21956,
+      "tier": 1
+    },
+    {
+      "id": "rochester-nh",
+      "geoid": "3365140",
+      "name": "Rochester",
+      "population": 32492,
+      "tier": 1
+    },
+    {
+      "id": "somersworth-nh",
+      "geoid": "3369940",
+      "name": "Somersworth",
+      "population": 11855,
+      "tier": 1
+    }
+  ]
+}

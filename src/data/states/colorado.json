@@ -1,0 +1,152 @@
+{
+  "id": "CO",
+  "name": "Colorado",
+  "capital": "denver-co",
+  "mapFiles": {
+    "state": "/maps/colorado-state.topojson",
+    "cities": "/maps/colorado-cities.geojson",
+    "water": "/maps/colorado-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "arvada-co",
+      "geoid": "0803455",
+      "name": "Arvada",
+      "population": 124402,
+      "tier": 1
+    },
+    {
+      "id": "aurora-co",
+      "geoid": "0804000",
+      "name": "Aurora",
+      "population": 386261,
+      "tier": 1
+    },
+    {
+      "id": "boulder-co",
+      "geoid": "0807850",
+      "name": "Boulder",
+      "population": 108250,
+      "tier": 1
+    },
+    {
+      "id": "broomfield-co",
+      "geoid": "0809280",
+      "name": "Broomfield",
+      "population": 74112,
+      "tier": 1
+    },
+    {
+      "id": "castle-rock-co",
+      "geoid": "0812415",
+      "name": "Castle Rock",
+      "population": 73158,
+      "tier": 2
+    },
+    {
+      "id": "colorado-springs-co",
+      "geoid": "0816000",
+      "name": "Colorado Springs",
+      "population": 478961,
+      "tier": 1
+    },
+    {
+      "id": "commerce-city-co",
+      "geoid": "0816495",
+      "name": "Commerce City",
+      "population": 62418,
+      "tier": 2
+    },
+    {
+      "id": "denver-co",
+      "geoid": "0820000",
+      "name": "Denver",
+      "population": 715522,
+      "tier": 1
+    },
+    {
+      "id": "fort-collins-co",
+      "geoid": "0827425",
+      "name": "Fort Collins",
+      "population": 169810,
+      "tier": 1
+    },
+    {
+      "id": "grand-junction-co",
+      "geoid": "0831660",
+      "name": "Grand Junction",
+      "population": 65560,
+      "tier": 1
+    },
+    {
+      "id": "greeley-co",
+      "geoid": "0832155",
+      "name": "Greeley",
+      "population": 108795,
+      "tier": 1
+    },
+    {
+      "id": "lakewood-co",
+      "geoid": "0843000",
+      "name": "Lakewood",
+      "population": 155984,
+      "tier": 1
+    },
+    {
+      "id": "littleton-co",
+      "geoid": "0845255",
+      "name": "Littleton",
+      "population": 45652,
+      "tier": 2
+    },
+    {
+      "id": "longmont-co",
+      "geoid": "0845970",
+      "name": "Longmont",
+      "population": 98885,
+      "tier": 1
+    },
+    {
+      "id": "loveland-co",
+      "geoid": "0846465",
+      "name": "Loveland",
+      "population": 76378,
+      "tier": 1
+    },
+    {
+      "id": "northglenn-co",
+      "geoid": "0854330",
+      "name": "Northglenn",
+      "population": 38131,
+      "tier": 2
+    },
+    {
+      "id": "parker-co",
+      "geoid": "0857630",
+      "name": "Parker",
+      "population": 58512,
+      "tier": 2
+    },
+    {
+      "id": "pueblo-co",
+      "geoid": "0862000",
+      "name": "Pueblo",
+      "population": 111876,
+      "tier": 1
+    },
+    {
+      "id": "thornton-co",
+      "geoid": "0877290",
+      "name": "Thornton",
+      "population": 141867,
+      "tier": 1
+    },
+    {
+      "id": "westminster-co",
+      "geoid": "0883835",
+      "name": "Westminster",
+      "population": 116317,
+      "tier": 1
+    }
+  ]
+}

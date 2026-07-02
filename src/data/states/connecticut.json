@@ -1,0 +1,152 @@
+{
+  "id": "CT",
+  "name": "Connecticut",
+  "capital": "hartford-ct",
+  "mapFiles": {
+    "state": "/maps/connecticut-state.topojson",
+    "cities": "/maps/connecticut-cities.geojson",
+    "water": "/maps/connecticut-water.geojson"
+  },
+  "cities": [
+    {
+      "id": "ansonia-ct",
+      "geoid": "0901150",
+      "name": "Ansonia",
+      "population": 18918,
+      "tier": 2
+    },
+    {
+      "id": "bridgeport-ct",
+      "geoid": "0908000",
+      "name": "Bridgeport",
+      "population": 148654,
+      "tier": 1
+    },
+    {
+      "id": "bristol-ct",
+      "geoid": "0908420",
+      "name": "Bristol",
+      "population": 60833,
+      "tier": 1
+    },
+    {
+      "id": "danbury-ct",
+      "geoid": "0918430",
+      "name": "Danbury",
+      "population": 86518,
+      "tier": 1
+    },
+    {
+      "id": "groton-ct",
+      "geoid": "0934180",
+      "name": "Groton",
+      "population": 9387,
+      "tier": 2
+    },
+    {
+      "id": "hartford-ct",
+      "geoid": "0937000",
+      "name": "Hartford",
+      "population": 121054,
+      "tier": 1
+    },
+    {
+      "id": "meriden-ct",
+      "geoid": "0946450",
+      "name": "Meriden",
+      "population": 60850,
+      "tier": 1
+    },
+    {
+      "id": "middletown-ct",
+      "geoid": "0947290",
+      "name": "Middletown",
+      "population": 47717,
+      "tier": 1
+    },
+    {
+      "id": "milford-ct",
+      "geoid": "0947515",
+      "name": "Milford",
+      "population": 50558,
+      "tier": 1
+    },
+    {
+      "id": "naugatuck-ct",
+      "geoid": "0949880",
+      "name": "Naugatuck",
+      "population": 31519,
+      "tier": 2
+    },
+    {
+      "id": "new-britain-ct",
+      "geoid": "0950370",
+      "name": "New Britain",
+      "population": 74135,
+      "tier": 1
+    },
+    {
+      "id": "new-haven-ct",
+      "geoid": "0952000",
+      "name": "New Haven",
+      "population": 134023,
+      "tier": 1
+    },
+    {
+      "id": "new-london-ct",
+      "geoid": "0952280",
+      "name": "New London",
+      "population": 27367,
+      "tier": 2
+    },
+    {
+      "id": "norwalk-ct",
+      "geoid": "0955990",
+      "name": "Norwalk",
+      "population": 91184,
+      "tier": 1
+    },
+    {
+      "id": "norwich-ct",
+      "geoid": "0956200",
+      "name": "Norwich",
+      "population": 40125,
+      "tier": 2
+    },
+    {
+      "id": "shelton-ct",
+      "geoid": "0968100",
+      "name": "Shelton",
+      "population": 40869,
+      "tier": 1
+    },
+    {
+      "id": "stamford-ct",
+      "geoid": "0973000",
+      "name": "Stamford",
+      "population": 135470,
+      "tier": 1
+    },
+    {
+      "id": "torrington-ct",
+      "geoid": "0976500",
+      "name": "Torrington",
+      "population": 35515,
+      "tier": 2
+    },
+    {
+      "id": "waterbury-ct",
+      "geoid": "0980000",
+      "name": "Waterbury",
+      "population": 114403,
+      "tier": 1
+    },
+    {
+      "id": "west-haven-ct",
+      "geoid": "0982800",
+      "name": "West Haven",
+      "population": 55584,
+      "tier": 1
+    }
+  ]
+}
