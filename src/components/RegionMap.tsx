@@ -11,7 +11,7 @@ import { useContainerSize } from "../hooks/useContainerSize";
 import { useFollowTargetCity } from "../hooks/useFollowTargetCity";
 import { createRegionProjection, getRegionCenter } from "../utils/geo";
 import { publicAssetUrl } from "../utils/publicAssetUrl";
-import { MAP_COLORS } from "../utils/mapTheme";
+import { useMapPalette } from "../hooks/useMapPalette";
 
 interface RegionMapProps {
   regionId: string;
@@ -57,6 +57,7 @@ export function RegionMap({
   alwaysHighlightTarget = false,
 }: RegionMapProps) {
   const { ref, width, height } = useContainerSize();
+  const MAP_COLORS = useMapPalette();
   const [data, setData] = useState<RegionMapData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const geoCenter = useMemo(

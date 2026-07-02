@@ -1,4 +1,6 @@
 import { badgeForAccuracy, upgradeBadge } from "./mastery";
+import { levelFromPoints } from "./points";
+import type { LevelUpEvent } from "./types";
 import { speedBadgeForRun, upgradeSpeedBadge } from "./speed";
 import type { MasteryBadge, SpeedBadge } from "../types/quiz";
 import type {
@@ -9,17 +11,19 @@ import type {
   PlayerProgressV2,
   PlayerProgressV3,
   PlayerProgressV4,
+  PlayerProgressV5,
   QuizResultRecord,
   SpeedResultRecord,
 } from "./types";
 import { getRegionForState } from "../data/regions";
+import { DEFAULT_MAP_THEME, themesUnlockedAtLevel, type MapThemeId } from "../data/mapThemes";
 
 const STORAGE_KEY = "state-cities-progress";
 const LEGACY_OREGON_BEST = "state-cities-oregon-best-pct";
 
-function emptyProgress(): PlayerProgressV4 {
+function emptyProgress(): PlayerProgressV5 {
   return {
-    version: 4,
+    version: 5,
     bestScores: {},
     mastery: {},
     speedBadges: {},
@@ -28,6 +32,7 @@ function emptyProgress(): PlayerProgressV4 {
     lastSession: null,
     focusRegionId: null,
     dailyBests: {},
+    dailyAttempts: {},
     learnZonesCompleted: {},
     learnZoneBests: {},
     learnZoneIdsByState: {},
@@ -37,10 +42,33 @@ function emptyProgress(): PlayerProgressV4 {
     weeklyWeekKey: null,
     weeklyQuizzes: 0,
     weakCities: {},
+    mapTheme: DEFAULT_MAP_THEME,
+    unlockedThemes: [DEFAULT_MAP_THEME],
+    adFree: false,
   };
 }
 
-function migrateV3(data: PlayerProgressV3): PlayerProgressV4 {
+function migrateV4(data: PlayerProgressV4): PlayerProgressV5 {
+  const level = levelFromPoints(data.points ?? 0);
+  const unlocked = new Set<MapThemeId>([DEFAULT_MAP_THEME]);
+  for (const themeId of themesUnlockedAtLevel(level)) {
+    unlocked.add(themeId);
+  }
+  return {
+    ...data,
+    version: 5,
+    mapTheme: DEFAULT_MAP_THEME,
+    unlockedThemes: [...unlocked],
+    dailyAttempts: {},
+    adFree: false,
+  };
+}
+
+function migrateV3(data: PlayerProgressV3): PlayerProgressV5 {
+  return migrateV4(migrateV3ToV4(data));
+}
+
+function migrateV3ToV4(data: PlayerProgressV3): PlayerProgressV4 {
   return {
     ...data,
     version: 4,
@@ -49,7 +77,7 @@ function migrateV3(data: PlayerProgressV3): PlayerProgressV4 {
   };
 }
 
-function migrateLegacyBest(data: PlayerProgressV4): PlayerProgressV4 {
+function migrateLegacyBest(data: PlayerProgressV5): PlayerProgressV5 {
   const legacy = localStorage.getItem(LEGACY_OREGON_BEST);
   if (!legacy) return data;
 
@@ -65,7 +93,7 @@ function migrateLegacyBest(data: PlayerProgressV4): PlayerProgressV4 {
   return data;
 }
 
-function migrateV1(data: PlayerProgressV1): PlayerProgressV4 {
+function migrateV1(data: PlayerProgressV1): PlayerProgressV5 {
   const v2: PlayerProgressV2 = {
     version: 2,
     bestScores: { ...data.bestScores },
@@ -77,7 +105,7 @@ function migrateV1(data: PlayerProgressV1): PlayerProgressV4 {
   return migrateV2(v2);
 }
 
-function migrateV2(data: PlayerProgressV2): PlayerProgressV4 {
+function migrateV2(data: PlayerProgressV2): PlayerProgressV5 {
   return migrateV3({
     version: 3,
     bestScores: { ...data.bestScores },
@@ -99,11 +127,11 @@ function migrateV2(data: PlayerProgressV2): PlayerProgressV4 {
 }
 
 function normalizeProgress(
-  parsed: PlayerProgressV1 | PlayerProgressV2 | PlayerProgressV3 | PlayerProgressV4,
-): PlayerProgressV4 {
-  if (parsed.version === 4 && typeof parsed.bestScores === "object") {
+  parsed: PlayerProgressV1 | PlayerProgressV2 | PlayerProgressV3 | PlayerProgressV4 | PlayerProgressV5,
+): PlayerProgressV5 {
+  if (parsed.version === 5 && typeof parsed.bestScores === "object") {
     return migrateLegacyBest({
-      version: 4,
+      version: 5,
       bestScores: parsed.bestScores ?? {},
       mastery: parsed.mastery ?? {},
       speedBadges: parsed.speedBadges ?? {},
@@ -112,6 +140,7 @@ function normalizeProgress(
       lastSession: parsed.lastSession ?? null,
       focusRegionId: parsed.focusRegionId ?? null,
       dailyBests: parsed.dailyBests ?? {},
+      dailyAttempts: parsed.dailyAttempts ?? {},
       learnZonesCompleted: parsed.learnZonesCompleted ?? {},
       learnZoneBests: parsed.learnZoneBests ?? {},
       learnZoneIdsByState: parsed.learnZoneIdsByState ?? {},
@@ -121,7 +150,34 @@ function normalizeProgress(
       weeklyWeekKey: parsed.weeklyWeekKey ?? null,
       weeklyQuizzes: parsed.weeklyQuizzes ?? 0,
       weakCities: parsed.weakCities ?? {},
+      mapTheme: parsed.mapTheme ?? DEFAULT_MAP_THEME,
+      unlockedThemes: parsed.unlockedThemes?.length ? parsed.unlockedThemes : [DEFAULT_MAP_THEME],
+      adFree: parsed.adFree ?? false,
     });
+  }
+  if (parsed.version === 4 && typeof parsed.bestScores === "object") {
+    return migrateLegacyBest(
+      migrateV4({
+        version: 4,
+        bestScores: parsed.bestScores ?? {},
+        mastery: parsed.mastery ?? {},
+        speedBadges: parsed.speedBadges ?? {},
+        bestTimes: parsed.bestTimes ?? {},
+        points: parsed.points ?? 0,
+        lastSession: parsed.lastSession ?? null,
+        focusRegionId: parsed.focusRegionId ?? null,
+        dailyBests: parsed.dailyBests ?? {},
+        learnZonesCompleted: parsed.learnZonesCompleted ?? {},
+        learnZoneBests: parsed.learnZoneBests ?? {},
+        learnZoneIdsByState: parsed.learnZoneIdsByState ?? {},
+        homeStateId: parsed.homeStateId ?? null,
+        streakCurrent: parsed.streakCurrent ?? 0,
+        streakLastDate: parsed.streakLastDate ?? null,
+        weeklyWeekKey: parsed.weeklyWeekKey ?? null,
+        weeklyQuizzes: parsed.weeklyQuizzes ?? 0,
+        weakCities: parsed.weakCities ?? {},
+      }),
+    );
   }
   if (parsed.version === 3 && typeof parsed.bestScores === "object") {
     return migrateLegacyBest(
@@ -159,7 +215,12 @@ export function loadProgress(): PlayerProgress {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return migrateLegacyBest(emptyProgress());
 
-    const parsed = JSON.parse(raw) as PlayerProgressV1 | PlayerProgressV2 | PlayerProgressV3 | PlayerProgressV4;
+    const parsed = JSON.parse(raw) as
+      | PlayerProgressV1
+      | PlayerProgressV2
+      | PlayerProgressV3
+      | PlayerProgressV4
+      | PlayerProgressV5;
     return normalizeProgress(parsed);
   } catch {
     return migrateLegacyBest(emptyProgress());
@@ -192,11 +253,63 @@ export function getPoints(): number {
   return loadProgress().points;
 }
 
-export function addPoints(amount: number): number {
+export function addPoints(amount: number): { points: number; levelUp: LevelUpEvent | null } {
   const data = loadProgress();
+  const previousLevel = levelFromPoints(data.points);
   data.points += amount;
+  const newLevel = levelFromPoints(data.points);
+
+  if (newLevel > previousLevel) {
+    for (let level = previousLevel + 1; level <= newLevel; level++) {
+      applyLevelUnlocks(data, level);
+    }
+  }
+
   saveProgress(data);
-  return data.points;
+
+  return {
+    points: data.points,
+    levelUp:
+      newLevel > previousLevel ? { previousLevel, newLevel } : null,
+  };
+}
+
+function applyLevelUnlocks(data: PlayerProgressV5, level: number): void {
+  for (const themeId of themesUnlockedAtLevel(level)) {
+    if (!data.unlockedThemes.includes(themeId)) {
+      data.unlockedThemes.push(themeId);
+    }
+  }
+}
+
+export function getMapTheme(): MapThemeId {
+  return loadProgress().mapTheme;
+}
+
+export function setMapTheme(themeId: MapThemeId): boolean {
+  const data = loadProgress();
+  if (!data.unlockedThemes.includes(themeId)) return false;
+  data.mapTheme = themeId;
+  saveProgress(data);
+  return true;
+}
+
+export function getUnlockedThemes(): MapThemeId[] {
+  return loadProgress().unlockedThemes;
+}
+
+export function isAdFree(): boolean {
+  return loadProgress().adFree;
+}
+
+export function getDailyAttempts(dateKey: string): number {
+  return loadProgress().dailyAttempts[dateKey] ?? 0;
+}
+
+export function incrementDailyAttempts(dateKey: string): void {
+  const data = loadProgress();
+  data.dailyAttempts[dateKey] = (data.dailyAttempts[dateKey] ?? 0) + 1;
+  saveProgress(data);
 }
 
 export function saveLastSession(session: LastSession): void {
@@ -307,6 +420,7 @@ export function recordDailyResult(dateKey: string, pct: number): {
   const isNewBest = previousBest === null ? pct > 0 : pct > previousBest;
 
   data.dailyBests[dateKey] = best;
+  data.dailyAttempts[dateKey] = (data.dailyAttempts[dateKey] ?? 0) + 1;
   saveProgress(data);
 
   return { best, isNewBest, previousBest, firstCompletion };

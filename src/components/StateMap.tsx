@@ -10,7 +10,8 @@ import { useContainerSize } from "../hooks/useContainerSize";
 import { useFollowTargetCity } from "../hooks/useFollowTargetCity";
 import { createStateProjection, getStateCenter } from "../utils/geo";
 import { publicAssetUrl } from "../utils/publicAssetUrl";
-import { MAP_COLORS, MAP_OPACITY } from "../utils/mapTheme";
+import { useMapPalette } from "../hooks/useMapPalette";
+import { MAP_OPACITY } from "../utils/mapTheme";
 
 interface StateMapProps {
   stateMeta: StateMeta;
@@ -70,6 +71,7 @@ export function StateMap({
   alwaysHighlightTarget = false,
 }: StateMapProps) {
   const { ref, width, height } = useContainerSize();
+  const MAP_COLORS = useMapPalette();
   const [data, setData] = useState<MapData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const geoCenter = useMemo(
@@ -421,7 +423,7 @@ export function StateMap({
                   const cityId = String(geo.properties?.id ?? "");
                   const state = cityState(cityId);
 
-                  return <CityBoundary key={geo.rsmKey} geo={geo} highlight={state} />;
+                  return <CityBoundary key={geo.rsmKey} geo={geo} highlight={state} palette={MAP_COLORS} />;
                 })
               }
             </Geographies>

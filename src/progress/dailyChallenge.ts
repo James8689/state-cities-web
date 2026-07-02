@@ -2,7 +2,8 @@ import { REGIONS, getRegionById } from "../data/regions";
 import { getCitiesForTier } from "../data/tiers";
 import { getStateBundle } from "../data/states";
 import type { CityMeta } from "../types/quiz";
-import { getDailyBest } from "./storage";
+import { getDailyAttempts, getDailyBest } from "./storage";
+import { getPlayerLevel, maxDailyAttempts } from "./levelPerks";
 
 export interface DailyChallenge {
   dateKey: string;
@@ -69,4 +70,19 @@ export function getDailyStatus(date = new Date()) {
 
 export function hasCompletedDailyToday(date = new Date()): boolean {
   return getDailyBest(getDateKey(date)) !== null;
+}
+
+export function getDailyAttemptsUsed(date = new Date()): number {
+  return getDailyAttempts(getDateKey(date));
+}
+
+export function getDailyAttemptsRemaining(date = new Date()): number {
+  const dateKey = getDateKey(date);
+  const used = getDailyAttempts(dateKey);
+  const max = maxDailyAttempts(getPlayerLevel());
+  return Math.max(0, max - used);
+}
+
+export function canPlayDailyToday(date = new Date()): boolean {
+  return getDailyAttemptsRemaining(date) > 0;
 }

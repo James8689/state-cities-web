@@ -114,18 +114,7 @@ export function CampaignHubScreen({
         </button>
 
         <HubProgressCard data={hubProgress} onClick={onOpenJourney} />
-
-        <section className="hub-store-placeholder" aria-label="Store">
-          <p className="hub-store-label">Store</p>
-          <p className="hub-store-desc">Unlock boosts and extras — coming later</p>
-        </section>
       </div>
-
-      <footer className="campaign-hub-footer">
-        <a className="state-select-footer-link" href="./privacy.html">
-          Privacy Policy
-        </a>
-      </footer>
     </div>
   );
 }

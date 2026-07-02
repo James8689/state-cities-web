@@ -809,17 +809,6 @@ h3,
   color: var(--sa-ink-muted);
 }
 
-.hub-store-placeholder {
-  background: rgba(255, 255, 255, 0.45);
-  border: 2px dashed rgba(61, 36, 86, 0.14);
-  border-radius: var(--sa-radius-card);
-}
-
-.hub-store-label {
-  color: var(--sa-ink-muted);
-  font-family: var(--sa-font-display);
-}
-
 /* Region chips on hub */
 
 .region-chip {
@@ -974,10 +963,6 @@ h3,
   flex-shrink: 0;
   color: var(--sa-ink-muted);
   opacity: 0.55;
-}
-
-.state-select-footer-link {
-  color: var(--sa-ink-muted);
 }
 
 /* ── Shared cards (detail, journey, region) ── */

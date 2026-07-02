@@ -17,12 +17,12 @@ const LEVEL_TITLES = [
 /** Flavor text for each level — titles are shown on hub and journey. */
 export const LEVEL_PERKS = [
   "Begin your cross-country map journey.",
-  "Your title updates on the hub.",
-  "Track progress across more regions.",
-  "Unlock deeper campaign goals.",
-  "Recognition as a serious cartographer.",
-  "Steer through harder regional targets.",
-  "Veteran status on your badge wall.",
+  "Unlock the Midnight map theme.",
+  "Unlock the Paper atlas theme.",
+  "Map hints appear after one miss instead of two.",
+  "Chase Quick draw, Speed run, and Lightning badges.",
+  "Play the daily challenge twice per day.",
+  "Veteran gold frame on your progress card.",
   "Maximum rank — true map mastery.",
 ];
 

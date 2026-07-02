@@ -1,4 +1,4 @@
-import { getDailyStatus } from "../progress/dailyChallenge";
+import { getDailyStatus, getDailyAttemptsRemaining, canPlayDailyToday } from "../progress/dailyChallenge";
 
 interface DailyChallengeCardProps {
   onPlay: () => void;
@@ -7,13 +7,16 @@ interface DailyChallengeCardProps {
 
 export function DailyChallengeCard({ onPlay, variant = "panel" }: DailyChallengeCardProps) {
   const { challenge, best, completed } = getDailyStatus();
+  const attemptsLeft = getDailyAttemptsRemaining();
+  const canPlay = canPlayDailyToday();
 
   if (variant === "hub") {
     return (
       <button
         type="button"
-        className="hub-card hub-card--action hub-daily-card"
+        className={`hub-card hub-card--action hub-daily-card${!canPlay ? " hub-daily-card--disabled" : ""}`}
         onClick={onPlay}
+        disabled={!canPlay}
         aria-label={`Today's daily challenge: ${challenge.label}`}
       >
         <span className="hub-daily-icon" aria-hidden>
@@ -26,8 +29,15 @@ export function DailyChallengeCard({ onPlay, variant = "panel" }: DailyChallenge
           {best !== null && (
             <p className="hub-card-desc hub-card-desc--accent">Best today: {best}%</p>
           )}
+          {attemptsLeft > 0 && attemptsLeft < 2 && (
+            <p className="hub-card-desc hub-card-desc--accent">
+              {attemptsLeft} try left today
+            </p>
+          )}
         </div>
-        <span className="hub-daily-pill">{completed ? "Again ›" : "Play ›"}</span>
+        <span className="hub-daily-pill">
+          {!canPlay ? "Done" : completed ? "Again ›" : "Play ›"}
+        </span>
       </button>
     );
   }

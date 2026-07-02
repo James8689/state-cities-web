@@ -1,7 +1,7 @@
 ﻿{
   "name": "State Cities",
   "short_name": "State Cities",
-  "description": "Learn the major cities of US states by tapping them on an interactive map.",
+  "description": "Learn US city geography by tapping cities on interactive state maps. All 50 states, daily challenges, and regional quizzes.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

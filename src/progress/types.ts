@@ -2,6 +2,7 @@ import type { MasteryBadge, QuizKind } from "../types/quiz";
 import type { SpeedBadge } from "../types/quiz";
 import type { CityMeta } from "../types/quiz";
 import type { TierId } from "../data/tiers";
+import type { MapThemeId } from "../data/mapThemes";
 
 export interface PlayerProgressV1 {
   version: 1;
@@ -59,9 +60,21 @@ export interface PlayerProgressV4 extends Omit<PlayerProgressV3, "version"> {
   bestTimes: Record<string, number>;
 }
 
+export interface PlayerProgressV5 extends Omit<PlayerProgressV4, "version"> {
+  version: 5;
+  /** Active map color theme for quizzes. */
+  mapTheme: MapThemeId;
+  /** Themes the player has unlocked by leveling up. */
+  unlockedThemes: MapThemeId[];
+  /** Plays used per UTC date key for daily challenge limits. */
+  dailyAttempts: Record<string, number>;
+  /** Reserved for a future ad-free purchase (not wired to IAP yet). */
+  adFree: boolean;
+}
+
 export type LearnZoneId = "north" | "south" | "east" | "west" | "central";
 
-export type PlayerProgress = PlayerProgressV4;
+export type PlayerProgress = PlayerProgressV5;
 
 export interface QuizSession {
   stateId: string;
@@ -86,6 +99,11 @@ export interface SpeedResultRecord {
   bestTimeMs: number | null;
   previousBestTimeMs: number | null;
   isNewBestTime: boolean;
+}
+
+export interface LevelUpEvent {
+  previousLevel: number;
+  newLevel: number;
 }
 
 export type RecommendationAction =

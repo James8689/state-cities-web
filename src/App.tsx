@@ -6,7 +6,7 @@ import { getRegionQuizCities } from "./data/regionQuiz";
 import { getNationalQuizCities, citiesSpanMultipleStates, findCityStateId } from "./data/nationalQuiz";
 import { isNationalQuizUnlocked } from "./progress/nationalProgress";
 import { weakCitiesToPractice } from "./progress/weakCities";
-import { getDailyChallenge } from "./progress/dailyChallenge";
+import { canPlayDailyToday, getDailyChallenge } from "./progress/dailyChallenge";
 import { getRegionById } from "./data/regions";
 import {
   getSuggestedStateForRegion,
@@ -120,6 +120,7 @@ function App() {
   }, [navigate]);
 
   const startDailyQuiz = useCallback((returnTo: Screen = "hub") => {
+    if (!canPlayDailyToday()) return;
     const challenge = getDailyChallenge();
     const bundle = getStateBundle(challenge.stateId);
     if (!bundle) return;
@@ -259,6 +260,10 @@ function App() {
       return;
     }
     if (!activeState) return;
+    if (quizKind === "daily") {
+      startDailyQuiz(quizReturnTo);
+      return;
+    }
     if (quizKind === "practice" && practiceParentKind) {
       startPractice(activeState, practiceParentKind, quizCities);
       return;
@@ -285,6 +290,8 @@ function App() {
     startNationalQuiz,
     startPractice,
     startLearn,
+    startDailyQuiz,
+    quizReturnTo,
   ]);
 
   const handleRetryMissed = useCallback(() => {
@@ -340,6 +347,11 @@ function App() {
   const goToJourney = useCallback(() => {
     navigate("journey");
   }, [navigate]);
+
+  const startDailyFromHub = useCallback(() => {
+    if (!canPlayDailyToday()) return;
+    startDailyQuiz("hub");
+  }, [startDailyQuiz]);
 
   const completeOnboarding = useCallback(
     (usps: string) => {
@@ -418,7 +430,7 @@ function App() {
           onBrowseStates={goToSelect}
           onOpenJourney={goToJourney}
           onRandomState={handleSelectState}
-          onStartDaily={() => startDailyQuiz("hub")}
+          onStartDaily={startDailyFromHub}
         />
       )}
       {screen === "learn" && (

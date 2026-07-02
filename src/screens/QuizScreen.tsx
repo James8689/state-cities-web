@@ -1,13 +1,10 @@
-﻿import { useEffect, useMemo, useState, type FormEvent } from "react";
+﻿import { Suspense, lazy, useEffect, useMemo, useState, type FormEvent } from "react";
 import { getRegionById } from "../data/regions";
 import { getDailyChallenge } from "../progress/dailyChallenge";
 import { getTierLabel } from "../data/tiers";
 import { ZONE_LABELS } from "../data/learnZones";
 import type { LearnZoneId } from "../data/learnZones";
 import { BackButton } from "../components/BackButton";
-import { NationalMap } from "../components/NationalMap";
-import { RegionMap } from "../components/RegionMap";
-import { StateMap } from "../components/StateMap";
 import { useQuiz } from "../hooks/useQuiz";
 import { countRevealableLetters } from "../utils/typeHint";
 import { formatElapsed, tracksSpeed } from "../progress/speed";
@@ -34,6 +31,10 @@ interface QuizScreenProps {
   onComplete: (result: QuizResult) => void;
   onBack: () => void;
 }
+
+const NationalMap = lazy(async () => import("../components/NationalMap").then((m) => ({ default: m.NationalMap })));
+const RegionMap = lazy(async () => import("../components/RegionMap").then((m) => ({ default: m.RegionMap })));
+const StateMap = lazy(async () => import("../components/StateMap").then((m) => ({ default: m.StateMap })));
 
 export function QuizScreen({
   stateMeta,
@@ -124,7 +125,8 @@ export function QuizScreen({
 
   return (
     <div className="screen quiz-screen">
-      <header className="quiz-topcard">
+      <div className="quiz-map-stack">
+        <header className="quiz-topcard">
         <div className="quiz-nav">
           <BackButton onClick={onBack} label="Leave quiz" variant="dark" />
           {headerLabel && <p className="quiz-nav-title">{headerLabel}</p>}
@@ -211,19 +213,20 @@ export function QuizScreen({
             </span>
           </div>
         )}
-      </header>
+        </header>
 
-      <div className="quiz-main">
         <div
           className={`map-area${quiz.feedbackFlash ? ` map-area--flash-${quiz.feedbackFlash}` : ""}`}
         >
-          {isNational ? (
-            <NationalMap {...mapProps} />
-          ) : isRegional && regionId ? (
-            <RegionMap regionId={regionId} {...mapProps} />
-          ) : (
-            <StateMap stateMeta={stateMeta} peaks={peaks} {...mapProps} />
-          )}
+          <Suspense fallback={<div className="map-loading">Loading map...</div>}>
+            {isNational ? (
+              <NationalMap {...mapProps} />
+            ) : isRegional && regionId ? (
+              <RegionMap regionId={regionId} {...mapProps} />
+            ) : (
+              <StateMap stateMeta={stateMeta} peaks={peaks} {...mapProps} />
+            )}
+          </Suspense>
           <div className="map-compass" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
               <path d="M12 3L15 12L12 10.5L9 12L12 3Z" fill="#e5533c" />
@@ -233,8 +236,9 @@ export function QuizScreen({
           </div>
           <p className="zoom-hint">Pinch to zoom · drag to pan</p>
         </div>
+      </div>
 
-        <div className="quiz-controls">
+      <div className="quiz-controls">
           {isTypeMode ? (
             <form
               className={`quiz-type-form${quiz.typeWrongFlash ? " quiz-type-form--wrong" : ""}`}
@@ -278,7 +282,6 @@ export function QuizScreen({
             </button>
           </div>
         </div>
-      </div>
     </div>
   );
 }

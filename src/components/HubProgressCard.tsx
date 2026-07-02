@@ -1,4 +1,5 @@
 import type { HubProgressSummary } from "../progress/journeyProfile";
+import { hasVeteranFrame, isMapMaster } from "../progress/levelPerks";
 
 interface HubProgressCardProps {
   data: HubProgressSummary;
@@ -38,9 +39,14 @@ export function HubProgressCard({ data, onClick }: HubProgressCardProps) {
   const barPct = data.levelProgress
     ? Math.min(100, (data.levelProgress.current / data.levelProgress.needed) * 100)
     : 100;
+  const frameClass = isMapMaster(data.level)
+    ? " hub-progress-card--master"
+    : hasVeteranFrame(data.level)
+      ? " hub-progress-card--veteran"
+      : "";
 
   return (
-    <button type="button" className="hub-progress-card" onClick={onClick}>
+    <button type="button" className={`hub-progress-card${frameClass}`} onClick={onClick}>
       <header className="hub-progress-card-header">
         <span className="hub-progress-card-label">Your progress</span>
         <span className="hub-progress-card-cta">View all ›</span>

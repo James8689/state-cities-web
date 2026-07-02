@@ -11,18 +11,20 @@ the native shells that load the built `dist/` bundle.
 | App icons (192, 512, 1024, apple-touch) | `public/icon-*.png` — regenerate with `npm run icons` |
 | Icon source art | `public/icon-source.svg` |
 | PWA manifest (relative paths) | `public/manifest.json` |
-| Privacy policy (static page) | `public/privacy.html` — linked from state picker |
+| Privacy policy (static page) | `public/privacy.html` |
+| Security headers (static hosts) | `public/_headers` (Cloudflare Pages / compatible CDNs) |
 | Capacitor config | `capacitor.config.ts` — app id `com.statecities.app` |
-| Native projects | `ios/`, `android/` |
+| Native projects | `ios/`, `android/` — version **1.0** |
 | Capacitor-safe asset URLs | `src/utils/publicAssetUrl.ts` + `vite` `base: './'` |
+| Monetization | **Disabled** for v1 (`src/config/appFlags.ts`) — no store UI |
 
 ## Privacy posture (for App Store Connect)
 
 - **No server-side collection** today
 - **No accounts, analytics, or ads** in current build
-- **localStorage** for per-state best scores on full quizzes (`src/progress/`); custom quizzes not tracked yet
+- **localStorage** for progression (scores, badges, speed, points/levels, streaks, map theme)
 - **Service worker** caches map GeoJSON for offline play
-- Update `public/privacy.html` support email before submission
+- Support: `support@statecities.app` in `public/privacy.html`
 
 ## Commands
 
@@ -35,19 +37,21 @@ npm run cap:ios          # open Xcode (requires macOS)
 npm run cap:android      # open Android Studio
 ```
 
-## Pre-submission checklist (later)
+## Pre-submission checklist
 
-- [ ] Replace placeholder support email in `privacy.html`
+- [ ] Confirm `support@statecities.app` is a real inbox (or update `privacy.html`)
 - [ ] Apple Developer Program account ($99/yr)
 - [ ] macOS + Xcode: build iOS, run in Simulator, then TestFlight
-- [ ] Android Studio: build APK/AAB for Play Console (optional parallel track)
-- [ ] App Store screenshots from **final** UI (after mastery/progression ships)
+- [ ] Android Studio: build AAB for Play Console (optional parallel track)
+- [ ] App Store screenshots from current UI (hub, quiz, results, journey)
 - [ ] 1024×1024 icon uploaded to App Store Connect (`public/icon-1024.png`)
 - [ ] Privacy nutrition labels: “Data Not Collected” or local-only gameplay data
-- [ ] Device smoke test: map load, tap, zoom, offline after first launch
-- [ ] Decide on service worker in native WebView (keep or disable — both work)
+- [ ] Device smoke test: map load, tap, zoom, type mode, offline after first launch
+- [ ] `monetizationEnabled: false` and `adsEnabled: false` in release build
+- [ ] Deploy web build to hosting if shipping PWA alongside native (`dist/`)
 
-## Timing
+## v1.1 (after launch)
 
-Capacitor is scaffolded now so architecture stays compatible. **TestFlight and store
-listing should wait** until Phase 2–3 UI is stable (see `PRODUCT_BLUEPRINT.md`).
+- In-app purchases via RevenueCat + Capacitor plugin
+- Re-enable store UI behind `monetizationEnabled`
+- First SKU: non-consumable ad-free

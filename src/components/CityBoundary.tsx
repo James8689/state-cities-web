@@ -1,6 +1,7 @@
 ﻿import { Geography } from "react-simple-maps";
 import type { CityHighlight } from "../types/quiz";
-import { MAP_COLORS } from "../utils/mapTheme";
+import type { MapPalette } from "../data/mapThemes";
+import { MAP_COLORS as DEFAULT_PALETTE } from "../utils/mapTheme";
 
 interface CityBoundaryProps {
   geo: {
@@ -9,24 +10,25 @@ interface CityBoundaryProps {
     geometry: GeoJSON.Geometry;
   };
   highlight: CityHighlight;
+  palette?: MapPalette;
 }
 
-export function CityBoundary({ geo, highlight }: CityBoundaryProps) {
-  let fill: string = MAP_COLORS.cityFill;
-  let stroke: string = MAP_COLORS.cityStroke;
-  let strokeWidth: number = MAP_COLORS.cityStrokeWidth;
+export function CityBoundary({ geo, highlight, palette = DEFAULT_PALETTE }: CityBoundaryProps) {
+  let fill: string = palette.cityFill;
+  let stroke: string = palette.cityStroke;
+  let strokeWidth: number = palette.cityStrokeWidth;
 
   if (highlight === "correct") {
-    fill = MAP_COLORS.correct;
-    stroke = MAP_COLORS.feedbackStroke;
+    fill = palette.correct;
+    stroke = palette.feedbackStroke;
     strokeWidth = 2;
   } else if (highlight === "hint") {
-    fill = MAP_COLORS.hint;
-    stroke = MAP_COLORS.feedbackStroke;
+    fill = palette.hint;
+    stroke = palette.feedbackStroke;
     strokeWidth = 2;
   } else if (highlight === "wrong") {
-    fill = MAP_COLORS.wrong;
-    stroke = MAP_COLORS.feedbackStroke;
+    fill = palette.wrong;
+    stroke = palette.feedbackStroke;
     strokeWidth = 2;
   }
 

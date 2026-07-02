@@ -32,6 +32,7 @@ interface ScoreBoardProps {
   /** When quizKind is practice, the tier/daily session being practiced. */
   practiceParentKind?: ParentQuizKind | null;
   result: QuizResult;
+  onLevelUp?: (event: import("../progress/types").LevelUpEvent) => void;
 }
 
 function parentLabel(kind: ParentQuizKind): string {
@@ -48,6 +49,7 @@ export function ScoreBoard({
   learnZoneId,
   practiceParentKind,
   result,
+  onLevelUp,
 }: ScoreBoardProps) {
   const pct = Math.round((result.points / result.total) * 100);
   const [record, setRecord] = useState<QuizResultRecord | null>(null);
@@ -82,9 +84,14 @@ export function ScoreBoard({
       return;
     }
 
+    const award = (amount: number) => {
+      const { levelUp } = addPoints(amount);
+      if (levelUp) onLevelUp?.(levelUp);
+    };
+
     if (quizKind === "learn" && learnZoneId) {
       const learnRecord = recordLearnZoneResult(stateId, learnZoneId, pct);
-      addPoints(
+      award(
         pointsForLearn(result, {
           firstCompletion: learnRecord.firstCompletion,
           isNewBest: learnRecord.isNewBest,
@@ -111,7 +118,7 @@ export function ScoreBoard({
     if (quizKind === "daily") {
       const challenge = getDailyChallenge();
       const dailyRecord = recordDailyResult(challenge.dateKey, pct);
-      addPoints(
+      award(
         pointsForDailyQuiz(result, {
           firstCompletion: dailyRecord.firstCompletion,
           isNewBest: dailyRecord.isNewBest,
@@ -151,7 +158,7 @@ export function ScoreBoard({
       tracksSpeed(quizKind) && result.elapsedMs > 0
         ? recordSpeedResult(progressKey, result.total, result.elapsedMs, pct)
         : null;
-    addPoints(pointsForQuiz(result, resultRecord));
+    award(pointsForQuiz(result, resultRecord));
     saveLastSession({
       stateId: quizKind === "regional" ? stateId || regionId || "" : quizKind === "national" ? "US" : stateId,
       kind: quizKind,
@@ -162,7 +169,7 @@ export function ScoreBoard({
     setRecord(resultRecord);
     setSpeedRecord(speed);
     setActivity(recordCampaignActivity(quizKind));
-  }, [stateId, quizKind, playMode, regionId, learnZoneId, practiceParentKind, pct, tracks, result]);
+  }, [stateId, quizKind, playMode, regionId, learnZoneId, practiceParentKind, pct, tracks, result, onLevelUp]);
 
   const daily = quizKind === "daily" ? getDailyChallenge() : null;
   const showSpeed = tracks && tracksSpeed(quizKind);

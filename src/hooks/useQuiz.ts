@@ -3,6 +3,7 @@ import type { CityMeta, QuizResult } from "../types/quiz";
 import { matchesCityName } from "../utils/cityNameMatch";
 import { hapticCorrect, hapticIncorrect } from "../utils/haptics";
 import { buildTypeHintDisplay, countRevealableLetters } from "../utils/typeHint";
+import { tapHintMissThreshold } from "../progress/levelPerks";
 
 function shuffle<T>(items: T[]): T[] {
   const copy = [...items];
@@ -40,7 +41,8 @@ export function useQuiz(cities: CityMeta[]) {
   const current = queue[index] ?? null;
   const total = queue.length;
 
-  const showHint = misses >= 2 || forcedHint;
+  const hintMissThreshold = tapHintMissThreshold();
+  const showHint = misses >= hintMissThreshold || forcedHint;
 
   useEffect(() => {
     if (finished) {

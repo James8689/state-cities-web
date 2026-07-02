@@ -1,7 +1,10 @@
-﻿import { getNextRecommendation } from "../progress/nextRecommendation";
+﻿import { useState } from "react";
+import { getNextRecommendation } from "../progress/nextRecommendation";
+import { LevelUpModal } from "../components/LevelUpModal";
 import { ScoreBoard } from "../components/ScoreBoard";
 import type { LearnZoneId } from "../data/learnZones";
 import type { ParentQuizKind, QuizKind, QuizPlayMode, QuizResult } from "../types/quiz";
+import type { LevelUpEvent } from "../progress/types";
 
 interface ResultsScreenProps {
   stateId: string;
@@ -34,6 +37,7 @@ export function ResultsScreen({
   onBackToState,
   onBackToHub,
 }: ResultsScreenProps) {
+  const [levelUp, setLevelUp] = useState<LevelUpEvent | null>(null);
   const hasMissed = result.missed.length > 0;
   const nextStep = getNextRecommendation({ skipPractice: true });
   const showContinue =
@@ -50,7 +54,9 @@ export function ResultsScreen({
         learnZoneId={learnZoneId}
         practiceParentKind={practiceParentKind}
         result={result}
+        onLevelUp={setLevelUp}
       />
+      {levelUp && <LevelUpModal event={levelUp} onDismiss={() => setLevelUp(null)} />}
       <div className="results-actions">
         {showContinue && (
           <button type="button" className="btn-primary" onClick={onContinueJourney}>

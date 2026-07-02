@@ -38,7 +38,7 @@ Default screen is always the **campaign hub**. **Continue** opens **state home**
 - Nearest-dot tap within ~80px tolerance; empty-map taps ignored (not a miss)
 - `ZoomableGroup` needs `zoom={zoom}` prop synced with `onMoveEnd` or view resets
 - Custom quiz passes a subset via `activeCityIds` on `StateMap`
-- Scoring: 1 pt/city, −0.5 per wrong guess; hint after 2 misses
+- Scoring: 1 pt/city, −0.5 per wrong guess; hint after 2 misses (1 miss at Lv4+)
 - Tiers: Major (top 10 by pop) + Full; badges at 70/85/100% best score
 - **Type mode** on state tiers and regional quiz (generous spelling match)
 - **Regional quiz**: mixed Major cities; unlock + play in Explore → Region or Journey
@@ -46,11 +46,11 @@ Default screen is always the **campaign hub**. **Continue** opens **state home**
 - **Weak city tracking**: miss counts persist; practice tough cities from Journey
 - **Daily challenge**: UTC regional rotation; primary entry on hub
 - **Play streak + weekly goal**: counted quizzes update streak/weekly progress on Journey
-- PWA + service worker (`public/sw.js`, cache v3); `body { position: fixed }` locks page scroll on quiz
+- PWA + service worker (`public/sw.js`, cache v8); `body { position: fixed }` locks page scroll on quiz
 - Share: `npm run build && npm run preview -- --host --port 4173` + cloudflared (WARP must be off)
 
 ## Known gaps
 
-- App Store: Capacitor scaffold ready; submission checklist in `docs/APP_STORE.md`
+- App Store: Capacitor scaffold ready; v1 ships without IAP — checklist in `docs/APP_STORE.md`
 - `DEFAULT_STATE` unused; app uses state picker
 - **Leaderboards / rankings** (daily, timed, total progress rank): deferred — see `docs/PRODUCT_BLUEPRINT.md` Phase 7

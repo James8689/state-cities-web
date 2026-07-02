@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { BackButton } from "../components/BackButton";
 import { BadgeProgressSheet } from "../components/BadgeProgressSheet";
+import { MapThemePicker } from "../components/MapThemePicker";
 import { Medal } from "../components/Medal";
 import { MasteryBadge } from "../components/MasteryBadge";
 import { NationalQuizTeaser } from "../components/NationalQuizTeaser";
+import { SpeedBadge } from "../components/SpeedBadge";
 import {
   displayTierForState,
   getBadgeProgressDetail,
@@ -16,6 +18,7 @@ import { getTopWeakCities } from "../progress/weakCities";
 import { getNextRecommendation } from "../progress/nextRecommendation";
 import { MASTERY_THRESHOLDS } from "../progress/mastery";
 import { REGIONAL_QUIZ_UNLOCK_COUNT } from "../progress/regionProgress";
+import { SPEED_SEC_PER_CITY } from "../progress/speed";
 import type { QuizPlayMode } from "../types/quiz";
 
 interface JourneyScreenProps {
@@ -236,8 +239,8 @@ export function JourneyScreen({
         <section className="journey-section">
           <h2 className="journey-section-title">Level path</h2>
           <p className="journey-section-desc">
-            Earn points from quizzes, daily challenges, and new badges. Each level updates your
-            title on the hub.
+            Earn points from quizzes, daily challenges, and new badges. Levels unlock themes,
+            smarter hints, extra daily attempts, and status frames.
           </p>
           <ol className="journey-levels">
             {profile.levels.map((entry) => (
@@ -254,6 +257,14 @@ export function JourneyScreen({
               </li>
             ))}
           </ol>
+        </section>
+
+        <section className="journey-section">
+          <h2 className="journey-section-title">Map themes</h2>
+          <p className="journey-section-desc">
+            Earn new looks by leveling up, then pick your active theme here.
+          </p>
+          <MapThemePicker />
         </section>
 
         <section className="journey-section">
@@ -357,18 +368,19 @@ export function JourneyScreen({
           </div>
         </section>
 
-        <section className="journey-section journey-section--soon">
+        <section className="journey-section">
           <h2 className="journey-section-title">Speed badges</h2>
           <p className="journey-section-desc">
-            Timed mode is coming soon — race the clock for extra badges on each tier.
+            Earn these by finishing perfect runs quickly in Major, Full, Regional, and National
+            quizzes.
           </p>
-          <div className="journey-soon-badges">
-            {["Quick draw", "Speed run", "Lightning map"].map((label) => (
-              <div key={label} className="journey-soon-badge">
-                <span className="journey-soon-icon" aria-hidden>
-                  ⏱
+          <div className="journey-speed-row">
+            {(["quick-draw", "speed-run", "lightning"] as const).map((badge) => (
+              <div key={badge} className="journey-speed-stat">
+                <SpeedBadge badge={badge} />
+                <span className="journey-speed-threshold">
+                  ≤{SPEED_SEC_PER_CITY[badge]}s per city
                 </span>
-                <span>{label}</span>
               </div>
             ))}
           </div>

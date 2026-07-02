@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { STATES } from "../data/states";
 import type { StateBundle } from "../types/quiz";
 import { StateSummaryBadge } from "../components/StateSummaryBadge";
@@ -89,6 +89,9 @@ export function StateSelectScreen({
   onBack,
 }: StateSelectScreenProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const isFirstLayoutRef = useRef(true);
+  const onViewStateChangeRef = useRef(onViewStateChange);
+  onViewStateChangeRef.current = onViewStateChange;
   const { sortMode, regionId } = viewState;
 
   const alphabeticalStates = useMemo(
@@ -101,15 +104,27 @@ export function StateSelectScreen({
   useLayoutEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
-    el.scrollTop = viewState.scrollTop;
-  }, [viewState.scrollTop, viewState.sortMode, viewState.regionId]);
 
-  const handleScroll = () => {
-    const top = scrollRef.current?.scrollTop ?? 0;
-    if (top !== viewState.scrollTop) {
-      onViewStateChange({ scrollTop: top });
+    if (isFirstLayoutRef.current) {
+      isFirstLayoutRef.current = false;
+      el.scrollTop = viewState.scrollTop;
+      return;
     }
-  };
+  }, [viewState.scrollTop]);
+
+  useLayoutEffect(() => {
+    const el = scrollRef.current;
+    if (!el || isFirstLayoutRef.current) return;
+    el.scrollTop = 0;
+  }, [sortMode, regionId]);
+
+  useEffect(() => {
+    const node = scrollRef.current;
+    return () => {
+      const top = node?.scrollTop ?? 0;
+      onViewStateChangeRef.current({ scrollTop: top });
+    };
+  }, []);
 
   const handleSelectState = (usps: string) => {
     const top = scrollRef.current?.scrollTop ?? 0;
@@ -157,7 +172,6 @@ export function StateSelectScreen({
         role="tabpanel"
         aria-labelledby={`state-sort-tab-${sortMode}`}
         className={`state-list-regions${sortMode === "region" ? " state-list-regions--region-detail" : ""}`}
-        onScroll={handleScroll}
       >
         {sortMode === "region" && (
           <RegionDetailPanel
@@ -193,12 +207,6 @@ export function StateSelectScreen({
           </ul>
         )}
       </div>
-
-      <footer className="state-select-footer">
-        <a className="state-select-footer-link" href="./privacy.html">
-          Privacy Policy
-        </a>
-      </footer>
     </div>
   );
 }

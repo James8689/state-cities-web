@@ -10,7 +10,7 @@ import { useContainerSize } from "../hooks/useContainerSize";
 import { useFollowTargetCity } from "../hooks/useFollowTargetCity";
 import { createRegionProjection, getRegionCenter } from "../utils/geo";
 import { publicAssetUrl } from "../utils/publicAssetUrl";
-import { MAP_COLORS } from "../utils/mapTheme";
+import { useMapPalette } from "../hooks/useMapPalette";
 
 interface NationalMapProps {
   activeCityIds: Set<string>;
@@ -54,6 +54,7 @@ export function NationalMap({
   alwaysHighlightTarget = false,
 }: NationalMapProps) {
   const { ref, width, height } = useContainerSize();
+  const MAP_COLORS = useMapPalette();
   const [data, setData] = useState<NationalMapData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const activeKey = useMemo(() => [...activeCityIds].sort().join(","), [activeCityIds]);
