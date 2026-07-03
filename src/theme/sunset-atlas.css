@@ -41,7 +41,7 @@
 :root {
   font-family: var(--sa-font-body);
   color: var(--sa-ink);
-  background: var(--sa-hero-ink);
+  background: var(--sa-paper);
 }
 
 .app-shell:has(.onboarding-screen),
