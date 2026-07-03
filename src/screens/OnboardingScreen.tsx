@@ -5,6 +5,7 @@ import { getRegionById, getRegionForState, REGIONS } from "../data/regions";
 import { getStateBundle } from "../data/states";
 import { pickRandomStateUsps } from "../progress/nextRecommendation";
 import { setHomeStateId } from "../progress/storage";
+import { useDragScroll } from "../hooks/useDragScroll";
 
 interface OnboardingScreenProps {
   onComplete: (stateId: string) => void;
@@ -13,6 +14,7 @@ interface OnboardingScreenProps {
 export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
   const [step, setStep] = useState(0);
   const [regionId, setRegionId] = useState(REGIONS[0]!.id);
+  const dragRef = useDragScroll<HTMLDivElement>();
   const isHomeStep = step >= ONBOARDING_TUTORIAL_STEPS.length;
   const tutorial = !isHomeStep ? ONBOARDING_TUTORIAL_STEPS[step] : null;
   const Illustration = tutorial ? ONBOARDING_ILLUSTRATIONS[tutorial.id] : null;
@@ -67,7 +69,7 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
             <p className="onboarding-region-label">1 · Choose your region</p>
           </div>
           <div className="onboarding-region-scroll-wrap">
-            <div className="region-picker onboarding-region-picker" role="tablist" aria-label="Regions">
+            <div ref={dragRef} className="region-picker onboarding-region-picker" role="tablist" aria-label="Regions">
               {REGIONS.map((r) => (
                 <button
                   key={r.id}

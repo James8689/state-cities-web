@@ -1,13 +1,95 @@
 /**
- * Device layout — phone widths, short viewports, and landscape orientation.
- * Portrait keeps the 480px phone frame; landscape expands to full width and
- * reflows the quiz into map + side controls so the map stays usable.
+ * Device layout — responsive breakpoints for web, tablet, and phone.
+ * Desktop-first with sidebar; tablet collapses sidebar; mobile hides it.
  */
 
 :root {
-  --app-max-width: 480px;
-  --space-page-x: 1rem;
+  --space-page-x: 2rem;
   --touch-target: 2.75rem;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MOBILE: < 768px — no sidebar, bottom tab bar, phone layout
+   ══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 767px) {
+  :root {
+    --space-page-x: 1rem;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-tab-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--sa-surface, #fff);
+    border-top: 1px solid var(--sa-border, rgba(61, 36, 86, 0.08));
+    padding: 0.5rem 0 max(0.5rem, env(safe-area-inset-bottom, 0px));
+    justify-content: space-around;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .mobile-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.125rem;
+    padding: 0.375rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: var(--sa-ink-muted, #8e7a9e);
+    transition: color 0.15s;
+  }
+
+  .mobile-tab--active {
+    color: var(--sa-brand, #f06548);
+  }
+
+  .mobile-tab-icon {
+    font-size: 1.25rem;
+  }
+
+  .mobile-tab-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .web-content {
+    padding-bottom: 4.5rem;
+  }
+
+  .web-layout--quiz .mobile-tab-bar {
+    display: none;
+  }
+
+  .web-layout--quiz .web-content {
+    padding-bottom: 0;
+  }
+
+  .screen {
+    padding: 1rem;
+  }
+
+  .screen.quiz-screen {
+    padding: 0;
+  }
+
+  .results-screen {
+    padding: 1.25rem;
+  }
 }
 
 /* ── Narrow phones (SE, mini) ── */
@@ -38,26 +120,84 @@
   }
 }
 
-/* ── Large phones (Plus / Pro Max portrait) ── */
+/* ══════════════════════════════════════════════════════════════
+   TABLET: 768px–1023px — sidebar collapsed to icons
+   ══════════════════════════════════════════════════════════════ */
 
-@media (min-width: 414px) {
-  :root {
-    --space-page-x: 1.125rem;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sidebar {
+    width: 72px;
+    align-items: center;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .sidebar-brand {
+    justify-content: center;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-title,
+  .sidebar-link-label,
+  .sidebar-footer-text {
+    display: none;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+    padding: 0.75rem;
+  }
+
+  .sidebar-link-icon {
+    margin: 0;
+  }
+
+  .sidebar-footer {
+    padding: 0.75rem 0 0;
+  }
+
+  .screen {
+    padding: 1.5rem;
   }
 }
 
-/* ── Short viewport — landscape phones, on-screen keyboard, etc. ── */
+/* ══════════════════════════════════════════════════════════════
+   DESKTOP: 1024px+ — full sidebar, generous layout
+   ══════════════════════════════════════════════════════════════ */
+
+@media (min-width: 1024px) {
+  .screen {
+    padding: 2rem 2.5rem;
+  }
+
+  .screen-nav {
+    padding: 0 0 0.5rem;
+  }
+
+  .campaign-hub-header {
+    padding: 0 0 1rem;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LARGE DESKTOP: 1440px+ — extra breathing room
+   ══════════════════════════════════════════════════════════════ */
+
+@media (min-width: 1440px) {
+  .screen {
+    padding: 2.5rem 3rem;
+  }
+
+  .sidebar {
+    width: 280px;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   QUIZ-SPECIFIC: landscape + short viewports
+   ══════════════════════════════════════════════════════════════ */
 
 @media (orientation: landscape) and (max-height: 520px) {
-  :root {
-    --app-max-width: none;
-  }
-
-  .app-shell:has(.quiz-screen) {
-    box-shadow: none;
-  }
-
-  /* Quiz stays portrait-style in landscape: header → map → bottom buttons */
   .screen.quiz-screen {
     display: flex;
     flex-direction: column;
@@ -87,7 +227,6 @@
     min-height: var(--touch-target);
   }
 
-  /* Compact quiz header */
   .quiz-topcard {
     padding-top: max(0.25rem, env(safe-area-inset-top, 0px));
     padding-bottom: 0.25rem;
@@ -143,126 +282,141 @@
     top: 0.5rem;
     right: 0.5rem;
   }
+}
 
-  /* Compact chrome — landscape height is precious; safe-area only on screen-nav */
-  .screen-nav {
-    padding-top: max(0.25rem, env(safe-area-inset-top, 0px));
-    padding-bottom: 0.25rem;
+@media (orientation: landscape) and (max-height: 400px) {
+  .quiz-find-row {
+    margin-top: 0.25rem;
   }
 
-  .back-btn {
-    width: 2.25rem;
-    height: 2.25rem;
+  .quiz-nav-title {
+    font-size: 0.625rem;
+  }
+
+  .quiz-action-btn {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* ── Apply page gutter token where screens scroll ── */
+
+.state-detail-body,
+.campaign-hub-body,
+.journey-body,
+.state-list-regions {
+  padding-left: var(--space-page-x);
+  padding-right: var(--space-page-x);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE SCREEN LAYOUTS
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Hub: multi-column card grid on desktop ── */
+
+@media (min-width: 768px) {
+  .campaign-hub-screen {
+    background: transparent;
   }
 
   .campaign-hub-header {
-    padding-top: max(0.25rem, env(safe-area-inset-top, 0px));
-    padding-bottom: 0.25rem;
-    padding-left: max(var(--space-page-x), env(safe-area-inset-left, 0px));
-    padding-right: max(var(--space-page-x), env(safe-area-inset-right, 0px));
+    text-align: left;
+    padding: 0 0 1.5rem;
+  }
+
+  .campaign-hub-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    overflow-y: visible;
+    padding: 0;
+  }
+
+  .hub-hero {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .campaign-hub-body {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .hub-hero {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── State Select: card grid for state list ── */
+
+@media (min-width: 768px) {
+  .state-select-screen {
+    background: transparent;
   }
 
   .state-select-header {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    padding-left: max(var(--space-page-x), env(safe-area-inset-left, 0px));
-    padding-right: max(var(--space-page-x), env(safe-area-inset-right, 0px));
+    text-align: left;
+    padding: 0 0 1rem;
   }
 
-  .campaign-hub-header h1,
-  .state-select-header h1 {
-    font-size: 1.125rem;
+  .state-list:not(.onboarding-state-list) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0;
   }
 
-  .campaign-hub-tagline,
-  .state-select-subtitle {
-    font-size: 0.75rem;
-    margin-top: 0.125rem;
+  .state-list:not(.onboarding-state-list) .state-list-item {
+    margin-bottom: 0;
   }
 
-  .state-select-tabs {
-    margin-bottom: 0.375rem;
+  .state-list-regions {
+    padding: 0;
+    overflow-y: visible;
   }
+}
 
-  .state-select-tab {
-    padding: 0.375rem 0.5rem;
-    font-size: 0.75rem;
+@media (min-width: 1024px) {
+  .state-list:not(.onboarding-state-list) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .state-list:not(.onboarding-state-list) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── State Home: side-by-side layout ── */
+
+@media (min-width: 768px) {
+  .state-detail-screen {
+    background: transparent;
   }
 
   .state-detail-header {
-    padding: 0.125rem 0 0.375rem;
+    text-align: left;
+    padding: 0 0 1.5rem;
   }
 
-  .state-detail-header h1 {
-    font-size: 1.125rem;
+  .state-detail-body {
+    padding: 0;
+    overflow-y: visible;
   }
 
-  .state-detail-header .subtitle {
-    font-size: 0.75rem;
-    margin-top: 0.125rem;
-  }
-
-  .journey-hero {
-    padding: 0.125rem 0 0.5rem;
-  }
-
-  .journey-hero h1 {
-    font-size: 1.125rem;
-  }
-
-  .journey-hero-eyebrow,
-  .journey-hero-next {
-    font-size: 0.6875rem;
-  }
-
-  .journey-hero-points {
-    font-size: 0.9375rem;
-    margin: 0.25rem 0 0.5rem;
-  }
-
-  .campaign-hub-body,
-  .state-detail-body,
-  .journey-body,
-  .state-list-regions {
-    overflow-anchor: none;
-  }
-
-  .onboarding-header {
-    padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
-    padding-bottom: 0.375rem;
-  }
-
-  .onboarding-header h1 {
-    font-size: 1.125rem;
-  }
-
-  .results-screen {
-    padding: 0.75rem 1rem;
-  }
-
-  .results-score {
-    font-size: 1.875rem;
-  }
-
-  /* State home: equal tier cards, full state on the left */
   .mode-tier-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.625rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     align-items: stretch;
   }
 
   .mode-tier-list > li {
     display: flex;
     min-width: 0;
-  }
-
-  .mode-tier-list > li:nth-child(1) {
-    order: 2;
-  }
-
-  .mode-tier-list > li:nth-child(2) {
-    order: 1;
   }
 
   .mode-tier-card {
@@ -281,42 +435,140 @@
   }
 }
 
-/* ── Very short landscape (SE, older small phones) ── */
+/* ── Journey: multi-column ── */
 
-@media (orientation: landscape) and (max-height: 400px) {
-  .quiz-find-row {
-    margin-top: 0.25rem;
+@media (min-width: 768px) {
+  .journey-screen {
+    background: transparent;
   }
 
-  .quiz-nav-title {
-    font-size: 0.625rem;
+  .journey-body {
+    padding: 0;
+    overflow-y: visible;
   }
 
-  .quiz-action-btn {
-    padding: 0.5rem 0.625rem;
-    font-size: 0.8125rem;
-  }
-
-  .hub-hero {
-    padding: 0.875rem 1rem;
-  }
-
-  .hub-hero-title {
-    font-size: 1.0625rem;
-  }
-
-  .hub-hero-reason {
-    margin-bottom: 0.625rem;
-    font-size: 0.8125rem;
+  .journey-badge-wall {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
 }
 
-/* ── Apply page gutter token where screens scroll ── */
+@media (min-width: 1024px) {
+  .journey-badge-wall {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
-.state-detail-body,
-.campaign-hub-body,
-.journey-body,
-.state-list-regions {
-  padding-left: max(var(--space-page-x), env(safe-area-inset-left, 0px));
-  padding-right: max(var(--space-page-x), env(safe-area-inset-right, 0px));
+/* ── Quiz: centered map with breathing room ── */
+
+@media (min-width: 768px) {
+  .screen.quiz-screen {
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quiz-topcard {
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .quiz-map-stack {
+    max-width: 900px;
+    width: 100%;
+  }
+}
+
+/* ── Results: wider layout ── */
+
+@media (min-width: 768px) {
+  .results-screen {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   DESKTOP HOVER + INTERACTION STATES
+   ══════════════════════════════════════════════════════════════ */
+
+@media (hover: hover) and (pointer: fine) {
+  .state-list-item--available:hover {
+    background: #f0f4ff;
+    border-color: #93c5fd;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.15s ease;
+  }
+
+  .state-list-item--suggested:hover {
+    background: #dbeafe;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  }
+
+  .hub-hero:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+  }
+
+  .mode-tier-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+    transition: all 0.15s ease;
+  }
+
+  .btn-secondary:hover {
+    background: var(--sa-paper-deep, #f3e4d6);
+    transition: all 0.15s ease;
+  }
+
+  .hub-card:hover,
+  .hub-explore-card:hover,
+  .hub-progress-card:hover,
+  .hub-daily-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+  }
+
+  .journey-badge-entry:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.15s ease;
+  }
+
+  .sidebar-link:hover {
+    background: var(--sa-paper-deep, #f3e4d6);
+    color: var(--sa-hero-ink, #3d2456);
+  }
+
+  .mobile-tab:hover {
+    color: var(--sa-brand, #f06548);
+  }
+}
+
+/* Ensure clickable elements show pointer cursor */
+.state-list-item--available,
+.hub-hero,
+.mode-tier-card,
+.hub-card,
+.hub-explore-card,
+.hub-progress-card,
+.hub-daily-card,
+.journey-badge-entry,
+.btn-primary,
+.btn-secondary,
+.btn-text {
+  cursor: pointer;
 }
