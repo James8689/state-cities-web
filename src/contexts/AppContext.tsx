@@ -19,7 +19,7 @@ import {
   type ExploreViewState,
 } from "../navigation/exploreView";
 import type { RecommendationAction } from "../progress/types";
-import type { CityMeta, ParentQuizKind, QuizKind, QuizPlayMode, QuizResult, Screen, StateBundle } from "../types/quiz";
+import type { CityMeta, ParentQuizKind, QuizKind, QuizPlayMode, QuizResult, StateBundle } from "../types/quiz";
 import { useNavigate } from "react-router-dom";
 
 export interface AppContextValue {
