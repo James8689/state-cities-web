@@ -20,23 +20,7 @@ import {
 } from "../navigation/exploreView";
 import type { RecommendationAction } from "../progress/types";
 import type { CityMeta, ParentQuizKind, QuizKind, QuizPlayMode, QuizResult, Screen, StateBundle } from "../types/quiz";
-import { useNavigate, useLocation } from "react-router-dom";
-
-function screenToPath(screen: Screen, stateId?: string): string {
-  switch (screen) {
-    case "hub": return "/";
-    case "select": return "/states";
-    case "stateHome": return stateId ? `/states/${stateId}` : "/states";
-    case "journey": return "/journey";
-    case "learn": return stateId ? `/states/${stateId}/learn` : "/";
-    case "learnRegion": return "/learn/region";
-    case "customSelect": return stateId ? `/states/${stateId}/custom` : "/";
-    case "quiz": return "/quiz";
-    case "results": return "/results";
-    case "onboarding": return "/welcome";
-    default: return "/";
-  }
-}
+import { useNavigate } from "react-router-dom";
 
 export interface AppContextValue {
   activeState: StateBundle | null;
@@ -98,7 +82,6 @@ export function useAppContext(): AppContextValue {
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const nav = useNavigate();
-  const location = useLocation();
 
   const [activeState, setActiveState] = useState<StateBundle | null>(null);
   const [quizCities, setQuizCities] = useState<CityMeta[]>([]);
